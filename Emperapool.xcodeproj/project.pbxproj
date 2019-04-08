@@ -15,6 +15,9 @@
 		042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */; };
 		042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */; };
 		042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */; };
+		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
+		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
+		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolUITests.swift; sourceTree = "<group>"; };
 		042CD24D225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		33F1B6AE168DECD3974E7A5C /* Pods-EmperapoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EB06B61ACF6B28B93FF08F2 /* Pods-Emperapool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emperapool.debug.xcconfig"; path = "Target Support Files/Pods-Emperapool/Pods-Emperapool.debug.xcconfig"; sourceTree = "<group>"; };
+		4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmperapoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmperapoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A228B95724E72D7EBB95E2 /* Pods-Emperapool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emperapool.release.xcconfig"; path = "Target Support Files/Pods-Emperapool/Pods-Emperapool.release.xcconfig"; sourceTree = "<group>"; };
+		C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emperapool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				042CD23F225B2ED2009E0F98 /* EmperapoolTests */,
 				042CD24A225B2ED2009E0F98 /* EmperapoolUITests */,
 				042CD226225B2ED0009E0F98 /* Products */,
+				EA46AA2AD59E4C7A8ECF4AD4 /* Pods */,
+				DF57EF58939220E6067000A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = EmperapoolUITests;
 			sourceTree = "<group>";
 		};
+		DF57EF58939220E6067000A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */,
+				54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */,
+				4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA46AA2AD59E4C7A8ECF4AD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB06B61ACF6B28B93FF08F2 /* Pods-Emperapool.debug.xcconfig */,
+				72A228B95724E72D7EBB95E2 /* Pods-Emperapool.release.xcconfig */,
+				0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */,
+				33F1B6AE168DECD3974E7A5C /* Pods-EmperapoolTests.release.xcconfig */,
+				1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */,
+				0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042CD250225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "Emperapool" */;
 			buildPhases = (
+				8D7E360036B4BF654908F2ED /* [CP] Check Pods Manifest.lock */,
 				042CD221225B2ED0009E0F98 /* Sources */,
 				042CD222225B2ED0009E0F98 /* Frameworks */,
 				042CD223225B2ED0009E0F98 /* Resources */,
@@ -152,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042CD253225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolTests" */;
 			buildPhases = (
+				EF9F487172452200C369F7F3 /* [CP] Check Pods Manifest.lock */,
 				042CD238225B2ED2009E0F98 /* Sources */,
 				042CD239225B2ED2009E0F98 /* Frameworks */,
 				042CD23A225B2ED2009E0F98 /* Resources */,
@@ -170,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042CD256225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolUITests" */;
 			buildPhases = (
+				B9BA60FAF1CEFEFE19EBF4FF /* [CP] Check Pods Manifest.lock */,
 				042CD243225B2ED2009E0F98 /* Sources */,
 				042CD244225B2ED2009E0F98 /* Frameworks */,
 				042CD245225B2ED2009E0F98 /* Resources */,
@@ -253,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D7E360036B4BF654908F2ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emperapool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BA60FAF1CEFEFE19EBF4FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmperapoolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9F487172452200C369F7F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmperapoolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		042CD221225B2ED0009E0F98 /* Sources */ = {
@@ -434,16 +546,18 @@
 		};
 		042CD251225B2ED2009E0F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB06B61ACF6B28B93FF08F2 /* Pods-Emperapool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK772YMH8E;
+				DEVELOPMENT_TEAM = 4B9M52YRT5;
 				INFOPLIST_FILE = Emperapool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adad.Emperapool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adad.Emperapool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,16 +566,18 @@
 		};
 		042CD252225B2ED2009E0F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A228B95724E72D7EBB95E2 /* Pods-Emperapool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK772YMH8E;
+				DEVELOPMENT_TEAM = 4B9M52YRT5;
 				INFOPLIST_FILE = Emperapool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adad.Emperapool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adad.Emperapool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,6 +586,7 @@
 		};
 		042CD254225B2ED2009E0F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +608,7 @@
 		};
 		042CD255225B2ED2009E0F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F1B6AE168DECD3974E7A5C /* Pods-EmperapoolTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +630,7 @@
 		};
 		042CD257225B2ED2009E0F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +651,7 @@
 		};
 		042CD258225B2ED2009E0F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD228225B2ED0009E0F98 /* AppDelegate.swift */; };
+		042CD22B225B2ED0009E0F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22A225B2ED0009E0F98 /* ViewController.swift */; };
+		042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD22C225B2ED0009E0F98 /* Main.storyboard */; };
+		042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22F225B2ED0009E0F98 /* Emperapool.xcdatamodeld */; };
+		042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042CD232225B2ED1009E0F98 /* Assets.xcassets */; };
+		042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */; };
+		042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */; };
+		042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042CD23D225B2ED2009E0F98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042CD21D225B2ED0009E0F98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042CD224225B2ED0009E0F98;
+			remoteInfo = Emperapool;
+		};
+		042CD248225B2ED2009E0F98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042CD21D225B2ED0009E0F98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042CD224225B2ED0009E0F98;
+			remoteInfo = Emperapool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042CD225225B2ED0009E0F98 /* Emperapool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emperapool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CD228225B2ED0009E0F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		042CD22A225B2ED0009E0F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042CD22D225B2ED0009E0F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042CD230225B2ED0009E0F98 /* Emperapool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Emperapool.xcdatamodel; sourceTree = "<group>"; };
+		042CD232225B2ED1009E0F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042CD235225B2ED1009E0F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042CD237225B2ED1009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042CD23C225B2ED2009E0F98 /* EmperapoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolTests.swift; sourceTree = "<group>"; };
+		042CD242225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolUITests.swift; sourceTree = "<group>"; };
+		042CD24D225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042CD222225B2ED0009E0F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD239225B2ED2009E0F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD244225B2ED2009E0F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042CD21C225B2ED0009E0F98 = {
+			isa = PBXGroup;
+			children = (
+				042CD227225B2ED0009E0F98 /* Emperapool */,
+				042CD23F225B2ED2009E0F98 /* EmperapoolTests */,
+				042CD24A225B2ED2009E0F98 /* EmperapoolUITests */,
+				042CD226225B2ED0009E0F98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042CD226225B2ED0009E0F98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042CD225225B2ED0009E0F98 /* Emperapool.app */,
+				042CD23C225B2ED2009E0F98 /* EmperapoolTests.xctest */,
+				042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042CD227225B2ED0009E0F98 /* Emperapool */ = {
+			isa = PBXGroup;
+			children = (
+				042CD228225B2ED0009E0F98 /* AppDelegate.swift */,
+				042CD22A225B2ED0009E0F98 /* ViewController.swift */,
+				042CD22C225B2ED0009E0F98 /* Main.storyboard */,
+				042CD232225B2ED1009E0F98 /* Assets.xcassets */,
+				042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */,
+				042CD237225B2ED1009E0F98 /* Info.plist */,
+				042CD22F225B2ED0009E0F98 /* Emperapool.xcdatamodeld */,
+			);
+			path = Emperapool;
+			sourceTree = "<group>";
+		};
+		042CD23F225B2ED2009E0F98 /* EmperapoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */,
+				042CD242225B2ED2009E0F98 /* Info.plist */,
+			);
+			path = EmperapoolTests;
+			sourceTree = "<group>";
+		};
+		042CD24A225B2ED2009E0F98 /* EmperapoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */,
+				042CD24D225B2ED2009E0F98 /* Info.plist */,
+			);
+			path = EmperapoolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042CD224225B2ED0009E0F98 /* Emperapool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CD250225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "Emperapool" */;
+			buildPhases = (
+				042CD221225B2ED0009E0F98 /* Sources */,
+				042CD222225B2ED0009E0F98 /* Frameworks */,
+				042CD223225B2ED0009E0F98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emperapool;
+			productName = Emperapool;
+			productReference = 042CD225225B2ED0009E0F98 /* Emperapool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042CD23B225B2ED2009E0F98 /* EmperapoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CD253225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolTests" */;
+			buildPhases = (
+				042CD238225B2ED2009E0F98 /* Sources */,
+				042CD239225B2ED2009E0F98 /* Frameworks */,
+				042CD23A225B2ED2009E0F98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042CD23E225B2ED2009E0F98 /* PBXTargetDependency */,
+			);
+			name = EmperapoolTests;
+			productName = EmperapoolTests;
+			productReference = 042CD23C225B2ED2009E0F98 /* EmperapoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042CD246225B2ED2009E0F98 /* EmperapoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042CD256225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolUITests" */;
+			buildPhases = (
+				042CD243225B2ED2009E0F98 /* Sources */,
+				042CD244225B2ED2009E0F98 /* Frameworks */,
+				042CD245225B2ED2009E0F98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042CD249225B2ED2009E0F98 /* PBXTargetDependency */,
+			);
+			name = EmperapoolUITests;
+			productName = EmperapoolUITests;
+			productReference = 042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042CD21D225B2ED0009E0F98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Mili;
+				TargetAttributes = {
+					042CD224225B2ED0009E0F98 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					042CD23B225B2ED2009E0F98 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 042CD224225B2ED0009E0F98;
+					};
+					042CD246225B2ED2009E0F98 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 042CD224225B2ED0009E0F98;
+					};
+				};
+			};
+			buildConfigurationList = 042CD220225B2ED0009E0F98 /* Build configuration list for PBXProject "Emperapool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 042CD21C225B2ED0009E0F98;
+			productRefGroup = 042CD226225B2ED0009E0F98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042CD224225B2ED0009E0F98 /* Emperapool */,
+				042CD23B225B2ED2009E0F98 /* EmperapoolTests */,
+				042CD246225B2ED2009E0F98 /* EmperapoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042CD223225B2ED0009E0F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */,
+				042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */,
+				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD23A225B2ED2009E0F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD245225B2ED2009E0F98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042CD221225B2ED0009E0F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CD22B225B2ED0009E0F98 /* ViewController.swift in Sources */,
+				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
+				042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD238225B2ED2009E0F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042CD243225B2ED2009E0F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		042CD23E225B2ED2009E0F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042CD224225B2ED0009E0F98 /* Emperapool */;
+			targetProxy = 042CD23D225B2ED2009E0F98 /* PBXContainerItemProxy */;
+		};
+		042CD249225B2ED2009E0F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042CD224225B2ED0009E0F98 /* Emperapool */;
+			targetProxy = 042CD248225B2ED2009E0F98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		042CD22C225B2ED0009E0F98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042CD22D225B2ED0009E0F98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042CD235225B2ED1009E0F98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		042CD24E225B2ED2009E0F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		042CD24F225B2ED2009E0F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042CD251225B2ED2009E0F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = Emperapool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.Emperapool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042CD252225B2ED2009E0F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = Emperapool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.Emperapool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		042CD254225B2ED2009E0F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = EmperapoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.EmperapoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emperapool.app/Emperapool";
+			};
+			name = Debug;
+		};
+		042CD255225B2ED2009E0F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = EmperapoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.EmperapoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emperapool.app/Emperapool";
+			};
+			name = Release;
+		};
+		042CD257225B2ED2009E0F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = EmperapoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.EmperapoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emperapool;
+			};
+			name = Debug;
+		};
+		042CD258225B2ED2009E0F98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK772YMH8E;
+				INFOPLIST_FILE = EmperapoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adad.EmperapoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emperapool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042CD220225B2ED0009E0F98 /* Build configuration list for PBXProject "Emperapool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CD24E225B2ED2009E0F98 /* Debug */,
+				042CD24F225B2ED2009E0F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CD250225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "Emperapool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CD251225B2ED2009E0F98 /* Debug */,
+				042CD252225B2ED2009E0F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CD253225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CD254225B2ED2009E0F98 /* Debug */,
+				042CD255225B2ED2009E0F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042CD256225B2ED2009E0F98 /* Build configuration list for PBXNativeTarget "EmperapoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042CD257225B2ED2009E0F98 /* Debug */,
+				042CD258225B2ED2009E0F98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		042CD22F225B2ED0009E0F98 /* Emperapool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				042CD230225B2ED0009E0F98 /* Emperapool.xcdatamodel */,
+			);
+			currentVersion = 042CD230225B2ED0009E0F98 /* Emperapool.xcdatamodel */;
+			path = Emperapool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 042CD21D225B2ED0009E0F98 /* Project object */;
+}

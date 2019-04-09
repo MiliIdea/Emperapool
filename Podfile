@@ -12,6 +12,22 @@ target 'Emperapool' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'DCKit', '~> 1.0.12'
+  
+  pod 'CodableAlamofire', '~> 1.1.0'
+  
+  pod 'UIColor_Hex_Swift', '~> 4.0.2'
+  
+  pod 'Kingfisher', '~> 4.10.0'
+  
+  pod 'ObjectMapper', '~> 3.3.0'
+  
+  pod 'Toast-Swift', '~> 4.0.0'
+  
+  pod 'IQKeyboardManagerSwift', '~> 6.1.1'
+  
+  pod 'AlamofireNetworkActivityLogger', '~> 2.3.0'
+  
   # Pods for Emperapool
 
   target 'EmperapoolTests' do

@@ -8,13 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD228225B2ED0009E0F98 /* AppDelegate.swift */; };
-		042CD22B225B2ED0009E0F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22A225B2ED0009E0F98 /* ViewController.swift */; };
+		042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22A225B2ED0009E0F98 /* LoginViewController.swift */; };
 		042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD22C225B2ED0009E0F98 /* Main.storyboard */; };
 		042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22F225B2ED0009E0F98 /* Emperapool.xcdatamodeld */; };
 		042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042CD232225B2ED1009E0F98 /* Assets.xcassets */; };
 		042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */; };
 		042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */; };
 		042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */; };
+		04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCA225C772000069A19 /* BYekan 1.ttf */; };
+		04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */; };
+		04C81BD5225C772100069A19 /* IRANSans(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */; };
+		04C81BD6225C772100069A19 /* BYekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCD225C772000069A19 /* BYekan.ttf */; };
+		04C81BD7225C772100069A19 /* IRANSans(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCE225C772000069A19 /* IRANSans(FaNum)_Light.ttf */; };
+		04C81BD8225C772100069A19 /* iran_sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCF225C772000069A19 /* iran_sans.ttf */; };
+		04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BD0225C772100069A19 /* B Yekan+ Bold.ttf */; };
+		04C81BDA225C772100069A19 /* iran_sans_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BD1225C772100069A19 /* iran_sans_medium.ttf */; };
+		04C81BDB225C772100069A19 /* B Yekan+.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BD2225C772100069A19 /* B Yekan+.ttf */; };
+		04C81BDF225C7CB500069A19 /* SHABNAM-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BDC225C7CB500069A19 /* SHABNAM-FD.ttf */; };
+		04C81BE0225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BDD225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf */; };
+		04C81BE1225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BDE225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf */; };
+		04C81BE4225C94D100069A19 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BE3225C94D100069A19 /* Extentions.swift */; };
+		04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -40,7 +54,7 @@
 /* Begin PBXFileReference section */
 		042CD225225B2ED0009E0F98 /* Emperapool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emperapool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD228225B2ED0009E0F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		042CD22A225B2ED0009E0F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042CD22A225B2ED0009E0F98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		042CD22D225B2ED0009E0F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		042CD230225B2ED0009E0F98 /* Emperapool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Emperapool.xcdatamodel; sourceTree = "<group>"; };
 		042CD232225B2ED1009E0F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +66,20 @@
 		042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolUITests.swift; sourceTree = "<group>"; };
 		042CD24D225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C81BCA225C772000069A19 /* BYekan 1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BYekan 1.ttf"; sourceTree = "<group>"; };
+		04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum).ttf"; sourceTree = "<group>"; };
+		04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
+		04C81BCD225C772000069A19 /* BYekan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BYekan.ttf; sourceTree = "<group>"; };
+		04C81BCE225C772000069A19 /* IRANSans(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum)_Light.ttf"; sourceTree = "<group>"; };
+		04C81BCF225C772000069A19 /* iran_sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iran_sans.ttf; sourceTree = "<group>"; };
+		04C81BD0225C772100069A19 /* B Yekan+ Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Yekan+ Bold.ttf"; sourceTree = "<group>"; };
+		04C81BD1225C772100069A19 /* iran_sans_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iran_sans_medium.ttf; sourceTree = "<group>"; };
+		04C81BD2225C772100069A19 /* B Yekan+.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Yekan+.ttf"; sourceTree = "<group>"; };
+		04C81BDC225C7CB500069A19 /* SHABNAM-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SHABNAM-FD.ttf"; sourceTree = "<group>"; };
+		04C81BDD225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SHABNAM-LIGHT-FD.ttf"; sourceTree = "<group>"; };
+		04C81BDE225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SHABNAM-BOLD-FD.ttf"; sourceTree = "<group>"; };
+		04C81BE3225C94D100069A19 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationCodeViewController.swift; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +122,7 @@
 		042CD21C225B2ED0009E0F98 = {
 			isa = PBXGroup;
 			children = (
+				04C81BC3225C721600069A19 /* Fonts */,
 				042CD227225B2ED0009E0F98 /* Emperapool */,
 				042CD23F225B2ED2009E0F98 /* EmperapoolTests */,
 				042CD24A225B2ED2009E0F98 /* EmperapoolUITests */,
@@ -116,8 +145,9 @@
 		042CD227225B2ED0009E0F98 /* Emperapool */ = {
 			isa = PBXGroup;
 			children = (
+				04C81BE5225CB3D200069A19 /* OTP */,
+				04C81BE2225C94AD00069A19 /* Extentions */,
 				042CD228225B2ED0009E0F98 /* AppDelegate.swift */,
-				042CD22A225B2ED0009E0F98 /* ViewController.swift */,
 				042CD22C225B2ED0009E0F98 /* Main.storyboard */,
 				042CD232225B2ED1009E0F98 /* Assets.xcassets */,
 				042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */,
@@ -143,6 +173,42 @@
 				042CD24D225B2ED2009E0F98 /* Info.plist */,
 			);
 			path = EmperapoolUITests;
+			sourceTree = "<group>";
+		};
+		04C81BC3225C721600069A19 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BDE225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf */,
+				04C81BDC225C7CB500069A19 /* SHABNAM-FD.ttf */,
+				04C81BDD225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf */,
+				04C81BD0225C772100069A19 /* B Yekan+ Bold.ttf */,
+				04C81BD2225C772100069A19 /* B Yekan+.ttf */,
+				04C81BCA225C772000069A19 /* BYekan 1.ttf */,
+				04C81BCD225C772000069A19 /* BYekan.ttf */,
+				04C81BD1225C772100069A19 /* iran_sans_medium.ttf */,
+				04C81BCF225C772000069A19 /* iran_sans.ttf */,
+				04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */,
+				04C81BCE225C772000069A19 /* IRANSans(FaNum)_Light.ttf */,
+				04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04C81BE2225C94AD00069A19 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BE3225C94D100069A19 /* Extentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		04C81BE5225CB3D200069A19 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				042CD22A225B2ED0009E0F98 /* LoginViewController.swift */,
+				04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */,
+			);
+			path = OTP;
 			sourceTree = "<group>";
 		};
 		DF57EF58939220E6067000A7 /* Frameworks */ = {
@@ -179,6 +245,7 @@
 				042CD221225B2ED0009E0F98 /* Sources */,
 				042CD222225B2ED0009E0F98 /* Frameworks */,
 				042CD223225B2ED0009E0F98 /* Resources */,
+				9ADE0F98800D9CF6CEDFE767 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,9 +342,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C81BDA225C772100069A19 /* iran_sans_medium.ttf in Resources */,
 				042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */,
+				04C81BD8225C772100069A19 /* iran_sans.ttf in Resources */,
+				04C81BDF225C7CB500069A19 /* SHABNAM-FD.ttf in Resources */,
+				04C81BDB225C772100069A19 /* B Yekan+.ttf in Resources */,
+				04C81BD5225C772100069A19 /* IRANSans(FaNum)_Bold.ttf in Resources */,
+				04C81BD6225C772100069A19 /* BYekan.ttf in Resources */,
+				04C81BE1225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf in Resources */,
+				04C81BD7225C772100069A19 /* IRANSans(FaNum)_Light.ttf in Resources */,
+				04C81BE0225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf in Resources */,
 				042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */,
+				04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */,
 				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
+				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
+				04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +397,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ADE0F98800D9CF6CEDFE767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emperapool/Pods-Emperapool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DCKit/DCKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emperapool/Pods-Emperapool-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9BA60FAF1CEFEFE19EBF4FF /* [CP] Check Pods Manifest.lock */ = {
@@ -371,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042CD22B225B2ED0009E0F98 /* ViewController.swift in Sources */,
+				04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */,
+				04C81BE4225C94D100069A19 /* Extentions.swift in Sources */,
+				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
 				042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */,
 			);

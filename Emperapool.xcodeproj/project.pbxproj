@@ -29,6 +29,14 @@
 		04C81BE1225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BDE225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf */; };
 		04C81BE4225C94D100069A19 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BE3225C94D100069A19 /* Extentions.swift */; };
 		04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */; };
+		04C81BEA225CD62000069A19 /* MR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BE9225CD62000069A19 /* MR.swift */; };
+		04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BEE225CD8B600069A19 /* EndPoints.swift */; };
+		04C81BF3225CDE9300069A19 /* TokenRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF0225CDE9300069A19 /* TokenRes.swift */; };
+		04C81BF4225CDE9300069A19 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF1225CDE9300069A19 /* GenericResponse.swift */; };
+		04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF2225CDE9300069A19 /* ProfileRes.swift */; };
+		04C81BF8225CE51000069A19 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF7225CE51000069A19 /* Reachability.swift */; };
+		04C81BFA225CE6C800069A19 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF9225CE6C800069A19 /* App.swift */; };
+		04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BFB225CE72500069A19 /* DefaultStrings.swift */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -80,6 +88,14 @@
 		04C81BDE225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SHABNAM-BOLD-FD.ttf"; sourceTree = "<group>"; };
 		04C81BE3225C94D100069A19 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationCodeViewController.swift; sourceTree = "<group>"; };
+		04C81BE9225CD62000069A19 /* MR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MR.swift; sourceTree = "<group>"; };
+		04C81BEE225CD8B600069A19 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		04C81BF0225CDE9300069A19 /* TokenRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenRes.swift; sourceTree = "<group>"; };
+		04C81BF1225CDE9300069A19 /* GenericResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		04C81BF2225CDE9300069A19 /* ProfileRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRes.swift; sourceTree = "<group>"; };
+		04C81BF7225CE51000069A19 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		04C81BF9225CE6C800069A19 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		04C81BFB225CE72500069A19 /* DefaultStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStrings.swift; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +138,6 @@
 		042CD21C225B2ED0009E0F98 = {
 			isa = PBXGroup;
 			children = (
-				04C81BC3225C721600069A19 /* Fonts */,
 				042CD227225B2ED0009E0F98 /* Emperapool */,
 				042CD23F225B2ED2009E0F98 /* EmperapoolTests */,
 				042CD24A225B2ED2009E0F98 /* EmperapoolUITests */,
@@ -145,6 +160,8 @@
 		042CD227225B2ED0009E0F98 /* Emperapool */ = {
 			isa = PBXGroup;
 			children = (
+				04C81BF6225CE4EA00069A19 /* Utils */,
+				04C81BE8225CD5F400069A19 /* ApiUtils */,
 				04C81BE5225CB3D200069A19 /* OTP */,
 				04C81BE2225C94AD00069A19 /* Extentions */,
 				042CD228225B2ED0009E0F98 /* AppDelegate.swift */,
@@ -209,6 +226,45 @@
 				04C81BE6225CB41700069A19 /* ActivationCodeViewController.swift */,
 			);
 			path = OTP;
+			sourceTree = "<group>";
+		};
+		04C81BE8225CD5F400069A19 /* ApiUtils */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BEB225CD62C00069A19 /* Models */,
+				04C81BE9225CD62000069A19 /* MR.swift */,
+				04C81BEE225CD8B600069A19 /* EndPoints.swift */,
+			);
+			path = ApiUtils;
+			sourceTree = "<group>";
+		};
+		04C81BEB225CD62C00069A19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BED225CD64500069A19 /* ResponseModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04C81BED225CD64500069A19 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BF1225CDE9300069A19 /* GenericResponse.swift */,
+				04C81BF2225CDE9300069A19 /* ProfileRes.swift */,
+				04C81BF0225CDE9300069A19 /* TokenRes.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		04C81BF6225CE4EA00069A19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BC3225C721600069A19 /* Fonts */,
+				04C81BF7225CE51000069A19 /* Reachability.swift */,
+				04C81BF9225CE6C800069A19 /* App.swift */,
+				04C81BFB225CE72500069A19 /* DefaultStrings.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DF57EF58939220E6067000A7 /* Frameworks */ = {
@@ -488,10 +544,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C81BF3225CDE9300069A19 /* TokenRes.swift in Sources */,
+				04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */,
 				04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */,
+				04C81BF4225CDE9300069A19 /* GenericResponse.swift in Sources */,
 				04C81BE4225C94D100069A19 /* Extentions.swift in Sources */,
+				04C81BEA225CD62000069A19 /* MR.swift in Sources */,
+				04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */,
+				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
+				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
 				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
+				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
 				042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

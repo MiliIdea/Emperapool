@@ -39,7 +39,7 @@ struct ProfileRes : Codable {
 	let job : String?
 	let video_reward_total : Int?
 	let video_reward_available : Int?
-	let video_reward_lastuse : String?
+	let video_reward_lastuse : Int?
 
 	enum CodingKeys: String, CodingKey {
 

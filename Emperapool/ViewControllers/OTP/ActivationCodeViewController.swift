@@ -32,11 +32,18 @@ class ActivationCodeViewController: UIViewController {
     }
     
     @IBAction func entry(_ sender: Any) {
-        
+        MR.approveToken(vc: self, phone: self.phoneNumber.text ?? "", activationCode: codeTextField.text ?? ""){res in
+            if let token = res?.extra_data?.token {
+                App.defaults.set(token, forKey: DefaultStrings.token)
+                self.navigate(vc: MainViewController.self){_ in}
+            }
+        }
     }
     
     @IBAction func resendCode(_ sender: Any) {
-        
+        MR.register(vc: self, phone: self.phoneNumber.text!){ res in
+             self.view.makeToast("code generated")
+        }
     }
     
 }

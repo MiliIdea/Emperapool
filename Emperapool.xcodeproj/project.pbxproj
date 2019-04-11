@@ -37,6 +37,19 @@
 		04C81BF8225CE51000069A19 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF7225CE51000069A19 /* Reachability.swift */; };
 		04C81BFA225CE6C800069A19 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BF9225CE6C800069A19 /* App.swift */; };
 		04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BFB225CE72500069A19 /* DefaultStrings.swift */; };
+		04C81BFF225E0F4F00069A19 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81BFE225E0F4F00069A19 /* MainViewController.swift */; };
+		04C81C03225F218600069A19 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C02225F218600069A19 /* ProfileViewController.swift */; };
+		04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */; };
+		04C81C08225F22BB00069A19 /* GameToturialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C07225F22BB00069A19 /* GameToturialViewController.swift */; };
+		04C81C0A225F22CC00069A19 /* GameMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C09225F22CC00069A19 /* GameMenuViewController.swift */; };
+		04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C0B225F22F200069A19 /* GameSettingsViewController.swift */; };
+		04C81C0E225F234000069A19 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C0D225F234000069A19 /* SupportViewController.swift */; };
+		04C81C10225F237400069A19 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C0F225F237400069A19 /* NewsViewController.swift */; };
+		04C81C12225F23BD00069A19 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C11225F23BD00069A19 /* MessagesViewController.swift */; };
+		04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */; };
+		04C81C16225F278E00069A19 /* GameMenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */; };
+		04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C19225F27EA00069A19 /* GameMenu.storyboard */; };
+		04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C1B225F27F900069A19 /* OTP.storyboard */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -96,6 +109,19 @@
 		04C81BF7225CE51000069A19 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		04C81BF9225CE6C800069A19 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		04C81BFB225CE72500069A19 /* DefaultStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStrings.swift; sourceTree = "<group>"; };
+		04C81BFE225E0F4F00069A19 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04C81C02225F218600069A19 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
+		04C81C07225F22BB00069A19 /* GameToturialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameToturialViewController.swift; sourceTree = "<group>"; };
+		04C81C09225F22CC00069A19 /* GameMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuViewController.swift; sourceTree = "<group>"; };
+		04C81C0B225F22F200069A19 /* GameSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsViewController.swift; sourceTree = "<group>"; };
+		04C81C0D225F234000069A19 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		04C81C0F225F237400069A19 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		04C81C11225F23BD00069A19 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
+		04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenuStoryboard.storyboard; sourceTree = "<group>"; };
+		04C81C19225F27EA00069A19 /* GameMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenu.storyboard; sourceTree = "<group>"; };
+		04C81C1B225F27F900069A19 /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,14 +186,13 @@
 		042CD227225B2ED0009E0F98 /* Emperapool */ = {
 			isa = PBXGroup;
 			children = (
+				04C81C18225F27BA00069A19 /* Storyboards */,
+				04C81C00225F214700069A19 /* ViewControllers */,
 				04C81BF6225CE4EA00069A19 /* Utils */,
 				04C81BE8225CD5F400069A19 /* ApiUtils */,
-				04C81BE5225CB3D200069A19 /* OTP */,
 				04C81BE2225C94AD00069A19 /* Extentions */,
 				042CD228225B2ED0009E0F98 /* AppDelegate.swift */,
-				042CD22C225B2ED0009E0F98 /* Main.storyboard */,
 				042CD232225B2ED1009E0F98 /* Assets.xcassets */,
-				042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */,
 				042CD237225B2ED1009E0F98 /* Info.plist */,
 				042CD22F225B2ED0009E0F98 /* Emperapool.xcdatamodeld */,
 			);
@@ -265,6 +290,60 @@
 				04C81BFB225CE72500069A19 /* DefaultStrings.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		04C81BFD225E0EE800069A19 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C81BFE225E0F4F00069A19 /* MainViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		04C81C00225F214700069A19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C81C06225F22A300069A19 /* GameMenuViewControllers */,
+				04C81C01225F217100069A19 /* ProfileViewControllers */,
+				04C81BE5225CB3D200069A19 /* OTP */,
+				04C81BFD225E0EE800069A19 /* MainViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04C81C01225F217100069A19 /* ProfileViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C81C02225F218600069A19 /* ProfileViewController.swift */,
+				04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */,
+			);
+			path = ProfileViewControllers;
+			sourceTree = "<group>";
+		};
+		04C81C06225F22A300069A19 /* GameMenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C81C07225F22BB00069A19 /* GameToturialViewController.swift */,
+				04C81C09225F22CC00069A19 /* GameMenuViewController.swift */,
+				04C81C0B225F22F200069A19 /* GameSettingsViewController.swift */,
+				04C81C0D225F234000069A19 /* SupportViewController.swift */,
+				04C81C0F225F237400069A19 /* NewsViewController.swift */,
+				04C81C11225F23BD00069A19 /* MessagesViewController.swift */,
+				04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */,
+				04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */,
+			);
+			path = GameMenuViewControllers;
+			sourceTree = "<group>";
+		};
+		04C81C18225F27BA00069A19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */,
+				042CD22C225B2ED0009E0F98 /* Main.storyboard */,
+				04C81C19225F27EA00069A19 /* GameMenu.storyboard */,
+				04C81C1B225F27F900069A19 /* OTP.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		DF57EF58939220E6067000A7 /* Frameworks */ = {
@@ -408,10 +487,13 @@
 				04C81BE1225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf in Resources */,
 				04C81BD7225C772100069A19 /* IRANSans(FaNum)_Light.ttf in Resources */,
 				04C81BE0225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf in Resources */,
+				04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */,
 				042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */,
 				04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */,
+				04C81C16225F278E00069A19 /* GameMenuStoryboard.storyboard in Resources */,
 				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
+				04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */,
 				04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,16 +628,26 @@
 			files = (
 				04C81BF3225CDE9300069A19 /* TokenRes.swift in Sources */,
 				04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */,
+				04C81C08225F22BB00069A19 /* GameToturialViewController.swift in Sources */,
 				04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */,
 				04C81BF4225CDE9300069A19 /* GenericResponse.swift in Sources */,
+				04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */,
 				04C81BE4225C94D100069A19 /* Extentions.swift in Sources */,
 				04C81BEA225CD62000069A19 /* MR.swift in Sources */,
 				04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */,
+				04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */,
+				04C81BFF225E0F4F00069A19 /* MainViewController.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
+				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
+				04C81C0A225F22CC00069A19 /* GameMenuViewController.swift in Sources */,
 				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
+				04C81C03225F218600069A19 /* ProfileViewController.swift in Sources */,
 				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
+				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
+				04C81C0E225F234000069A19 /* SupportViewController.swift in Sources */,
+				04C81C12225F23BD00069A19 /* MessagesViewController.swift in Sources */,
 				042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

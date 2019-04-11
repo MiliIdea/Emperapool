@@ -33,8 +33,10 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func sendMobileNumber(_ sender: Any) {
-        self.navigate(vc: ActivationCodeViewController.self){v in
-            v.phone = "8888"
+        MR.register(vc: self, phone: self.mobileTextField.text!){ res in
+            self.navigate(vc: ActivationCodeViewController.self){v in
+                v.phone = self.mobileTextField.text ?? ""
+            }
         }
     }
     

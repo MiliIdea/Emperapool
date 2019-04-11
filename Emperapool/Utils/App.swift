@@ -27,7 +27,7 @@ public class App {
             head["Authorization"] = "bearer " + token
             print(head["Authorization"] as Any)
         }
-
+        print(head)
         return head
     }
     

@@ -15,13 +15,37 @@ import Toast_Swift
 class MR {
     
     static func register(vc : UIViewController , phone : String   , completionHandler: @escaping (GenericResponse<[TokenRes] ,TokenRes>?) -> Void){
-        request(EndPoints.register, method: .post , parameters: ["mobile" : phone] , encoding: JSONEncoding.default, headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[TokenRes] ,TokenRes>>) in
+        request(EndPoints.register, method: .post , parameters: ["mobile" : phone] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[TokenRes] ,TokenRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)
             }
         }
         
     }
+    
+    static func approveToken(vc : UIViewController , phone : String , activationCode : String   , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
+        request(EndPoints.approveUserToken, method: .post , parameters: ["mobile" : phone , "activation_code" : activationCode] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
+    
+    
+    
+    static func getProfile(vc : UIViewController , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
+        request(EndPoints.getProfile, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
+    
+    
+    
     
     
     
@@ -47,7 +71,7 @@ class MR {
         print(response.response?.debugDescription ?? "")
         print()
         print(response.response?.statusCode ?? "")
-        if(response.response?.statusCode == 200){
+        if(response.response?.statusCode == 200 || response.response?.statusCode == 201){
             completionHandler(response)
         }else{
             if(response.response?.statusCode == 400){

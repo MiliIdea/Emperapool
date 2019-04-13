@@ -47,7 +47,6 @@
 		04C81C10225F237400069A19 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C0F225F237400069A19 /* NewsViewController.swift */; };
 		04C81C12225F23BD00069A19 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C11225F23BD00069A19 /* MessagesViewController.swift */; };
 		04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */; };
-		04C81C16225F278E00069A19 /* GameMenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */; };
 		04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C19225F27EA00069A19 /* GameMenu.storyboard */; };
 		04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C1B225F27F900069A19 /* OTP.storyboard */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
@@ -119,7 +118,6 @@
 		04C81C0F225F237400069A19 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		04C81C11225F23BD00069A19 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
-		04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenuStoryboard.storyboard; sourceTree = "<group>"; };
 		04C81C19225F27EA00069A19 /* GameMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenu.storyboard; sourceTree = "<group>"; };
 		04C81C1B225F27F900069A19 /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -330,7 +328,6 @@
 				04C81C0F225F237400069A19 /* NewsViewController.swift */,
 				04C81C11225F23BD00069A19 /* MessagesViewController.swift */,
 				04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */,
-				04C81C15225F278E00069A19 /* GameMenuStoryboard.storyboard */,
 			);
 			path = GameMenuViewControllers;
 			sourceTree = "<group>";
@@ -490,7 +487,6 @@
 				04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */,
 				042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */,
 				04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */,
-				04C81C16225F278E00069A19 /* GameMenuStoryboard.storyboard in Resources */,
 				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
 				04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */,

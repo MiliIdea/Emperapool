@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func sendMobileNumber(_ sender: Any) {
         MR.register(vc: self, phone: self.mobileTextField.text!){ res in
-            self.navigate(vc: ActivationCodeViewController.self){v in
+            self.navigate(storyboardName : "OTP",vc: ActivationCodeViewController.self){v in
                 v.phone = self.mobileTextField.text ?? ""
             }
         }

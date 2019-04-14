@@ -15,6 +15,11 @@
 		042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */; };
 		042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */; };
 		042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */; };
+		0472C96F2263000D0056848A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C96E2263000D0056848A /* HomeViewController.swift */; };
+		0472C9722263006B0056848A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C9712263006B0056848A /* StoreViewController.swift */; };
+		0472C975226300BE0056848A /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C974226300BE0056848A /* AwardViewController.swift */; };
+		0472C978226302280056848A /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C977226302280056848A /* TabController.swift */; };
+		0472C97C22631B8D0056848A /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C97B22631B8D0056848A /* LeaderBoardViewController.swift */; };
 		04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCA225C772000069A19 /* BYekan 1.ttf */; };
 		04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */; };
 		04C81BD5225C772100069A19 /* IRANSans(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */; };
@@ -86,6 +91,11 @@
 		042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolUITests.swift; sourceTree = "<group>"; };
 		042CD24D225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0472C96E2263000D0056848A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0472C9712263006B0056848A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		0472C974226300BE0056848A /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
+		0472C977226302280056848A /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		0472C97B22631B8D0056848A /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		04C81BCA225C772000069A19 /* BYekan 1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BYekan 1.ttf"; sourceTree = "<group>"; };
 		04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum).ttf"; sourceTree = "<group>"; };
 		04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
@@ -184,10 +194,10 @@
 		042CD227225B2ED0009E0F98 /* Emperapool */ = {
 			isa = PBXGroup;
 			children = (
+				04C81BE8225CD5F400069A19 /* ApiUtils */,
 				04C81C18225F27BA00069A19 /* Storyboards */,
 				04C81C00225F214700069A19 /* ViewControllers */,
 				04C81BF6225CE4EA00069A19 /* Utils */,
-				04C81BE8225CD5F400069A19 /* ApiUtils */,
 				04C81BE2225C94AD00069A19 /* Extentions */,
 				042CD228225B2ED0009E0F98 /* AppDelegate.swift */,
 				042CD232225B2ED1009E0F98 /* Assets.xcassets */,
@@ -213,6 +223,46 @@
 				042CD24D225B2ED2009E0F98 /* Info.plist */,
 			);
 			path = EmperapoolUITests;
+			sourceTree = "<group>";
+		};
+		0472C970226300520056848A /* StoreViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0472C9712263006B0056848A /* StoreViewController.swift */,
+			);
+			path = StoreViewControllers;
+			sourceTree = "<group>";
+		};
+		0472C973226300A90056848A /* AwardsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0472C974226300BE0056848A /* AwardViewController.swift */,
+			);
+			path = AwardsViewControllers;
+			sourceTree = "<group>";
+		};
+		0472C976226301FB0056848A /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				0472C977226302280056848A /* TabController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		0472C97922631AE40056848A /* HomeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0472C96E2263000D0056848A /* HomeViewController.swift */,
+			);
+			path = HomeViewControllers;
+			sourceTree = "<group>";
+		};
+		0472C97A22631B6B0056848A /* LeaderBoardsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0472C97B22631B8D0056848A /* LeaderBoardViewController.swift */,
+			);
+			path = LeaderBoardsViewControllers;
 			sourceTree = "<group>";
 		};
 		04C81BC3225C721600069A19 /* Fonts */ = {
@@ -282,6 +332,7 @@
 		04C81BF6225CE4EA00069A19 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0472C976226301FB0056848A /* TabController */,
 				04C81BC3225C721600069A19 /* Fonts */,
 				04C81BF7225CE51000069A19 /* Reachability.swift */,
 				04C81BF9225CE6C800069A19 /* App.swift */,
@@ -294,6 +345,11 @@
 			isa = PBXGroup;
 			children = (
 				04C81BFE225E0F4F00069A19 /* MainViewController.swift */,
+				0472C97A22631B6B0056848A /* LeaderBoardsViewControllers */,
+				0472C97922631AE40056848A /* HomeViewControllers */,
+				0472C973226300A90056848A /* AwardsViewControllers */,
+				0472C970226300520056848A /* StoreViewControllers */,
+				04C81C01225F217100069A19 /* ProfileViewControllers */,
 			);
 			path = MainViewControllers;
 			sourceTree = "<group>";
@@ -302,7 +358,6 @@
 			isa = PBXGroup;
 			children = (
 				04C81C06225F22A300069A19 /* GameMenuViewControllers */,
-				04C81C01225F217100069A19 /* ProfileViewControllers */,
 				04C81BE5225CB3D200069A19 /* OTP */,
 				04C81BFD225E0EE800069A19 /* MainViewControllers */,
 			);
@@ -629,10 +684,14 @@
 				04C81BF4225CDE9300069A19 /* GenericResponse.swift in Sources */,
 				04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */,
 				04C81BE4225C94D100069A19 /* Extentions.swift in Sources */,
+				0472C978226302280056848A /* TabController.swift in Sources */,
 				04C81BEA225CD62000069A19 /* MR.swift in Sources */,
 				04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */,
 				04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */,
+				0472C9722263006B0056848A /* StoreViewController.swift in Sources */,
 				04C81BFF225E0F4F00069A19 /* MainViewController.swift in Sources */,
+				0472C96F2263000D0056848A /* HomeViewController.swift in Sources */,
+				0472C97C22631B8D0056848A /* LeaderBoardViewController.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
@@ -642,6 +701,7 @@
 				04C81C03225F218600069A19 /* ProfileViewController.swift in Sources */,
 				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
 				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
+				0472C975226300BE0056848A /* AwardViewController.swift in Sources */,
 				04C81C0E225F234000069A19 /* SupportViewController.swift in Sources */,
 				04C81C12225F23BD00069A19 /* MessagesViewController.swift in Sources */,
 				042CD231225B2ED0009E0F98 /* Emperapool.xcdatamodeld in Sources */,

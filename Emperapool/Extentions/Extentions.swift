@@ -12,6 +12,22 @@ import IQKeyboardManagerSwift
 
 extension UIViewController {
     
+    
+    func add(_ child: UIViewController , containerView : UIView) {
+        addChild(child)
+        containerView.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
+    func remove() {
+        guard parent != nil else {
+            return
+        }
+        willMove(toParent: nil)
+        removeFromParent()
+        view.removeFromSuperview()
+    }
+    
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false

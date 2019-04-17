@@ -22,10 +22,10 @@ public class App {
         }
     }
     
-    static func publicHeader(_ token : String = (App.defaults.object(forKey: DefaultStrings.token) as? String) ?? "" , api : String = "1.0") -> [String : String] {
+    static func publicHeader(_ token : String = ((App.defaults.object(forKey: DefaultStrings.token) as? String) ?? "") , api : String = "1.0") -> [String : String] {
         var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "app-version" : Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String , "api-version" : api]
         if(token != ""){
-            head["Authorization"] = "bearer " + token
+            head["Authorization"] = "Bearer " + token
             print(head["Authorization"] as Any)
         }
         print(head)
@@ -39,7 +39,7 @@ public class App {
         var nav : CGFloat = navBotOrigin
         
         if(navBotOrigin == -1){
-            nav = 81 * vc.view.frame.height / 677
+            nav = 70 * vc.view.frame.height / 677
         }
         
         let h = vc.view.frame.height - nav
@@ -48,7 +48,7 @@ public class App {
         
         let loadingView : UIView = UIView.init(frame: .init(x: 0, y: nav, width: w, height: h))
         
-        let lotWidth = 180 * vc.view.frame.height / 677
+        let lotWidth = 40 * vc.view.frame.height / 677
         
         let lottieView : UIView = UIView.init(frame: .init(x: ((w / 2) - (lotWidth / 2)), y: ((h / 2) - (lotWidth / 2)) , width: lotWidth, height: lotWidth ))
         
@@ -72,7 +72,7 @@ public class App {
         
         vc.view.addSubview(loadingView)
         
-        let animationView = AnimationView(name: "emp_studio")
+        let animationView = AnimationView(name: "loading")
         
         animationView.frame.size = lottieView.frame.size
         

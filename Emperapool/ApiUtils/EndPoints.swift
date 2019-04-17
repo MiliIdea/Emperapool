@@ -34,4 +34,8 @@ public class EndPoints {
     
     static let gameLeaderboard : String = baseUrl + "user/leaderboard/game/30"
     
+    //- MARK: Game
+    
+    static let gameList : String = baseUrl + "game/list"
+    
 }

@@ -9,6 +9,7 @@
 import UIKit
 import DCKit
 
+
 class HomeTableViewCell: UITableViewCell {
 
     
@@ -22,13 +23,16 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var coinRequiredLabel: UILabel!
     @IBOutlet weak var coinRequiredBack: UIView!
     @IBOutlet weak var coinRequiredBackOfLabel: DCBorderedView!
+    @IBOutlet weak var freeFeeLabel: UILabel!
+    @IBOutlet weak var freeFeeBack: DCBorderedView!
     
     @IBOutlet weak var coinAwardLabel: UILabel!
     @IBOutlet weak var gemAwardLabel: UILabel!
     @IBOutlet weak var coinAwardView: UIView!
     @IBOutlet weak var gemAwardView: UIView!
     
-    @IBOutlet weak var requiredBox: DCBorderedView!
+    @IBOutlet weak var requiredBox: GradientView!
+    @IBOutlet weak var awardBack: DCBorderedView!
     
     
     

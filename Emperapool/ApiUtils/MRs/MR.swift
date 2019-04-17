@@ -71,7 +71,8 @@ class MR {
                     if(isShowToast){vc.view.makeToast("خطا در دریافت اطلاعات")}
                 }
             }else if(response.response?.statusCode == 401){
-                vc.navigate(vc: LoginViewController.self){_ in }
+                App.defaults.removeObject(forKey: DefaultStrings.token)
+                vc.navigate(storyboardName: "OTP" ,vc: LoginViewController.self){_ in }
                 
             }else if(response.response?.statusCode == 500){
                 if(isShowToast && MR.haveInternet()){vc.view.makeToast("خطا در سرور")}

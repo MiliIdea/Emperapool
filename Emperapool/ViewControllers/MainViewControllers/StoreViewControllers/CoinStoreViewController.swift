@@ -1,19 +1,15 @@
 //
-//  StoreViewController.swift
+//  CoinStoreViewController.swift
 //  Emperapool
 //
-//  Created by MAC on 4/14/19.
+//  Created by MAC on 4/17/19.
 //  Copyright © 2019 Mili. All rights reserved.
 //
 
 import UIKit
 
-class StoreViewController: UIViewController {
+class CoinStoreViewController: UIViewController {
 
-    @IBOutlet weak var tabView: UIView!
-    
-    @IBOutlet weak var MainBoard: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -25,6 +25,9 @@
 		0421715A2267169F000D3623 /* GameListRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042171522267169F000D3623 /* GameListRes.swift */; };
 		0421715C226717F4000D3623 /* HomeSettingsRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421715B226717F4000D3623 /* HomeSettingsRes.swift */; };
 		0421715E22671807000D3623 /* ExtraGameListRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421715D22671807000D3623 /* ExtraGameListRes.swift */; };
+		0421716022675681000D3623 /* CoinStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421715F22675681000D3623 /* CoinStoreViewController.swift */; };
+		042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042171612267568E000D3623 /* AvatarStoreViewController.swift */; };
+		04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04217163226756B1000D3623 /* BadgeStoreViewController.swift */; };
 		042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD228225B2ED0009E0F98 /* AppDelegate.swift */; };
 		042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22A225B2ED0009E0F98 /* LoginViewController.swift */; };
 		042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD22C225B2ED0009E0F98 /* Main.storyboard */; };
@@ -122,6 +125,9 @@
 		042171522267169F000D3623 /* GameListRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListRes.swift; sourceTree = "<group>"; };
 		0421715B226717F4000D3623 /* HomeSettingsRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSettingsRes.swift; sourceTree = "<group>"; };
 		0421715D22671807000D3623 /* ExtraGameListRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraGameListRes.swift; sourceTree = "<group>"; };
+		0421715F22675681000D3623 /* CoinStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinStoreViewController.swift; sourceTree = "<group>"; };
+		042171612267568E000D3623 /* AvatarStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStoreViewController.swift; sourceTree = "<group>"; };
+		04217163226756B1000D3623 /* BadgeStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStoreViewController.swift; sourceTree = "<group>"; };
 		042CD225225B2ED0009E0F98 /* Emperapool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emperapool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD228225B2ED0009E0F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042CD22A225B2ED0009E0F98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -321,6 +327,9 @@
 			isa = PBXGroup;
 			children = (
 				0472C9712263006B0056848A /* StoreViewController.swift */,
+				0421715F22675681000D3623 /* CoinStoreViewController.swift */,
+				042171612267568E000D3623 /* AvatarStoreViewController.swift */,
+				04217163226756B1000D3623 /* BadgeStoreViewController.swift */,
 			);
 			path = StoreViewControllers;
 			sourceTree = "<group>";
@@ -831,16 +840,19 @@
 				04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */,
 				0472C9722263006B0056848A /* StoreViewController.swift in Sources */,
 				04C81BFF225E0F4F00069A19 /* MainViewController.swift in Sources */,
+				0421716022675681000D3623 /* CoinStoreViewController.swift in Sources */,
 				0472C96F2263000D0056848A /* HomeViewController.swift in Sources */,
 				0472C98922647E6D0056848A /* ExtraLeaderboardRes.swift in Sources */,
 				0472C9852264680F0056848A /* LeaderboardRes.swift in Sources */,
 				0472C97C22631B8D0056848A /* LeaderBoardViewController.swift in Sources */,
+				04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */,
 				040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				042171562267169F000D3623 /* Time.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
+				042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */,
 				0421715A2267169F000D3623 /* GameListRes.swift in Sources */,
 				042171542267169F000D3623 /* Fifty.swift in Sources */,
 				0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */,

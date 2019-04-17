@@ -57,14 +57,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rightpic1" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-dy-Sjy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="howtoplay" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-dy-Sjy">
                                 <rect key="frame" x="89" y="108" width="197" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDZ-fg-dym" customClass="DCBorderedButton" customModule="DCKit">
-                                <rect key="frame" x="22" y="298" width="331" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDZ-fg-dym" customClass="DCBorderedButton" customModule="DCKit">
+                                <rect key="frame" x="16" y="302" width="337" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <state key="normal" image="ic_how">
                                     <attributedString key="attributedTitle">
                                         <fragment content="آموزش ویدویی">
                                             <attributes>
@@ -1219,7 +1219,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="osF-BC-a6w">
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1238,13 +1238,14 @@
         <image name="call us1" width="400" height="400.5"/>
         <image name="correct" width="55" height="55"/>
         <image name="how to1" width="400" height="400.5"/>
+        <image name="howtoplay" width="141.5" height="194"/>
+        <image name="ic_how" width="73" height="73"/>
         <image name="lamp1" width="32" height="32"/>
         <image name="message1" width="400" height="400.5"/>
         <image name="news1" width="400" height="400.5"/>
         <image name="plus1" width="18" height="18"/>
         <image name="question" width="74" height="118"/>
         <image name="rate us1" width="400" height="400.5"/>
-        <image name="rightpic1" width="97.5" height="100"/>
         <image name="rules1" width="400" height="400.5"/>
         <image name="setting1" width="400" height="400.5"/>
         <image name="settingic1" width="100" height="100"/>

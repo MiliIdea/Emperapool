@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        self.goToSpecificViewController()
         return true
     }
 
@@ -91,17 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func goToSpecificViewController(){
-        if(App.defaults.object(forKey: DefaultStrings.token) != nil){
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            let navigationController = UINavigationController(rootViewController: secondViewController)
-            navigationController.setNavigationBarHidden(true, animated: false)
-            self.window?.makeKeyAndVisible()
-            self.window?.rootViewController?.present(navigationController, animated: false, completion: {() -> Void in
-            })
-        }
-    }
+    
 
 }
 

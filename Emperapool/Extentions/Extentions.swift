@@ -16,6 +16,7 @@ extension UIViewController {
     func add(_ child: UIViewController , containerView : UIView) {
         addChild(child)
         containerView.addSubview(child.view)
+        child.view.frame.size = containerView.frame.size
         child.didMove(toParent: self)
     }
     func remove() {

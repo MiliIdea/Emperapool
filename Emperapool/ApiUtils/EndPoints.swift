@@ -12,6 +12,8 @@ public class EndPoints {
     
     static let baseUrl : String = "https://api.emperapool.com/api/v2/"
     
+    //- MARK: User
+    
     static let register : String = baseUrl + "user/auth/register"
     
     static let approveUserToken : String = baseUrl + "user/auth/approve"
@@ -23,5 +25,13 @@ public class EndPoints {
     static let getStates : String = baseUrl + "user/profile/list/states"
     
     static let rewardVideo : String = baseUrl + "user/profile/reward/video"
+    
+    //- MARK: Leaderboards
+    
+    static let overallLeaderboard : String = baseUrl + "user/leaderboard/overall"
+    
+    static let monthLeaderboard : String = baseUrl + "user/leaderboard/month"
+    
+    static let gameLeaderboard : String = baseUrl + "user/leaderboard/game/30"
     
 }

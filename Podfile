@@ -28,6 +28,17 @@ target 'Emperapool' do
   
   pod 'AlamofireNetworkActivityLogger', '~> 2.3.0'
   
+  pod 'Firebase', '~> 5.12.0'
+  
+  pod 'Firebase/Messaging'
+  
+  pod 'Fabric', '~> 1.9.0'
+  
+  pod 'Crashlytics', '~> 3.12.0'
+  
+  pod 'lottie-ios', '~> 3.0.3'
+
+  
   # Pods for Emperapool
 
   target 'EmperapoolTests' do

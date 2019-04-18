@@ -282,9 +282,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9Z-Jt-Z3i">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="head_av" translatesAutoresizingMaskIntoConstraints="NO" id="TwM-gR-ImL">
+                                        <rect key="frame" x="18" y="17" width="338" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Crp-DI-OR9"/>
                     </view>
                     <size key="freeformSize" width="375" height="552"/>
@@ -305,14 +311,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNs-de-DVi">
-                                        <rect key="frame" x="18" y="15" width="338" height="101"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Headercoin" translatesAutoresizingMaskIntoConstraints="NO" id="oNs-de-DVi">
+                                        <rect key="frame" x="18" y="17" width="338" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dMH-3G-VNj"/>
                     </view>
                     <size key="freeformSize" width="375" height="552"/>
@@ -332,9 +338,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSP-Lh-cqs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="head_badge" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-OY-Mvc">
+                                        <rect key="frame" x="19" y="17" width="338" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3xu-Ue-Bs9"/>
                     </view>
                     <size key="freeformSize" width="375" height="552"/>
@@ -677,26 +689,40 @@
         <scene sceneID="5Nt-nH-GPw">
             <objects>
                 <viewController storyboardIdentifier="StoreViewController" id="Veh-NM-c37" customClass="StoreViewController" customModule="Emperapool" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Ws-ej-N0i">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="0Ws-ej-N0i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-bc-G4a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96746855970000001" green="0.81299978490000002" blue="0.34090119600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJ5-l7-XhA">
+                                        <rect key="frame" x="0.0" y="53" width="375" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBf-Dp-b52">
+                                        <rect key="frame" x="0.0" y="51" width="375" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMr-oa-Rwd">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMr-oa-Rwd">
                                 <rect key="frame" x="0.0" y="51" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jEP-Z8-Wbl"/>
                     </view>
                     <size key="freeformSize" width="375" height="603"/>
                     <connections>
-                        <outlet property="MainBoard" destination="RMr-oa-Rwd" id="MHN-Vv-9oK"/>
+                        <outlet property="mainBoard" destination="RMr-oa-Rwd" id="MHN-Vv-9oK"/>
+                        <outlet property="seprator" destination="gJ5-l7-XhA" id="0Ar-jW-o0F"/>
+                        <outlet property="tabIndicator" destination="PBf-Dp-b52" id="xgU-RA-zmq"/>
                         <outlet property="tabView" destination="4T8-bc-G4a" id="miV-OA-Qr6"/>
                     </connections>
                 </viewController>
@@ -831,6 +857,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Headercoin" width="341.5" height="114.5"/>
         <image name="acceptbutton" width="115.5" height="35.5"/>
         <image name="background" width="375" height="667"/>
         <image name="backpf_pic1" width="118" height="118"/>
@@ -840,6 +867,8 @@
         <image name="denybutton" width="115.5" height="35.5"/>
         <image name="gem_pf" width="100" height="100"/>
         <image name="gemback1" width="168" height="71"/>
+        <image name="head_av" width="346.5" height="105"/>
+        <image name="head_badge" width="349" height="113"/>
         <image name="header1" width="375" height="202"/>
         <image name="invitefriend" width="100" height="100"/>
         <image name="lamp1" width="32" height="32"/>

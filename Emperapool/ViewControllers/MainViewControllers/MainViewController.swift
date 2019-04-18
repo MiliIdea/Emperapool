@@ -78,9 +78,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func goMenu(_ sender: Any) {
-        navigate(storyboardName : "GameMenu",vc: GameMenuViewController.self){vc in
-            
-        }
+        navigate(storyboardName : "GameMenu",vc: GameMenuViewController.self){vc in }
     }
     
     @IBAction func help(_ sender: Any) {

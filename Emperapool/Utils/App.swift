@@ -34,13 +34,13 @@ public class App {
     
     // - MARK: LoadingMethodes
     
-    static func showLoading(vc : UIViewController , navBotOrigin : CGFloat = -1 , viewAlpha : CGFloat = 1 , withLoading : Bool = true){
+    static func showLoading(vc : UIViewController , navBotOrigin : CGFloat = 0 , viewAlpha : CGFloat = 1 , withLoading : Bool = true){
         
-        var nav : CGFloat = navBotOrigin
+        let nav : CGFloat = navBotOrigin
         
-        if(navBotOrigin == -1){
-            nav = 70 * vc.view.frame.height / 677
-        }
+//        if(navBotOrigin == -1){
+//            nav = 0 * vc.view.frame.height / 677
+//        }
         
         let h = vc.view.frame.height - nav
         

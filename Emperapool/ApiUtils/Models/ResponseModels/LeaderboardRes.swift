@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LeaderboardRes : Codable {
+struct LeaderboardRes<T : Codable> : Codable {
     
     let avatar : String?
     
@@ -18,7 +18,7 @@ struct LeaderboardRes : Codable {
     
     let display_name : String?
     
-    let point : Int?
+    let point : T?
     
     let level : Int?
     
@@ -37,5 +37,5 @@ struct LeaderboardRes : Codable {
         case level = "level"
         
     }
-    
+
 }

@@ -15,10 +15,6 @@ import Toast_Swift
 class MR {
     
     
-    
-    
-    
-    
     static func haveInternet() -> Bool{
         guard let status = Network.reachability?.status else { return false}
         if(status == .unreachable){

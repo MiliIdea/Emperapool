@@ -78,7 +78,11 @@ public class TabController {
             b.tag = index + 1
             b.setTitle(t.title, for: .normal)
             b.titleLabel?.font = UIFont.init(name: "SHABNAM-BOLD-FD", size: 17)
-            b.addTarget(self.parentVC, action: #selector(StoreViewController.tabPressed(sender:)), for: .touchUpInside)
+            if(parentVC is StoreViewController){
+                b.addTarget(self.parentVC, action: #selector(StoreViewController.tabPressed(sender:)), for: .touchUpInside)
+            }else{
+                b.addTarget(self.parentVC, action: #selector(LeaderBoardViewController.tabPressed(sender:)), for: .touchUpInside)
+            }
             self.tabsButtonsView.addSubview(b)
             index += 1
         }

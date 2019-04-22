@@ -28,6 +28,8 @@
 		0421716022675681000D3623 /* CoinStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421715F22675681000D3623 /* CoinStoreViewController.swift */; };
 		042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042171612267568E000D3623 /* AvatarStoreViewController.swift */; };
 		04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04217163226756B1000D3623 /* BadgeStoreViewController.swift */; };
+		042171672268674F000D3623 /* prizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042171652268674F000D3623 /* prizeTableViewCell.swift */; };
+		042171682268674F000D3623 /* prizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042171662268674F000D3623 /* prizeTableViewCell.xib */; };
 		042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD228225B2ED0009E0F98 /* AppDelegate.swift */; };
 		042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD22A225B2ED0009E0F98 /* LoginViewController.swift */; };
 		042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD22C225B2ED0009E0F98 /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 		042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042CD234225B2ED1009E0F98 /* LaunchScreen.storyboard */; };
 		042CD241225B2ED2009E0F98 /* EmperapoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD240225B2ED2009E0F98 /* EmperapoolTests.swift */; };
 		042CD24C225B2ED2009E0F98 /* EmperapoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */; };
+		04559FBC226B448400394D87 /* LeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FBB226B448400394D87 /* LeadersViewController.swift */; };
+		04559FBE226D9DB500394D87 /* LeaderBoardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FBD226D9DB500394D87 /* LeaderBoardType.swift */; };
+		04559FC1226DA9F900394D87 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FBF226DA9F900394D87 /* LeaderboardTableViewCell.swift */; };
+		04559FC2226DA9F900394D87 /* LeaderboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04559FC0226DA9F900394D87 /* LeaderboardTableViewCell.xib */; };
 		0472C96F2263000D0056848A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C96E2263000D0056848A /* HomeViewController.swift */; };
 		0472C9722263006B0056848A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C9712263006B0056848A /* StoreViewController.swift */; };
 		0472C975226300BE0056848A /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C974226300BE0056848A /* AwardViewController.swift */; };
@@ -84,6 +90,19 @@
 		04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */; };
 		04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C19225F27EA00069A19 /* GameMenu.storyboard */; };
 		04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C1B225F27F900069A19 /* OTP.storyboard */; };
+		04D7158C22687060007F94A7 /* MR_PRIZE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7158B22687060007F94A7 /* MR_PRIZE.swift */; };
+		04D7158E2268716F007F94A7 /* PrizeRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7158D2268716F007F94A7 /* PrizeRes.swift */; };
+		04D71596226886B4007F94A7 /* ShopListRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D71590226886B2007F94A7 /* ShopListRes.swift */; };
+		04D71598226886B4007F94A7 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D71592226886B3007F94A7 /* Avatars.swift */; };
+		04D71599226886B4007F94A7 /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D71593226886B3007F94A7 /* Badges.swift */; };
+		04D7159B226886B4007F94A7 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D71595226886B4007F94A7 /* Coins.swift */; };
+		04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7159C226886C5007F94A7 /* MR-SHOP.swift */; };
+		04D715A022688BB9007F94A7 /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7159E22688BB9007F94A7 /* CoinCollectionViewCell.swift */; };
+		04D715A122688BB9007F94A7 /* CoinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D7159F22688BB9007F94A7 /* CoinCollectionViewCell.xib */; };
+		04D715A422688BC8007F94A7 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D715A222688BC8007F94A7 /* AvatarCollectionViewCell.swift */; };
+		04D715A522688BC8007F94A7 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D715A322688BC8007F94A7 /* AvatarCollectionViewCell.xib */; };
+		04D715A822688BD4007F94A7 /* BadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D715A622688BD4007F94A7 /* BadgeCollectionViewCell.swift */; };
+		04D715A922688BD4007F94A7 /* BadgeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D715A722688BD4007F94A7 /* BadgeCollectionViewCell.xib */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -128,6 +147,8 @@
 		0421715F22675681000D3623 /* CoinStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinStoreViewController.swift; sourceTree = "<group>"; };
 		042171612267568E000D3623 /* AvatarStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStoreViewController.swift; sourceTree = "<group>"; };
 		04217163226756B1000D3623 /* BadgeStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStoreViewController.swift; sourceTree = "<group>"; };
+		042171652268674F000D3623 /* prizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prizeTableViewCell.swift; sourceTree = "<group>"; };
+		042171662268674F000D3623 /* prizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = prizeTableViewCell.xib; sourceTree = "<group>"; };
 		042CD225225B2ED0009E0F98 /* Emperapool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emperapool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD228225B2ED0009E0F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042CD22A225B2ED0009E0F98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +163,10 @@
 		042CD247225B2ED2009E0F98 /* EmperapoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmperapoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042CD24B225B2ED2009E0F98 /* EmperapoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmperapoolUITests.swift; sourceTree = "<group>"; };
 		042CD24D225B2ED2009E0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04559FBB226B448400394D87 /* LeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersViewController.swift; sourceTree = "<group>"; };
+		04559FBD226D9DB500394D87 /* LeaderBoardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardType.swift; sourceTree = "<group>"; };
+		04559FBF226DA9F900394D87 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		04559FC0226DA9F900394D87 /* LeaderboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderboardTableViewCell.xib; sourceTree = "<group>"; };
 		0472C96E2263000D0056848A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0472C9712263006B0056848A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		0472C974226300BE0056848A /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +215,19 @@
 		04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
 		04C81C19225F27EA00069A19 /* GameMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenu.storyboard; sourceTree = "<group>"; };
 		04C81C1B225F27F900069A19 /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
+		04D7158B22687060007F94A7 /* MR_PRIZE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MR_PRIZE.swift; sourceTree = "<group>"; };
+		04D7158D2268716F007F94A7 /* PrizeRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrizeRes.swift; sourceTree = "<group>"; };
+		04D71590226886B2007F94A7 /* ShopListRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListRes.swift; sourceTree = "<group>"; };
+		04D71592226886B3007F94A7 /* Avatars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
+		04D71593226886B3007F94A7 /* Badges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		04D71595226886B4007F94A7 /* Coins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		04D7159C226886C5007F94A7 /* MR-SHOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MR-SHOP.swift"; sourceTree = "<group>"; };
+		04D7159E22688BB9007F94A7 /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D7159F22688BB9007F94A7 /* CoinCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCollectionViewCell.xib; sourceTree = "<group>"; };
+		04D715A222688BC8007F94A7 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D715A322688BC8007F94A7 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
+		04D715A622688BD4007F94A7 /* BadgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D715A722688BD4007F94A7 /* BadgeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +272,16 @@
 			children = (
 				040C550C2264BA7100B6F769 /* HomeTableViewCell.swift */,
 				040C550D2264BA7100B6F769 /* HomeTableViewCell.xib */,
+				042171652268674F000D3623 /* prizeTableViewCell.swift */,
+				042171662268674F000D3623 /* prizeTableViewCell.xib */,
+				04D7159E22688BB9007F94A7 /* CoinCollectionViewCell.swift */,
+				04D7159F22688BB9007F94A7 /* CoinCollectionViewCell.xib */,
+				04D715A222688BC8007F94A7 /* AvatarCollectionViewCell.swift */,
+				04D715A322688BC8007F94A7 /* AvatarCollectionViewCell.xib */,
+				04D715A622688BD4007F94A7 /* BadgeCollectionViewCell.swift */,
+				04D715A722688BD4007F94A7 /* BadgeCollectionViewCell.xib */,
+				04559FBF226DA9F900394D87 /* LeaderboardTableViewCell.swift */,
+				04559FC0226DA9F900394D87 /* LeaderboardTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -362,6 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				0472C97B22631B8D0056848A /* LeaderBoardViewController.swift */,
+				04559FBB226B448400394D87 /* LeadersViewController.swift */,
+				04559FBD226D9DB500394D87 /* LeaderBoardType.swift */,
 			);
 			path = LeaderBoardsViewControllers;
 			sourceTree = "<group>";
@@ -373,6 +423,8 @@
 				0472C981226465F80056848A /* MR-USER.swift */,
 				0472C98622647CF40056848A /* MR-LEADERBOARDs.swift */,
 				04217148226713FF000D3623 /* MR-GAME.swift */,
+				04D7158B22687060007F94A7 /* MR_PRIZE.swift */,
+				04D7159C226886C5007F94A7 /* MR-SHOP.swift */,
 			);
 			path = MRs;
 			sourceTree = "<group>";
@@ -443,6 +495,7 @@
 		04C81BED225CD64500069A19 /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				04D7158F2268869E007F94A7 /* ShopListResponse */,
 				0421714A2267168E000D3623 /* GameListResponse */,
 				04C81BF1225CDE9300069A19 /* GenericResponse.swift */,
 				04C81BF2225CDE9300069A19 /* ProfileRes.swift */,
@@ -451,6 +504,7 @@
 				0472C97F226463E40056848A /* UserRes.swift */,
 				0472C9842264680F0056848A /* LeaderboardRes.swift */,
 				0472C98822647E6D0056848A /* ExtraLeaderboardRes.swift */,
+				04D7158D2268716F007F94A7 /* PrizeRes.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -526,6 +580,17 @@
 				0472C98A22649CF10056848A /* Game.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04D7158F2268869E007F94A7 /* ShopListResponse */ = {
+			isa = PBXGroup;
+			children = (
+				04D71592226886B3007F94A7 /* Avatars.swift */,
+				04D71593226886B3007F94A7 /* Badges.swift */,
+				04D71595226886B4007F94A7 /* Coins.swift */,
+				04D71590226886B2007F94A7 /* ShopListRes.swift */,
+			);
+			path = ShopListResponse;
 			sourceTree = "<group>";
 		};
 		DF57EF58939220E6067000A7 /* Frameworks */ = {
@@ -660,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C81BDA225C772100069A19 /* iran_sans_medium.ttf in Resources */,
+				04D715A522688BC8007F94A7 /* AvatarCollectionViewCell.xib in Resources */,
 				042CD236225B2ED1009E0F98 /* LaunchScreen.storyboard in Resources */,
 				042171432266FF4D000D3623 /* emp_studio.json in Resources */,
 				04C81BD8225C772100069A19 /* iran_sans.ttf in Resources */,
@@ -671,11 +737,15 @@
 				04C81BD7225C772100069A19 /* IRANSans(FaNum)_Light.ttf in Resources */,
 				04C81BE0225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf in Resources */,
 				04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */,
+				042171682268674F000D3623 /* prizeTableViewCell.xib in Resources */,
+				04D715A922688BD4007F94A7 /* BadgeCollectionViewCell.xib in Resources */,
 				042CD233225B2ED1009E0F98 /* Assets.xcassets in Resources */,
 				0472C98B22649CF10056848A /* Game.storyboard in Resources */,
 				04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */,
+				04D715A122688BB9007F94A7 /* CoinCollectionViewCell.xib in Resources */,
 				04217147226713A7000D3623 /* loading.json in Resources */,
 				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
+				04559FC2226DA9F900394D87 /* LeaderboardTableViewCell.xib in Resources */,
 				042171412266FF4D000D3623 /* startgamepage.json in Resources */,
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
 				04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */,
@@ -825,6 +895,8 @@
 				04C81BF3225CDE9300069A19 /* TokenRes.swift in Sources */,
 				0421715E22671807000D3623 /* ExtraGameListRes.swift in Sources */,
 				04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */,
+				04D71598226886B4007F94A7 /* Avatars.swift in Sources */,
+				04D71596226886B4007F94A7 /* ShopListRes.swift in Sources */,
 				042171582267169F000D3623 /* Conditions.swift in Sources */,
 				04C81C08225F22BB00069A19 /* GameToturialViewController.swift in Sources */,
 				04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */,
@@ -834,13 +906,16 @@
 				04C81BE4225C94D100069A19 /* Extentions.swift in Sources */,
 				042171552267169F000D3623 /* Chart.swift in Sources */,
 				0472C978226302280056848A /* TabController.swift in Sources */,
+				04559FC1226DA9F900394D87 /* LeaderboardTableViewCell.swift in Sources */,
 				042171532267169F000D3623 /* Rules.swift in Sources */,
 				04C81BEA225CD62000069A19 /* MR.swift in Sources */,
 				04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */,
 				04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */,
+				04D715A822688BD4007F94A7 /* BadgeCollectionViewCell.swift in Sources */,
 				0472C9722263006B0056848A /* StoreViewController.swift in Sources */,
 				04C81BFF225E0F4F00069A19 /* MainViewController.swift in Sources */,
 				0421716022675681000D3623 /* CoinStoreViewController.swift in Sources */,
+				04559FBE226D9DB500394D87 /* LeaderBoardType.swift in Sources */,
 				0472C96F2263000D0056848A /* HomeViewController.swift in Sources */,
 				0472C98922647E6D0056848A /* ExtraLeaderboardRes.swift in Sources */,
 				0472C9852264680F0056848A /* LeaderboardRes.swift in Sources */,
@@ -850,12 +925,15 @@
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				042171562267169F000D3623 /* Time.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
+				04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
 				042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */,
 				0421715A2267169F000D3623 /* GameListRes.swift in Sources */,
+				042171672268674F000D3623 /* prizeTableViewCell.swift in Sources */,
 				042171542267169F000D3623 /* Fifty.swift in Sources */,
 				0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */,
+				04D715A022688BB9007F94A7 /* CoinCollectionViewCell.swift in Sources */,
 				04C81C0A225F22CC00069A19 /* GameMenuViewController.swift in Sources */,
 				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
 				0472C982226465F80056848A /* MR-USER.swift in Sources */,
@@ -865,10 +943,16 @@
 				0472C97E22645F7B0056848A /* StatesListRes.swift in Sources */,
 				04217149226713FF000D3623 /* MR-GAME.swift in Sources */,
 				0472C980226463E40056848A /* UserRes.swift in Sources */,
+				04D715A422688BC8007F94A7 /* AvatarCollectionViewCell.swift in Sources */,
 				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
 				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
+				04559FBC226B448400394D87 /* LeadersViewController.swift in Sources */,
 				042171572267169F000D3623 /* Help.swift in Sources */,
+				04D71599226886B4007F94A7 /* Badges.swift in Sources */,
 				0421714522670266000D3623 /* SplashViewController.swift in Sources */,
+				04D7158E2268716F007F94A7 /* PrizeRes.swift in Sources */,
+				04D7159B226886B4007F94A7 /* Coins.swift in Sources */,
+				04D7158C22687060007F94A7 /* MR_PRIZE.swift in Sources */,
 				0472C975226300BE0056848A /* AwardViewController.swift in Sources */,
 				04C81C0E225F234000069A19 /* SupportViewController.swift in Sources */,
 				04C81C12225F23BD00069A19 /* MessagesViewController.swift in Sources */,

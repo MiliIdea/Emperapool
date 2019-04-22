@@ -18,6 +18,11 @@ struct GenericResponse <T : Codable , V : Codable> : Codable {
 	let data : T?
 	let extra_data : V?
 	let message_show : Bool?
+    let complete : Bool?
+    let available_to_pay : Bool?
+    let next_step : Int?
+    let before_buy : Bool?
+    let ready_to_buy : Bool?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -26,6 +31,11 @@ struct GenericResponse <T : Codable , V : Codable> : Codable {
 		case data = "data"
 		case extra_data = "extra_data"
 		case message_show = "message_show"
+        case complete = "complete"
+        case available_to_pay = "available_to_pay"
+        case next_step = "next_step"
+        case before_buy = "before_buy"
+        case ready_to_buy = "ready_to_buy"
 	}
 
 }

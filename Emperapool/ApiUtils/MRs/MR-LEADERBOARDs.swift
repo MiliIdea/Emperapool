@@ -15,7 +15,7 @@ import Toast_Swift
 
 extension MR {
 
-    static func getOverallLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes] ,ExtraLeaderboardRes>?) -> Void){
+    static func getOverallLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes<Int>] ,ExtraLeaderboardRes<Int>>?) -> Void){
         request(EndPoints.overallLeaderboard, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[LeaderboardRes],ExtraLeaderboardRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)
@@ -25,7 +25,7 @@ extension MR {
     }
     
     
-    static func getMonthLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes] ,ExtraLeaderboardRes>?) -> Void){
+    static func getMonthLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes<String>] ,ExtraLeaderboardRes<String>>?) -> Void){
         request(EndPoints.monthLeaderboard, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[LeaderboardRes],ExtraLeaderboardRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)
@@ -35,7 +35,7 @@ extension MR {
     }
     
     
-    static func getGameLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes] ,ExtraLeaderboardRes>?) -> Void){
+    static func getGameLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes<String>] ,ExtraLeaderboardRes<String>>?) -> Void){
         request(EndPoints.gameLeaderboard, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[LeaderboardRes],ExtraLeaderboardRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)

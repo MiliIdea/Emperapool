@@ -25,9 +25,9 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
         self.table.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier:"HomeTableViewCell")
         
-        self.table.estimatedRowHeight = 118 * self.view.frame.height / 667
+        self.table.estimatedRowHeight = 118 * self.parent!.view.frame.height / 667
         
-        self.table.rowHeight = 118 * self.view.frame.height / 667
+        self.table.rowHeight = 118 * self.parent!.view.frame.height / 667
         
         self.table.delegate = self
         

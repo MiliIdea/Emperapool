@@ -20,11 +20,20 @@ class StoreViewController: UIViewController {
     
     var tabsController : TabController?
     
+    var shopListResponse : ShopListRes?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tabIndicator.setY(y: self.seprator.y - self.tabIndicator.height)
-        self.configureTopTabs()
+        App.showLoading(vc: self)
+        MR.getShopList(vc: self){res in
+            App.dismissLoading(vc: self)
+            if(res != nil && res?.data != nil){
+                self.shopListResponse = res?.data
+                self.configureTopTabs()
+            }
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -53,12 +62,16 @@ class StoreViewController: UIViewController {
         self.tabsController = TabController.init(parentVC: self, mainBoard: self.mainBoard, tabsButtonsView: self.tabView, topTabs: tabs)
         
         self.tabIndicator.setWidth(width: self.tabView.width / CGFloat(self.tabsController!.topTabs.count))
+        
+        self.mainBoard.frame.origin.x = CGFloat(-1 * (1 - 1)) * self.view.frame.width
+
+        self.tabIndicator.setX(x: CGFloat((1 - 1)) * self.tabIndicator.width )
+
+        self.tabsController?.updateButtonsBackground(index: 1)
     }
     
     
     @objc func tabPressed(sender : UIButton){
-        print(sender)
-        
         sender.frame.size.height = self.tabView.height
         UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
             self.mainBoard.frame.origin.x = CGFloat(-1 * (sender.tag - 1)) * self.view.frame.width

@@ -38,4 +38,11 @@ public class EndPoints {
     
     static let gameList : String = baseUrl + "game/list"
     
+    //- MARK: Prize
+    
+    static let prizeList : String = baseUrl + "shop/prize/list"
+    
+    //- MARK: Shop
+    
+    static let shopList : String = baseUrl + "shop/list"
 }

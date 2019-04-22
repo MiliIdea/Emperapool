@@ -94,7 +94,6 @@ class MainViewController: UIViewController {
     }
     
     @objc func tabPressed(sender : UIButton){
-        print(sender)
         UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
             self.mainBoard.frame.origin.x = CGFloat(-1 * (sender.tag - 1)) * self.view.frame.width
         },completion: nil)

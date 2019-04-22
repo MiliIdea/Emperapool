@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct ExtraLeaderboardRes : Codable {
+struct ExtraLeaderboardRes<T : Codable> : Codable {
     
-    let self_rank : String?
+    let self_rank : T?
     
-    let point_earn : String?
+    let point_earn : Int?
     
     enum CodingKeys: String, CodingKey {
         

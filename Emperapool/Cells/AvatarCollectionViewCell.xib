@@ -25,11 +25,15 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-AF-Cgu" customClass="DCBorderedView" customModule="DCKit">
-                        <rect key="frame" x="17" y="12" width="116" height="115"/>
+                        <rect key="frame" x="17" y="12" width="116" height="116"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regular_bg_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="G5Z-lv-Jdh">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqj-Ez-e0Y">
-                                <rect key="frame" x="12" y="17" width="92" height="93"/>
+                                <rect key="frame" x="12" y="17" width="92" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -81,6 +85,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="134" height="129"/>
             <connections>
+                <outlet property="backImage" destination="G5Z-lv-Jdh" id="wVJ-4G-dkI"/>
                 <outlet property="backView" destination="oQn-AF-Cgu" id="imv-Qu-MVJ"/>
                 <outlet property="icon" destination="iqj-Ez-e0Y" id="nrC-Sc-SUE"/>
                 <outlet property="priceLabel" destination="qsx-qC-raD" id="Dqe-nn-zDy"/>
@@ -90,5 +95,6 @@
     </objects>
     <resources>
         <image name="coin_pre" width="21.5" height="21"/>
+        <image name="regular_bg_avatar" width="85" height="85"/>
     </resources>
 </document>

@@ -24,6 +24,8 @@ public class EndPoints {
     
     static let getStates : String = baseUrl + "user/profile/list/states"
     
+    static let getMyBadges : String = baseUrl + "shop/badge/mybadge"
+    
     static let rewardVideo : String = baseUrl + "user/profile/reward/video"
     
     //- MARK: Leaderboards
@@ -45,4 +47,10 @@ public class EndPoints {
     //- MARK: Shop
     
     static let shopList : String = baseUrl + "shop/list"
+    
+    //- MARK: DailyMachine
+    
+    static let getDailyMachine : String = baseUrl + "luck/wof/list"
+    
+    static let getRoll : String = baseUrl + "luck/wof/roll/"
 }

@@ -65,6 +65,15 @@ extension MR {
         
     }
     
+    static func getMyBadge(vc : UIViewController , completionHandler: @escaping (GenericResponse<[Badges] ,UserRes>?) -> Void){
+        request(EndPoints.getMyBadges, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[Badges],UserRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
+    
     static func updateUser(vc : UIViewController , profile : [String: Any] , activationCode : String   , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
         request(EndPoints.approveUserToken, method: .post , parameters: profile , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
             DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
@@ -74,4 +83,6 @@ extension MR {
         }
         
     }
+    
+    
 }

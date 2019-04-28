@@ -12,9 +12,17 @@ struct UserRes : Codable {
     
     let user : ProfileRes?
     
+    let choice : Int?
+    
+    let next_available_roll : Int?
+    
     enum CodingKeys: String, CodingKey {
         
         case user = "user"
+        
+        case choice = "choice"
+        
+        case next_available_roll = "next_available_roll"
         
     }
     

@@ -14,6 +14,8 @@ public class App {
     
     static let defaults: UserDefaults = UserDefaults.standard
     
+    static var profile : ProfileRes? = nil
+    
     static var decoder : JSONDecoder {
         get{
             let decoder = JSONDecoder()
@@ -37,11 +39,7 @@ public class App {
     static func showLoading(vc : UIViewController , navBotOrigin : CGFloat = 0 , viewAlpha : CGFloat = 1 , withLoading : Bool = true){
         
         let nav : CGFloat = navBotOrigin
-        
-//        if(navBotOrigin == -1){
-//            nav = 0 * vc.view.frame.height / 677
-//        }
-        
+
         let h = vc.view.frame.height - nav
         
         let w = vc.view.frame.width
@@ -63,6 +61,10 @@ public class App {
         loadingView.backgroundColor = UIColor.white
         
         loadingView.alpha = viewAlpha
+        
+        if(viewAlpha != 1){
+            loadingView.backgroundColor = UIColor.black
+        }
         
         loadingView.tag = 1234
         
@@ -106,6 +108,20 @@ public class App {
             }
         }
         
+    }
+    
+    
+    static func showNetworkErrorPopup(vc : UIViewController){
+        if(vc.view.viewWithTag(876) != nil){
+            return
+        }
+        vc.view.endEditing(true)
+        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+        let popup : ErrorNetPopupViewController = (storyboard.instantiateViewController(withIdentifier: "ErrorNetPopupViewController")) as! ErrorNetPopupViewController
+        vc.addChild(popup)
+        popup.view.tag = 876
+        vc.view.addSubview(popup.view)
+        popup.didMove(toParent: vc)
     }
     
 }

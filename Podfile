@@ -37,6 +37,8 @@ target 'Emperapool' do
   pod 'Crashlytics', '~> 3.12.0'
   
   pod 'lottie-ios', '~> 3.0.3'
+  
+  pod 'iCarousel', '~> 1.8.3'
 
   
   # Pods for Emperapool

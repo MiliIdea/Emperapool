@@ -52,7 +52,7 @@ class BadgeStoreViewController: UIViewController , UICollectionViewDelegate, UIC
     override func viewDidLayoutSubviews() {
         let h = self.collection.collectionViewLayout.collectionViewContentSize.height
         self.collection.frame.size.height = h
-        self.myScrollView.contentSize.height = h + self.collection.y + 20
+        self.myScrollView.contentSize.height = h + self.collection.y
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

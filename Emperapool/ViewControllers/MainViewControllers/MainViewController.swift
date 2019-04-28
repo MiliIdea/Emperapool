@@ -82,7 +82,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func help(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
         
         let vc : ProfileSettingsViewController = (storyboard.instantiateViewController(withIdentifier: "ProfileSettingsViewController")) as! ProfileSettingsViewController
         
@@ -124,6 +124,28 @@ class MainViewController: UIViewController {
             self.sliderView.frame.origin.y = self.tabBarView.frame.origin.y - self.sliderView.frame.height
             self.slideButton.transform = CGAffineTransform(rotationAngle: (2 * CGFloat.pi))
         },completion: nil)
+    }
+    
+    @IBAction func goInviteFriends(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+        let vc : InviteFriendsViewController = (storyboard.instantiateViewController(withIdentifier: "InviteFriendsViewController")) as! InviteFriendsViewController
+        self.addChild(vc)
+        vc.didMove(toParent: self)
+        self.view.addSubview(vc.view)
+    }
+    
+    @IBAction func goVideo(_ sender: Any) {
+    }
+    
+    @IBAction func goDailyMachine(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+        let vc : DailyMachinesViewController = (storyboard.instantiateViewController(withIdentifier: "DailyMachinesViewController")) as! DailyMachinesViewController
+        self.addChild(vc)
+        vc.didMove(toParent: self)
+        self.view.addSubview(vc.view)
+    }
+    
+    @IBAction func goQuestionPlan(_ sender: Any) {
     }
     
     

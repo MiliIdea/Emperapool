@@ -78,6 +78,9 @@ class MR {
                 if(isShowToast && MR.haveInternet()){vc.view.makeToast("خطا در ارتباط به سرور")}
             }
             
+            if(!MR.haveInternet()){
+//                App.showNetworkErrorPopup(vc: vc)
+            }
             
         }
     }

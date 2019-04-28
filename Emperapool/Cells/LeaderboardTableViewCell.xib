@@ -80,7 +80,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="22" width="300" height="300"/>
+        <image name="22" width="150" height="150"/>
         <image name="gem_pre" width="21.5" height="21"/>
     </resources>
 </document>

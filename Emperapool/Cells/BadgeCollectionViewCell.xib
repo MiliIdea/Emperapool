@@ -28,9 +28,13 @@
                         <rect key="frame" x="7" y="12" width="147" height="185"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regular_bg_badge" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-Wu-wXl">
+                                <rect key="frame" x="0.0" y="0.0" width="147" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhQ-au-q8E">
                                 <rect key="frame" x="8" y="6" width="131" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="گزینه کوچک" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ni7-G5-TXn">
                                 <rect key="frame" x="4" y="158" width="139" height="22"/>
@@ -88,6 +92,8 @@
             <size key="customSize" width="196" height="276"/>
             <connections>
                 <outlet property="back" destination="RfH-ju-q55" id="gKx-QE-YoT"/>
+                <outlet property="backCoin" destination="qWr-84-ABw" id="Htv-lg-v9u"/>
+                <outlet property="backImage" destination="aRT-Wu-wXl" id="P2K-FZ-fZz"/>
                 <outlet property="badgeTitle" destination="Ni7-G5-TXn" id="j6j-Uv-qoQ"/>
                 <outlet property="icon" destination="VhQ-au-q8E" id="xMM-gh-nHS"/>
                 <outlet property="priceLabel" destination="2Tc-SJ-WJt" id="qi3-hi-jsx"/>
@@ -97,5 +103,6 @@
     </objects>
     <resources>
         <image name="coin_pre" width="21.5" height="21"/>
+        <image name="regular_bg_badge" width="135" height="180"/>
     </resources>
 </document>

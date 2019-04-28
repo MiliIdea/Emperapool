@@ -19,6 +19,10 @@ class BadgeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var back: DCBorderedView!
     
+    @IBOutlet weak var backImage: UIImageView!
+    
+    @IBOutlet weak var backCoin: DCBorderedView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

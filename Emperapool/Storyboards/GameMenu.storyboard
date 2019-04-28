@@ -438,7 +438,7 @@
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-ez-0WV">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oab-8H-cs1">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
@@ -1251,6 +1251,6 @@
         <image name="settingic1" width="100" height="100"/>
         <image name="support1" width="400" height="400.5"/>
         <image name="updown1" width="21" height="21"/>
-        <image name="wrong" width="24.5" height="24.5"/>
+        <image name="wrong" width="55" height="55"/>
     </resources>
 </document>

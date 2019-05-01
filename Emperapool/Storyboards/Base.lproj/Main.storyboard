@@ -508,44 +508,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyW-2o-xwK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-Ty-bCk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhO-zX-5Vv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vaa-pR-Js5">
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-pg-Agy">
+                                        <rect key="frame" x="19" y="21" width="33" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="close:" destination="SdQ-no-uG6" eventType="touchUpInside" id="lJR-il-SAr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="yOR-oX-zWv"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyW-2o-xwK">
+                                <rect key="frame" x="0.0" y="54" width="375" height="498"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaa-pR-Js5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="standing1" translatesAutoresizingMaskIntoConstraints="NO" id="whb-1K-X90">
-                                                <rect key="frame" x="38" y="96" width="299" height="181"/>
+                                                <rect key="frame" x="37" y="86" width="303" height="177"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Fj-2M-H5h">
-                                                <rect key="frame" x="152" y="8" width="65" height="65"/>
+                                                <rect key="frame" x="151" y="2" width="63" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold" translatesAutoresizingMaskIntoConstraints="NO" id="oC6-mp-QOU">
-                                                <rect key="frame" x="189" y="51" width="35" height="29"/>
+                                                <rect key="frame" x="181" y="32" width="46" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-Ch-ZeF">
-                                                <rect key="frame" x="128" y="81" width="114" height="21"/>
+                                                <rect key="frame" x="133" y="69" width="106" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s19-xu-axg" customClass="DCBorderedView" customModule="DCKit">
-                                                <rect key="frame" x="145" y="114" width="84" height="29"/>
+                                                <rect key="frame" x="151" y="103" width="76" height="25"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gem_pre" translatesAutoresizingMaskIntoConstraints="NO" id="c5P-bY-C3i">
-                                                        <rect key="frame" x="4" y="4" width="21" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="3" y="0.0" width="21" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bid-Uc-cSa">
-                                                        <rect key="frame" x="26" y="4" width="50" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="24" y="0.0" width="43" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                         <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -559,27 +577,27 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-oT-Hi9">
-                                                <rect key="frame" x="270" y="101" width="48" height="48"/>
+                                                <rect key="frame" x="265" y="96" width="51" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jG8-aF-n9Y">
-                                                <rect key="frame" x="256" y="157" width="76" height="21"/>
+                                                <rect key="frame" x="256" y="144" width="66" height="19"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqZ-H0-cjE" customClass="DCBorderedView" customModule="DCKit">
-                                                <rect key="frame" x="263" y="191" width="61" height="25"/>
+                                                <rect key="frame" x="257" y="184" width="65" height="19"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gem_pre" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-HA-A1e">
-                                                        <rect key="frame" x="4" y="4" width="13" height="17"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="4" y="0.0" width="13" height="19"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1O5-vb-7DJ">
-                                                        <rect key="frame" x="17" y="4" width="38" height="17"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="21" y="0.0" width="39" height="19"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                         <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -588,36 +606,36 @@
                                                 <color key="backgroundColor" red="0.6282522384564766" green="0.34287008725331375" blue="0.20153551694419633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="13"/>
+                                                        <real key="value" value="11"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="xix-Aa-dim">
-                                                <rect key="frame" x="54" y="73" width="52" height="52"/>
+                                                <rect key="frame" x="51" y="61" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhE-B5-sXG">
-                                                <rect key="frame" x="38" y="133" width="82" height="21"/>
+                                                <rect key="frame" x="37" y="127" width="77" height="14"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bronze" translatesAutoresizingMaskIntoConstraints="NO" id="6Y5-XY-1SW">
-                                                <rect key="frame" x="298" y="138" width="26" height="21"/>
+                                                <rect key="frame" x="294" y="121" width="33" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZRa-Nj-60q" customClass="DCBorderedView" customModule="DCKit">
-                                                <rect key="frame" x="49" y="171" width="62" height="25"/>
+                                                <rect key="frame" x="45" y="155" width="67" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gem_pre" translatesAutoresizingMaskIntoConstraints="NO" id="63n-ft-e8t">
-                                                        <rect key="frame" x="4" y="4" width="14" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="3" y="1" width="17" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="کرسی سیر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AoX-Lu-ggt">
-                                                        <rect key="frame" x="18" y="4" width="38" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="24" y="1" width="34" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                         <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -626,42 +644,76 @@
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="13"/>
+                                                        <real key="value" value="11"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="silver" translatesAutoresizingMaskIntoConstraints="NO" id="Vs2-0f-MdA">
-                                                <rect key="frame" x="84" y="109" width="26" height="24"/>
+                                                <rect key="frame" x="84" y="96" width="28" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vaa-pR-Js5" secondAttribute="height" multiplier="25:19" id="JFX-r2-5Y7"/>
+                                        </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vin-fn-KAV">
-                                        <rect key="frame" x="0.0" y="285" width="375" height="267"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vin-fn-KAV">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="215"/>
                                         <color key="backgroundColor" red="0.54616463179999997" green="0.84441280360000004" blue="0.37629425529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="267" id="d5M-rS-mJn"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="dataSource" destination="SdQ-no-uG6" id="mlw-NN-Y1j"/>
                                             <outlet property="delegate" destination="SdQ-no-uG6" id="hF3-Oe-dPl"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vin-fn-KAV" firstAttribute="leading" secondItem="jyW-2o-xwK" secondAttribute="leading" id="3Sa-So-cp0"/>
+                                    <constraint firstItem="vaa-pR-Js5" firstAttribute="centerX" secondItem="jyW-2o-xwK" secondAttribute="centerX" id="DoX-lO-7gC"/>
+                                    <constraint firstItem="Vin-fn-KAV" firstAttribute="top" secondItem="vaa-pR-Js5" secondAttribute="bottom" id="VR6-5k-KHV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vin-fn-KAV" secondAttribute="trailing" id="YYQ-LE-mFl"/>
+                                    <constraint firstItem="vaa-pR-Js5" firstAttribute="top" secondItem="jyW-2o-xwK" secondAttribute="top" id="aYf-Pt-4jX"/>
+                                    <constraint firstAttribute="trailing" secondItem="vaa-pR-Js5" secondAttribute="trailing" id="gar-2B-ENW"/>
+                                    <constraint firstItem="vaa-pR-Js5" firstAttribute="leading" secondItem="jyW-2o-xwK" secondAttribute="leading" id="v5L-RJ-elI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vin-fn-KAV" secondAttribute="bottom" id="xsJ-Ud-BV9"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GhO-zX-5Vv" firstAttribute="baseline" secondItem="jyW-2o-xwK" secondAttribute="firstBaseline" id="1mL-TG-j4k"/>
+                            <constraint firstItem="jyW-2o-xwK" firstAttribute="bottom" secondItem="flc-Jc-dAn" secondAttribute="bottom" id="4Wx-Tt-CLl"/>
+                            <constraint firstItem="jyW-2o-xwK" firstAttribute="leading" secondItem="flc-Jc-dAn" secondAttribute="leading" id="4hz-Od-9Te"/>
+                            <constraint firstItem="jyW-2o-xwK" firstAttribute="leading" secondItem="GhO-zX-5Vv" secondAttribute="leading" id="77L-P6-CfN"/>
+                            <constraint firstItem="nhf-Ty-bCk" firstAttribute="bottom" secondItem="flc-Jc-dAn" secondAttribute="bottom" id="ArV-BH-Qdj"/>
+                            <constraint firstItem="nhf-Ty-bCk" firstAttribute="trailing" secondItem="flc-Jc-dAn" secondAttribute="trailing" id="EKG-iQ-g3n"/>
+                            <constraint firstItem="nhf-Ty-bCk" firstAttribute="leading" secondItem="flc-Jc-dAn" secondAttribute="leading" id="lsh-pT-LQQ"/>
+                            <constraint firstItem="jyW-2o-xwK" firstAttribute="trailing" secondItem="flc-Jc-dAn" secondAttribute="trailing" id="nas-2K-4TW"/>
+                            <constraint firstItem="nhf-Ty-bCk" firstAttribute="top" secondItem="XFm-BC-epK" secondAttribute="top" id="pRT-Hx-4Q5"/>
+                            <constraint firstItem="jyW-2o-xwK" firstAttribute="trailing" secondItem="GhO-zX-5Vv" secondAttribute="trailing" id="vIt-jT-Cg5"/>
+                            <constraint firstItem="flc-Jc-dAn" firstAttribute="top" secondItem="GhO-zX-5Vv" secondAttribute="top" constant="20" id="yU1-hq-UBZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="flc-Jc-dAn"/>
                     </view>
                     <size key="freeformSize" width="375" height="552"/>
                     <connections>
+                        <outlet property="backImage" destination="nhf-Ty-bCk" id="aPy-Da-eIm"/>
+                        <outlet property="closeButton" destination="Cyj-pg-Agy" id="jgc-Av-y79"/>
                         <outlet property="firstGem" destination="bid-Uc-cSa" id="Ahj-bw-nse"/>
                         <outlet property="firstImage" destination="3Fj-2M-H5h" id="3wr-ho-PSe"/>
                         <outlet property="firstName" destination="yMZ-Ch-ZeF" id="ur3-jP-gea"/>
                         <outlet property="myScrollView" destination="jyW-2o-xwK" id="kY5-ke-tLu"/>
+                        <outlet property="navigationHeight" destination="yOR-oX-zWv" id="D7b-vt-n1H"/>
+                        <outlet property="navigationTopSafeArea" destination="yU1-hq-UBZ" id="zts-qZ-wLz"/>
+                        <outlet property="navigationView" destination="GhO-zX-5Vv" id="aDo-Sp-OzU"/>
                         <outlet property="secondGem" destination="AoX-Lu-ggt" id="cuM-ZO-s5K"/>
                         <outlet property="secondImage" destination="xix-Aa-dim" id="Rqe-QP-1oA"/>
                         <outlet property="secondName" destination="IhE-B5-sXG" id="Uh4-HQ-Ct4"/>
                         <outlet property="table" destination="Vin-fn-KAV" id="GdX-ta-KlV"/>
+                        <outlet property="tableHeight" destination="d5M-rS-mJn" id="C9z-5O-FXM"/>
                         <outlet property="theardGem" destination="1O5-vb-7DJ" id="5N7-uA-NGf"/>
                         <outlet property="theardImage" destination="jjr-oT-Hi9" id="5Bj-zx-cWE"/>
                         <outlet property="theardName" destination="jG8-aF-n9Y" id="sgm-OT-41m"/>
@@ -1212,12 +1264,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g58-g6-SUf">
-                                        <rect key="frame" x="0.0" y="53" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="51" width="375" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8an-Im-w7m">
-                                        <rect key="frame" x="0.0" y="51" width="375" height="2"/>
+                                        <rect key="frame" x="0.0" y="49" width="375" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
@@ -1242,7 +1294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbo-dD-CE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="931"/>
+            <point key="canvasLocation" x="3240.8000000000002" y="930.58470764617698"/>
         </scene>
     </scenes>
     <resources>
@@ -1251,6 +1303,7 @@
         <image name="background" width="375" height="667"/>
         <image name="backpf_pic1" width="118" height="118"/>
         <image name="bronze" width="22.5" height="22.5"/>
+        <image name="close" width="60" height="60"/>
         <image name="coin_pf" width="100" height="100"/>
         <image name="coin_pre" width="21.5" height="21"/>
         <image name="coinback1" width="168" height="71"/>

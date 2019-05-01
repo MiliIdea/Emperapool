@@ -25,7 +25,7 @@ public class App {
     }
     
     static func publicHeader(_ token : String = ((App.defaults.object(forKey: DefaultStrings.token) as? String) ?? "") , api : String = "1.0") -> [String : String] {
-        var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "app-version" : Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String , "api-version" : api]
+        var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "version" : Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String , "api-version" : api]
         if(token != ""){
             head["Authorization"] = "Bearer " + token
             print(head["Authorization"] as Any)

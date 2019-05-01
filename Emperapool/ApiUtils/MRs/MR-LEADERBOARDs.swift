@@ -35,8 +35,8 @@ extension MR {
     }
     
     
-    static func getGameLeaderboard(vc : UIViewController , completionHandler: @escaping (GenericResponse<[LeaderboardRes<String>] ,ExtraLeaderboardRes<String>>?) -> Void){
-        request(EndPoints.gameLeaderboard, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[LeaderboardRes],ExtraLeaderboardRes>>) in
+    static func getGameLeaderboard(vc : UIViewController , gameId : String , completionHandler: @escaping (GenericResponse<[LeaderboardRes<String>] ,ExtraLeaderboardRes<String>>?) -> Void){
+        request((EndPoints.gameLeaderboard + gameId), method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[LeaderboardRes],ExtraLeaderboardRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)
             }

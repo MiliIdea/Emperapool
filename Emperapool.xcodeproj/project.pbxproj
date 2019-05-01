@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04028FF92276F5DE00100C54 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04028FF82276F5DE00100C54 /* QuestionViewController.swift */; };
+		04028FFB2276F5EB00100C54 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04028FFA2276F5EB00100C54 /* ChatViewController.swift */; };
+		04028FFE227713DE00100C54 /* PreGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04028FFC227713DE00100C54 /* PreGameTableViewCell.swift */; };
+		04028FFF227713DE00100C54 /* PreGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04028FFD227713DE00100C54 /* PreGameTableViewCell.xib */; };
+		040290012278338D00100C54 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040290002278338D00100C54 /* GameBoardViewController.swift */; };
+		040290042279A43300100C54 /* ChatRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040290022279A43300100C54 /* ChatRowTableViewCell.swift */; };
+		040290052279A43300100C54 /* ChatRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040290032279A43300100C54 /* ChatRowTableViewCell.xib */; };
 		040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C550C2264BA7100B6F769 /* HomeTableViewCell.swift */; };
 		040C550F2264BA7100B6F769 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040C550D2264BA7100B6F769 /* HomeTableViewCell.xib */; };
 		042171412266FF4D000D3623 /* startgamepage.json in Resources */ = {isa = PBXBuildFile; fileRef = 0421713E2266FF4D000D3623 /* startgamepage.json */; };
@@ -54,6 +61,10 @@
 		04559FD92270433300394D87 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FD72270433200394D87 /* Options.swift */; };
 		04559FDA2270433300394D87 /* DailyMachineRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FD82270433200394D87 /* DailyMachineRes.swift */; };
 		04559FDC2270842300394D87 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FDB2270842300394D87 /* MachineViewController.swift */; };
+		04559FDF2275780C00394D87 /* XMPPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FDE2275780C00394D87 /* XMPPController.swift */; };
+		04559FE32275AEA500394D87 /* StreamDataRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FE12275AEA500394D87 /* StreamDataRes.swift */; };
+		04559FE42275AEA500394D87 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FE22275AEA500394D87 /* Question.swift */; };
+		04559FE62275B37000394D87 /* OnlineUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04559FE52275B37000394D87 /* OnlineUsers.swift */; };
 		0472C96F2263000D0056848A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C96E2263000D0056848A /* HomeViewController.swift */; };
 		0472C9722263006B0056848A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C9712263006B0056848A /* StoreViewController.swift */; };
 		0472C975226300BE0056848A /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C974226300BE0056848A /* AwardViewController.swift */; };
@@ -138,6 +149,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04028FF82276F5DE00100C54 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		04028FFA2276F5EB00100C54 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		04028FFC227713DE00100C54 /* PreGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreGameTableViewCell.swift; sourceTree = "<group>"; };
+		04028FFD227713DE00100C54 /* PreGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreGameTableViewCell.xib; sourceTree = "<group>"; };
+		040290002278338D00100C54 /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
+		040290022279A43300100C54 /* ChatRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowTableViewCell.swift; sourceTree = "<group>"; };
+		040290032279A43300100C54 /* ChatRowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRowTableViewCell.xib; sourceTree = "<group>"; };
 		040C550C2264BA7100B6F769 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		040C550D2264BA7100B6F769 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		0421713E2266FF4D000D3623 /* startgamepage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = startgamepage.json; sourceTree = "<group>"; };
@@ -191,6 +209,10 @@
 		04559FD72270433200394D87 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		04559FD82270433200394D87 /* DailyMachineRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMachineRes.swift; sourceTree = "<group>"; };
 		04559FDB2270842300394D87 /* MachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
+		04559FDE2275780C00394D87 /* XMPPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPController.swift; sourceTree = "<group>"; };
+		04559FE12275AEA500394D87 /* StreamDataRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataRes.swift; sourceTree = "<group>"; };
+		04559FE22275AEA500394D87 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		04559FE52275B37000394D87 /* OnlineUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUsers.swift; sourceTree = "<group>"; };
 		0472C96E2263000D0056848A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0472C9712263006B0056848A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		0472C974226300BE0056848A /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +330,10 @@
 				04559FC0226DA9F900394D87 /* LeaderboardTableViewCell.xib */,
 				04559FCE226F443800394D87 /* MachineCollectionViewCell.swift */,
 				04559FCF226F443800394D87 /* MachineCollectionViewCell.xib */,
+				04028FFC227713DE00100C54 /* PreGameTableViewCell.swift */,
+				04028FFD227713DE00100C54 /* PreGameTableViewCell.xib */,
+				040290022279A43300100C54 /* ChatRowTableViewCell.swift */,
+				040290032279A43300100C54 /* ChatRowTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -367,8 +393,8 @@
 			isa = PBXGroup;
 			children = (
 				04C81BE8225CD5F400069A19 /* ApiUtils */,
-				04C81C18225F27BA00069A19 /* Storyboards */,
 				040C550B2264BA4100B6F769 /* Cells */,
+				04C81C18225F27BA00069A19 /* Storyboards */,
 				04C81C00225F214700069A19 /* ViewControllers */,
 				04C81BF6225CE4EA00069A19 /* Utils */,
 				04C81BE2225C94AD00069A19 /* Extentions */,
@@ -419,6 +445,16 @@
 			path = DailyMachineResponse;
 			sourceTree = "<group>";
 		};
+		04559FE02275AE8A00394D87 /* StreamDataResponse */ = {
+			isa = PBXGroup;
+			children = (
+				04559FE22275AEA500394D87 /* Question.swift */,
+				04559FE12275AEA500394D87 /* StreamDataRes.swift */,
+				04559FE52275B37000394D87 /* OnlineUsers.swift */,
+			);
+			path = StreamDataResponse;
+			sourceTree = "<group>";
+		};
 		0472C970226300520056848A /* StoreViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,14 +472,6 @@
 				0472C974226300BE0056848A /* AwardViewController.swift */,
 			);
 			path = AwardsViewControllers;
-			sourceTree = "<group>";
-		};
-		0472C976226301FB0056848A /* TabController */ = {
-			isa = PBXGroup;
-			children = (
-				0472C977226302280056848A /* TabController.swift */,
-			);
-			path = TabController;
 			sourceTree = "<group>";
 		};
 		0472C97922631AE40056848A /* HomeViewControllers */ = {
@@ -482,6 +510,9 @@
 			isa = PBXGroup;
 			children = (
 				0472C98D2264AEF80056848A /* PreGameViewController.swift */,
+				04028FF82276F5DE00100C54 /* QuestionViewController.swift */,
+				04028FFA2276F5EB00100C54 /* ChatViewController.swift */,
+				040290002278338D00100C54 /* GameBoardViewController.swift */,
 			);
 			path = GameViewControllers;
 			sourceTree = "<group>";
@@ -544,6 +575,7 @@
 		04C81BED225CD64500069A19 /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				04559FE02275AE8A00394D87 /* StreamDataResponse */,
 				04559FD62270430F00394D87 /* DailyMachineResponse */,
 				04D7158F2268869E007F94A7 /* ShopListResponse */,
 				0421714A2267168E000D3623 /* GameListResponse */,
@@ -562,14 +594,15 @@
 		04C81BF6225CE4EA00069A19 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0421713D2266FF40000D3623 /* Lotties */,
-				0472C976226301FB0056848A /* TabController */,
-				04C81BC3225C721600069A19 /* Fonts */,
-				04C81BF7225CE51000069A19 /* Reachability.swift */,
 				04C81BF9225CE6C800069A19 /* App.swift */,
+				04C81BF7225CE51000069A19 /* Reachability.swift */,
 				04C81BFB225CE72500069A19 /* DefaultStrings.swift */,
 				0472C98F2264B6230056848A /* GradientView.swift */,
 				04559FC3226EFB4700394D87 /* SwiftEventBus.swift */,
+				04559FDE2275780C00394D87 /* XMPPController.swift */,
+				0472C977226302280056848A /* TabController.swift */,
+				0421713D2266FF40000D3623 /* Lotties */,
+				04C81BC3225C721600069A19 /* Fonts */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -789,6 +822,7 @@
 				04C81BD6225C772100069A19 /* BYekan.ttf in Resources */,
 				04C81BE1225C7CB500069A19 /* SHABNAM-BOLD-FD.ttf in Resources */,
 				04C81BD7225C772100069A19 /* IRANSans(FaNum)_Light.ttf in Resources */,
+				04028FFF227713DE00100C54 /* PreGameTableViewCell.xib in Resources */,
 				04C81BE0225C7CB500069A19 /* SHABNAM-LIGHT-FD.ttf in Resources */,
 				04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */,
 				042171682268674F000D3623 /* prizeTableViewCell.xib in Resources */,
@@ -805,6 +839,7 @@
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
 				04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */,
 				04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */,
+				040290052279A43300100C54 /* ChatRowTableViewCell.xib in Resources */,
 				040C550F2264BA7100B6F769 /* HomeTableViewCell.xib in Resources */,
 				042171422266FF4D000D3623 /* middlegame.json in Resources */,
 			);
@@ -860,16 +895,23 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Emperapool/Pods-Emperapool-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DCKit/DCKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
+				"${BUILT_PRODUCTS_DIR}/libidn/libidn.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -879,16 +921,23 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libidn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -969,6 +1018,7 @@
 				042171532267169F000D3623 /* Rules.swift in Sources */,
 				04C81BEA225CD62000069A19 /* MR.swift in Sources */,
 				04C81BEF225CD8B600069A19 /* EndPoints.swift in Sources */,
+				04559FE42275AEA500394D87 /* Question.swift in Sources */,
 				04C81C05225F219600069A19 /* ProfileSettingsViewController.swift in Sources */,
 				04D715A822688BD4007F94A7 /* BadgeCollectionViewCell.swift in Sources */,
 				0472C9722263006B0056848A /* StoreViewController.swift in Sources */,
@@ -984,17 +1034,23 @@
 				04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */,
 				040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
+				04559FE62275B37000394D87 /* OnlineUsers.swift in Sources */,
+				04559FDF2275780C00394D87 /* XMPPController.swift in Sources */,
 				042171562267169F000D3623 /* Time.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */,
 				04559FC8226F27B300394D87 /* InviteFriendsViewController.swift in Sources */,
+				04028FFE227713DE00100C54 /* PreGameTableViewCell.swift in Sources */,
+				04559FE32275AEA500394D87 /* StreamDataRes.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
+				04028FF92276F5DE00100C54 /* QuestionViewController.swift in Sources */,
 				042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */,
 				0421715A2267169F000D3623 /* GameListRes.swift in Sources */,
 				04559FC4226EFB4700394D87 /* SwiftEventBus.swift in Sources */,
 				04559FCD226F36A800394D87 /* ErrorNetPopupViewController.swift in Sources */,
 				042171672268674F000D3623 /* prizeTableViewCell.swift in Sources */,
+				04028FFB2276F5EB00100C54 /* ChatViewController.swift in Sources */,
 				042171542267169F000D3623 /* Fifty.swift in Sources */,
 				0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */,
 				04D715A022688BB9007F94A7 /* CoinCollectionViewCell.swift in Sources */,
@@ -1009,12 +1065,14 @@
 				0472C980226463E40056848A /* UserRes.swift in Sources */,
 				04D715A422688BC8007F94A7 /* AvatarCollectionViewCell.swift in Sources */,
 				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
+				040290042279A43300100C54 /* ChatRowTableViewCell.swift in Sources */,
 				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
 				04559FD5227041B300394D87 /* MR-DAILY-MACHINE.swift in Sources */,
 				04559FBC226B448400394D87 /* LeadersViewController.swift in Sources */,
 				042171572267169F000D3623 /* Help.swift in Sources */,
 				04D71599226886B4007F94A7 /* Badges.swift in Sources */,
 				0421714522670266000D3623 /* SplashViewController.swift in Sources */,
+				040290012278338D00100C54 /* GameBoardViewController.swift in Sources */,
 				04D7158E2268716F007F94A7 /* PrizeRes.swift in Sources */,
 				04D7159B226886B4007F94A7 /* Coins.swift in Sources */,
 				04D7158C22687060007F94A7 /* MR_PRIZE.swift in Sources */,

@@ -13,7 +13,11 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
 
     @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
     @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var navigationView: UIView!
+    @IBOutlet weak var navigationHeight: NSLayoutConstraint!
+    @IBOutlet weak var navigationTopSafeArea: NSLayoutConstraint!
     
     @IBOutlet weak var firstImage: UIImageView!
     @IBOutlet weak var firstName: UILabel!
@@ -27,11 +31,16 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
     @IBOutlet weak var theardName: UILabel!
     @IBOutlet weak var theardGem: UILabel!
     
+    @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var backImage: UIImageView!
     var type : LeaderBoardType = .overall
     
     var overallLeaderBoards : [LeaderboardRes<Int>] = [LeaderboardRes<Int>]()
     
     var leaderBoards : [LeaderboardRes<String>] = [LeaderboardRes<String>]()
+    
+    var gameId : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +52,13 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
         self.table.rowHeight = 57 * self.parent!.view.frame.height / 667
         
         App.showLoading(vc: self)
-        
+
         switch self.type {
         case .Month :
+            self.navigationHeight.constant = 30
+            self.navigationView.alpha = 0
+            self.navigationTopSafeArea.constant = 25
+            
             self.firstName.text = "fiiirst"
             MR.getMonthLeaderboard(vc: self){res in
                 App.dismissLoading(vc: self)
@@ -56,7 +69,10 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
             }
             break
         case .Game :
-            MR.getGameLeaderboard(vc: self){res in
+            self.navigationHeight.constant = 70 * self.view.frame.height / 552
+            self.closeButton.alpha = 1
+            self.backImage.alpha = 1
+            MR.getGameLeaderboard(vc: self, gameId: gameId ?? "31"){res in
                 App.dismissLoading(vc: self)
                 if(res != nil && res?.data != nil && !(res?.data!.isEmpty)!){
                     self.leaderBoards = (res?.data!)!
@@ -65,6 +81,10 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
             }
             break
         case .overall :
+            self.navigationHeight.constant = 30
+            self.navigationView.alpha = 0
+            self.navigationTopSafeArea.constant = 25
+            
             self.firstName.text = "sescoonnd"
             MR.getOverallLeaderboard(vc: self){res in
                 App.dismissLoading(vc: self)
@@ -106,6 +126,8 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
             self.overallLeaderBoards.removeFirst()
             
             self.table.setHeight(height: self.table.rowHeight * CGFloat(self.overallLeaderBoards.count))
+            self.tableHeight.constant = self.table.rowHeight * CGFloat(self.overallLeaderBoards.count)
+            
         default:
             
             self.firstName.text = self.leaderBoards.first?.display_name
@@ -129,6 +151,7 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
             }
             self.leaderBoards.removeFirst()
             self.table.setHeight(height: self.table.rowHeight * CGFloat(self.leaderBoards.count))
+            self.tableHeight.constant = self.table.rowHeight * CGFloat(self.leaderBoards.count)
         }
         self.table.reloadData()
         self.myScrollView.contentSize.height = self.table.height + self.table.y + (80 * self.parent!.view.frame.height / 667)
@@ -173,6 +196,10 @@ class LeadersViewController : UIViewController ,UITableViewDelegate , UITableVie
     
     
 
+    @IBAction func close(_ sender: Any) {
+        self.view.removeFromSuperview()
+        self.removeFromParent()
+    }
     
     
     

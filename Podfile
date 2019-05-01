@@ -39,6 +39,12 @@ target 'Emperapool' do
   pod 'lottie-ios', '~> 3.0.3'
   
   pod 'iCarousel', '~> 1.8.3'
+  
+  pod 'XMPPFramework', '~> 4.0.0'
+  
+  pod 'SWXMLHash', '~> 4.7.0'
+  
+  pod 'UICircularProgressRing', '~> 6.1.0'
 
   
   # Pods for Emperapool

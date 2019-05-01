@@ -24,5 +24,25 @@ extension MR {
         
     }
     
+    static func joinGame(vc : UIViewController , gameId : Int  , answer : Int , questionId : Int  , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
+        request(EndPoints.joinGame, method: .post , parameters: ["gameId" : gameId , "answer" : answer , "questionId" : questionId] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
+    
+    static func answerQuestion(vc : UIViewController , gameId : Int  , answer : Int , questionId : Int  , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
+        request(EndPoints.answerQuestion, method: .post , parameters: ["gameId" : gameId , "answer" : answer , "questionId" : questionId] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
+    
     
 }

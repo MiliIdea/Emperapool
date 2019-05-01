@@ -34,11 +34,15 @@ public class EndPoints {
     
     static let monthLeaderboard : String = baseUrl + "user/leaderboard/month"
     
-    static let gameLeaderboard : String = baseUrl + "user/leaderboard/game/30"
+    static let gameLeaderboard : String = baseUrl + "user/leaderboard/game/"
     
     //- MARK: Game
     
     static let gameList : String = baseUrl + "game/list"
+    
+    static let joinGame : String = baseUrl + "game/join"
+    
+    static let answerQuestion : String = baseUrl + "game/second-chance/video"
     
     //- MARK: Prize
     

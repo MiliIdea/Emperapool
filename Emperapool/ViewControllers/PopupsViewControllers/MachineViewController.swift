@@ -48,6 +48,10 @@ class MachineViewController: UIViewController  , iCarouselDelegate , iCarouselDa
         self.wheelView.setHeight(height: self.wheelView.width)
         self.wheelView.layer.cornerRadius = self.wheelView.height / 2
         self.firstPosition = self.rollButton.frame.origin
+        self.closeButton.alpha = 0
+        self.closeLabel.alpha = 0
+        self.retryButton.alpha = 0
+        self.retryLabel.alpha = 0
         if(dailyMachineResponse != nil){
             _ = UIImageView.init().kf.setImage(with: URL.init(string: dailyMachineResponse?.image ?? "")){res ,er , c ,t in
                 self.imageArrays = self.splitImage(row: self.dailyMachineResponse!.options!.count, oImg: res!)

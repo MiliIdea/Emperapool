@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SHABNAM-BOLD-FD.ttf">
+            <string>Shabnam-Bold-FD</string>
+        </array>
+        <array key="SHABNAM-FD.ttf">
+            <string>Shabnam-FD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ChatRowTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatRowTableViewCell" id="KGk-i7-Jjw" customClass="ChatRowTableViewCell" customModule="Emperapool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRZ-fZ-e4g">
+                        <rect key="frame" x="324.5" y="5" width="27.5" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pRZ-fZ-e4g" secondAttribute="height" multiplier="1:1" id="lMN-dU-2M3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UgA-fG-VJ5">
+                        <rect key="frame" x="288" y="4" width="31" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="mDU-gR-mLg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="15"/>
+                        <color key="textColor" red="0.62227824966418877" green="0.85415381677309743" blue="0.92781989738900739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متن" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-yC-yt7">
+                        <rect key="frame" x="23" y="4" width="260" height="29.5"/>
+                        <fontDescription key="fontDescription" name="Shabnam-FD" family="Shabnam FD" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="UgA-fG-VJ5" firstAttribute="leading" secondItem="S0U-yC-yt7" secondAttribute="trailing" constant="5" id="5HB-Zj-rfF"/>
+                    <constraint firstAttribute="bottom" secondItem="UgA-fG-VJ5" secondAttribute="bottom" constant="4" id="6xo-DR-ljW"/>
+                    <constraint firstItem="UgA-fG-VJ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="7wC-OX-IX8"/>
+                    <constraint firstAttribute="trailing" secondItem="pRZ-fZ-e4g" secondAttribute="trailing" constant="23" id="AAG-mD-fdN"/>
+                    <constraint firstItem="S0U-yC-yt7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="LBK-i2-uzr"/>
+                    <constraint firstItem="pRZ-fZ-e4g" firstAttribute="leading" secondItem="UgA-fG-VJ5" secondAttribute="trailing" constant="5.5" id="Sau-pm-NiV"/>
+                    <constraint firstItem="pRZ-fZ-e4g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Sus-LG-5S9"/>
+                    <constraint firstItem="pRZ-fZ-e4g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YKQ-Be-PDZ"/>
+                    <constraint firstAttribute="bottom" secondItem="S0U-yC-yt7" secondAttribute="bottom" constant="4" id="YVm-1x-zIV"/>
+                    <constraint firstItem="S0U-yC-yt7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="an0-vd-W1F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name" destination="UgA-fG-VJ5" id="Qij-QW-K3S"/>
+                <outlet property="nameWidth" destination="mDU-gR-mLg" id="YoV-JG-OV3"/>
+                <outlet property="profileImage" destination="pRZ-fZ-e4g" id="PgL-e1-Cj8"/>
+                <outlet property="txt" destination="S0U-yC-yt7" id="I1T-qL-OHl"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1251,6 +1251,6 @@
         <image name="settingic1" width="100" height="100"/>
         <image name="support1" width="400" height="400.5"/>
         <image name="updown1" width="21" height="21"/>
-        <image name="wrong" width="55" height="55"/>
+        <image name="wrong" width="24.5" height="24.5"/>
     </resources>
 </document>

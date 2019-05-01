@@ -107,5 +107,22 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Game", bundle: nil)
+        
+        let vc : PreGameViewController = (storyboard.instantiateViewController(withIdentifier: "PreGameViewController")) as! PreGameViewController
+        
+        vc.gameRules = self.gameList[indexPath.row]
+        
+        self.parent!.addChild(vc)
+        
+        vc.didMove(toParent: self.parent!)
+        
+        self.parent!.view.addSubview(vc.view)
+        
+    }
+    
+    
 
 }

@@ -13,6 +13,8 @@ class SplashViewController: UIViewController {
 
     @IBOutlet weak var lottieView: UIView!
     
+    var isIntroCalled : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,17 +36,22 @@ class SplashViewController: UIViewController {
             animationView.stop()
         }
         
-        
+        MR.getIntro(vc: self){res in
+            self.isIntroCalled = true
+            App.introRes = res
+        }
         
         // Do any additional setup after loading the view.
     }
     
 
     func goToSpecificViewController(){
-        if(App.defaults.object(forKey: DefaultStrings.token) != nil){
-            navigate(vc: MainViewController.self){_ in}
-        }else{
-            navigate(storyboardName: "OTP", vc: LoginViewController.self){_ in}
+        if(isIntroCalled){
+            if(App.defaults.object(forKey: DefaultStrings.token) != nil){
+                navigate(vc: MainViewController.self){_ in}
+            }else{
+                navigate(storyboardName: "OTP", vc: LoginViewController.self){_ in}
+            }
         }
     }
 

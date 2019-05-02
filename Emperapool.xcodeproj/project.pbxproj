@@ -79,6 +79,8 @@
 		0472C98B22649CF10056848A /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472C98A22649CF10056848A /* Game.storyboard */; };
 		0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C98D2264AEF80056848A /* PreGameViewController.swift */; };
 		0472C9902264B6230056848A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472C98F2264B6230056848A /* GradientView.swift */; };
+		04C0952D227AC982001D48EE /* ExtraAnswerRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0952C227AC982001D48EE /* ExtraAnswerRes.swift */; };
+		04C0952F227ACA14001D48EE /* ExtraJoinGameRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0952E227ACA14001D48EE /* ExtraJoinGameRes.swift */; };
 		04C81BD3225C772100069A19 /* BYekan 1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCA225C772000069A19 /* BYekan 1.ttf */; };
 		04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */; };
 		04C81BD5225C772100069A19 /* IRANSans(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */; };
@@ -126,6 +128,10 @@
 		04D715A522688BC8007F94A7 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D715A322688BC8007F94A7 /* AvatarCollectionViewCell.xib */; };
 		04D715A822688BD4007F94A7 /* BadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D715A622688BD4007F94A7 /* BadgeCollectionViewCell.swift */; };
 		04D715A922688BD4007F94A7 /* BadgeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D715A722688BD4007F94A7 /* BadgeCollectionViewCell.xib */; };
+		04FAEF63227B110600078C64 /* ChatWordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF61227B110600078C64 /* ChatWordCollectionViewCell.swift */; };
+		04FAEF64227B110600078C64 /* ChatWordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */; };
+		04FAEF66227B1B3600078C64 /* MR-INTRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF65227B1B3600078C64 /* MR-INTRO.swift */; };
+		04FAEF68227B1B8700078C64 /* IntroRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF67227B1B8700078C64 /* IntroRes.swift */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -227,6 +233,8 @@
 		0472C98A22649CF10056848A /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		0472C98D2264AEF80056848A /* PreGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreGameViewController.swift; sourceTree = "<group>"; };
 		0472C98F2264B6230056848A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		04C0952C227AC982001D48EE /* ExtraAnswerRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraAnswerRes.swift; sourceTree = "<group>"; };
+		04C0952E227ACA14001D48EE /* ExtraJoinGameRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraJoinGameRes.swift; sourceTree = "<group>"; };
 		04C81BCA225C772000069A19 /* BYekan 1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BYekan 1.ttf"; sourceTree = "<group>"; };
 		04C81BCB225C772000069A19 /* IRANSans(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum).ttf"; sourceTree = "<group>"; };
 		04C81BCC225C772000069A19 /* IRANSans(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSans(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
@@ -274,6 +282,10 @@
 		04D715A322688BC8007F94A7 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D715A622688BD4007F94A7 /* BadgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D715A722688BD4007F94A7 /* BadgeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeCollectionViewCell.xib; sourceTree = "<group>"; };
+		04FAEF61227B110600078C64 /* ChatWordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWordCollectionViewCell.swift; sourceTree = "<group>"; };
+		04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatWordCollectionViewCell.xib; sourceTree = "<group>"; };
+		04FAEF65227B1B3600078C64 /* MR-INTRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MR-INTRO.swift"; sourceTree = "<group>"; };
+		04FAEF67227B1B8700078C64 /* IntroRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroRes.swift; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +346,8 @@
 				04028FFD227713DE00100C54 /* PreGameTableViewCell.xib */,
 				040290022279A43300100C54 /* ChatRowTableViewCell.swift */,
 				040290032279A43300100C54 /* ChatRowTableViewCell.xib */,
+				04FAEF61227B110600078C64 /* ChatWordCollectionViewCell.swift */,
+				04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -451,6 +465,8 @@
 				04559FE22275AEA500394D87 /* Question.swift */,
 				04559FE12275AEA500394D87 /* StreamDataRes.swift */,
 				04559FE52275B37000394D87 /* OnlineUsers.swift */,
+				04C0952C227AC982001D48EE /* ExtraAnswerRes.swift */,
+				04C0952E227ACA14001D48EE /* ExtraJoinGameRes.swift */,
 			);
 			path = StreamDataResponse;
 			sourceTree = "<group>";
@@ -502,6 +518,7 @@
 				04D7158B22687060007F94A7 /* MR_PRIZE.swift */,
 				04D7159C226886C5007F94A7 /* MR-SHOP.swift */,
 				04559FD4227041B300394D87 /* MR-DAILY-MACHINE.swift */,
+				04FAEF65227B1B3600078C64 /* MR-INTRO.swift */,
 			);
 			path = MRs;
 			sourceTree = "<group>";
@@ -586,6 +603,7 @@
 				0472C97F226463E40056848A /* UserRes.swift */,
 				0472C9842264680F0056848A /* LeaderboardRes.swift */,
 				0472C98822647E6D0056848A /* ExtraLeaderboardRes.swift */,
+				04FAEF67227B1B8700078C64 /* IntroRes.swift */,
 				04D7158D2268716F007F94A7 /* PrizeRes.swift */,
 			);
 			path = ResponseModels;
@@ -837,6 +855,7 @@
 				04559FC2226DA9F900394D87 /* LeaderboardTableViewCell.xib in Resources */,
 				042171412266FF4D000D3623 /* startgamepage.json in Resources */,
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
+				04FAEF64227B110600078C64 /* ChatWordCollectionViewCell.xib in Resources */,
 				04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */,
 				04C81BD4225C772100069A19 /* IRANSans(FaNum).ttf in Resources */,
 				040290052279A43300100C54 /* ChatRowTableViewCell.xib in Resources */,
@@ -1008,6 +1027,7 @@
 				04C81C08225F22BB00069A19 /* GameToturialViewController.swift in Sources */,
 				04C81BE7225CB41700069A19 /* ActivationCodeViewController.swift in Sources */,
 				04559FD3227031BC00394D87 /* DailyMachinesViewController.swift in Sources */,
+				04FAEF63227B110600078C64 /* ChatWordCollectionViewCell.swift in Sources */,
 				04C81BF4225CDE9300069A19 /* GenericResponse.swift in Sources */,
 				04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */,
 				0472C98722647CF40056848A /* MR-LEADERBOARDs.swift in Sources */,
@@ -1029,6 +1049,7 @@
 				04559FBE226D9DB500394D87 /* LeaderBoardType.swift in Sources */,
 				0472C96F2263000D0056848A /* HomeViewController.swift in Sources */,
 				0472C98922647E6D0056848A /* ExtraLeaderboardRes.swift in Sources */,
+				04FAEF66227B1B3600078C64 /* MR-INTRO.swift in Sources */,
 				0472C9852264680F0056848A /* LeaderboardRes.swift in Sources */,
 				0472C97C22631B8D0056848A /* LeaderBoardViewController.swift in Sources */,
 				04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */,
@@ -1038,6 +1059,7 @@
 				04559FDF2275780C00394D87 /* XMPPController.swift in Sources */,
 				042171562267169F000D3623 /* Time.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
+				04FAEF68227B1B8700078C64 /* IntroRes.swift in Sources */,
 				04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */,
 				04559FC8226F27B300394D87 /* InviteFriendsViewController.swift in Sources */,
 				04028FFE227713DE00100C54 /* PreGameTableViewCell.swift in Sources */,
@@ -1054,6 +1076,8 @@
 				042171542267169F000D3623 /* Fifty.swift in Sources */,
 				0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */,
 				04D715A022688BB9007F94A7 /* CoinCollectionViewCell.swift in Sources */,
+				04C0952F227ACA14001D48EE /* ExtraJoinGameRes.swift in Sources */,
+				04C0952D227AC982001D48EE /* ExtraAnswerRes.swift in Sources */,
 				04C81C0A225F22CC00069A19 /* GameMenuViewController.swift in Sources */,
 				042CD229225B2ED0009E0F98 /* AppDelegate.swift in Sources */,
 				0472C982226465F80056848A /* MR-USER.swift in Sources */,

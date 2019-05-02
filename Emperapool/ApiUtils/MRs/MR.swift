@@ -29,10 +29,10 @@ class MR {
     static func resHandler<T , V>(vc : UIViewController , response : DataResponse<GenericResponse<T , V>> , isShowToast : Bool = true , completionHandler: @escaping (DataResponse<GenericResponse<T , V>>?) -> Void){
         
         vc.view.isUserInteractionEnabled = true
-        print(response.response?.debugDescription ?? "")
-        print()
+//        print(response.response?.debugDescription ?? "")
+//        print()
         print(response.response?.statusCode ?? "")
-        if(response.response?.statusCode == 200 || response.response?.statusCode == 201){
+        if(response.response?.statusCode == 200 || response.response?.statusCode == 201 || response.response?.statusCode == 202 ){
             completionHandler(response)
         }else{
             if(response.response?.statusCode == 400){

@@ -12,6 +12,10 @@ public class EndPoints {
     
     static let baseUrl : String = "https://api.emperapool.com/api/v2/"
     
+    //- MARK: Intro
+    
+    static let intro : String = "http://reversion.emperapool.com/?v=38&ios=1"
+    
     //- MARK: User
     
     static let register : String = baseUrl + "user/auth/register"
@@ -42,7 +46,7 @@ public class EndPoints {
     
     static let joinGame : String = baseUrl + "game/join"
     
-    static let answerQuestion : String = baseUrl + "game/second-chance/video"
+    static let answerQuestion : String = baseUrl + "game/answer/send"
     
     //- MARK: Prize
     

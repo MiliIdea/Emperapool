@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
-class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewDataSource{
+class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var collection: UICollectionView!
     
     var chats : [ChatRow] = [ChatRow]()
+    
+    var chatWords : [String] = [String]()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
+        collection.register(UINib(nibName: "ChatWordCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ChatWordCollectionViewCell")
+        
         self.table.register(UINib(nibName: "ChatRowTableViewCell", bundle: nil), forCellReuseIdentifier:"ChatRowTableViewCell")
         
-        self.table.estimatedRowHeight = 40 * self.view.frame.height / 677
+        self.table.estimatedRowHeight = 30 * self.view.frame.height / 677
         
-        self.table.rowHeight = 40 * self.view.frame.height / 677
+        self.table.rowHeight = 30 * self.view.frame.height / 677
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.chatWords = App.introRes?.chat_words ?? [String]()
+        
+        if(chatWords.isEmpty){
+            self.collection.alpha = 0
+        }
+        self.collection.reloadData()
     }
     
     
@@ -63,4 +78,46 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
             self.table.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return chatWords.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell : ChatWordCollectionViewCell = collection.dequeueReusableCell(withReuseIdentifier: "ChatWordCollectionViewCell", for: indexPath as IndexPath) as! ChatWordCollectionViewCell
+        let c = chatWords[indexPath.item]
+        cell.wordLabel.text = c
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if let font = UIFont.init(name: "SHABNAM-FD", size: 16) {
+            let c = chatWords[indexPath.item]
+            let fontAttributes = [NSAttributedString.Key.font: font]
+            let myText = c
+            let size = (myText as NSString).size(withAttributes: fontAttributes)
+            return CGSize(width: size.width + (30 * self.view.frame.width / 375) , height: self.collection.height)
+        }else{
+            return CGSize(width: 100 , height: self.collection.height)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
 }

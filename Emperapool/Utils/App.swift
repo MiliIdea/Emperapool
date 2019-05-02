@@ -16,6 +16,8 @@ public class App {
     
     static var profile : ProfileRes? = nil
     
+    static var introRes : IntroRes? = nil
+    
     static var decoder : JSONDecoder {
         get{
             let decoder = JSONDecoder()
@@ -25,12 +27,13 @@ public class App {
     }
     
     static func publicHeader(_ token : String = ((App.defaults.object(forKey: DefaultStrings.token) as? String) ?? "") , api : String = "1.0") -> [String : String] {
-        var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "version" : Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String , "api-version" : api]
+        //Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "version" : "40" , "api-version" : api]
         if(token != ""){
             head["Authorization"] = "Bearer " + token
-            print(head["Authorization"] as Any)
+//            print(head["Authorization"] as Any)
         }
-        print(head)
+//        print(head)
         return head
     }
     

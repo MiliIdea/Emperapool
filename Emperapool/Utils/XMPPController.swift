@@ -35,8 +35,10 @@ class XMPPController: NSObject {
     let userJID: XMPPJID
     let hostPort: UInt16
     let password: String
+    let dataRoomAddress : String
+    let chatRoomAddress : String
     
-    init(hostName: String, userJIDString: String, hostPort: UInt16 = 5222, password: String ) throws {
+    init(hostName: String, userJIDString: String, hostPort: UInt16 = 5222, password: String , dataRoomAddress : String , chatRoomAddress : String) throws {
 
         guard let userJID = XMPPJID(string: userJIDString) else {
             throw XMPPControllerError.wrongUserJID
@@ -46,6 +48,8 @@ class XMPPController: NSObject {
         self.userJID = userJID
         self.hostPort = hostPort
         self.password = password
+        self.dataRoomAddress = dataRoomAddress
+        self.chatRoomAddress = chatRoomAddress
         
         // Stream Configuration
         self.xmppStream = XMPPStream()
@@ -80,11 +84,13 @@ extension XMPPController: XMPPStreamDelegate {
             self.xmppStream.send(XMPPPresence())
             print("Stream: Authenticated")
             let roomStorage: XMPPRoomMemoryStorage = XMPPRoomMemoryStorage()
-            self.dataRoom = XMPPRoom.init(roomStorage: roomStorage, jid: XMPPJID.init(string: "data_49_0@conference.chat.emperapool.com")! , dispatchQueue: .main)
+            //"data_49_0@conference.chat.emperapool.com"
+            self.dataRoom = XMPPRoom.init(roomStorage: roomStorage, jid: XMPPJID.init(string: self.dataRoomAddress)! , dispatchQueue: .main)
             self.dataRoom?.activate(self.xmppStream)
             self.dataRoom?.addDelegate(self, delegateQueue: .main)
             self.dataRoom?.join(usingNickname: self.userJID.bare, history: try .init(xmlString: "<history maxstanzas='0'/>"))
-            self.chatRoom = XMPPRoom.init(roomStorage: roomStorage, jid: XMPPJID.init(string: "chat_49_0@conference.chat.emperapool.com")! , dispatchQueue: .main)
+            //"chat_49_0@conference.chat.emperapool.com"
+            self.chatRoom = XMPPRoom.init(roomStorage: roomStorage, jid: XMPPJID.init(string: self.chatRoomAddress)! , dispatchQueue: .main)
             self.chatRoom?.activate(self.xmppStream)
             self.chatRoom?.addDelegate(self, delegateQueue: .main)
             self.chatRoom?.join(usingNickname: self.userJID.bare, history: try .init(xmlString: "<history maxstanzas='0'/>"))
@@ -114,6 +120,7 @@ extension XMPPController: XMPPStreamDelegate {
         } catch {
             print("ERROR")
             print(error)
+            print(message)
             let xml = SWXMLHash.parse(message.description)
             let name : String = xml["message"]["body"][0].element?.text ?? ""
             let avatar : String = xml["message"]["body"][1].element?.text ?? ""

@@ -26,6 +26,8 @@ class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableVie
         self.table.estimatedRowHeight = 30 
         
         self.table.rowHeight = 30
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,6 +46,7 @@ class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableVie
     
     @IBAction func startGame(_ sender: Any) {
         self.parent!.navigate(storyboardName: "Game", vc: GameBoardViewController.self){vc in
+            vc.gameRules = self.gameRules
             self.view.removeFromSuperview()
             self.removeFromParent()
         }
@@ -89,7 +92,28 @@ class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableVie
        
         let c = self.gameRules?.rules?.prize![indexPath.row]
         
+        if(c?.type == "once"){
+            cell.prizeLabel.text = "به ازای " + (c?.period?.description ?? "0") + " پاسخ درست"
+            
+        }else{
+            
+            cell.prizeLabel.text = "به ازای هر " + (c?.period?.description ?? "0") + " پاسخ درست"
+        }
         
+        if(c?.coin == 0){
+            cell.coinBox.setWidth(width: 0)
+        }else{
+            cell.coinLabel.text = "X " + (c?.coin?.description ?? "0")
+        }
+        if(c?.gem == 0){
+            cell.gemBox.setWidth(width: 0)
+        }else{
+            cell.gemLabel.text = "X " + (c?.gem?.description ?? "0")
+        }
+        
+        cell.badgeBox.setWidth(width: 0)
+        cell.gemBox.setX(x: cell.badgeBox.x)
+        cell.coinBox.setX(x: cell.gemBox.width + cell.gemBox.x)
         
         return cell
     }

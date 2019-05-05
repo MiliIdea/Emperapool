@@ -69,6 +69,18 @@ class XMPPController: NSObject {
         
         try! self.xmppStream.connect(withTimeout: XMPPStreamTimeoutNone)
     }
+    
+    
+    func sendMessage(txt : String){
+        if(self.chatRoom?.isJoined ?? false){
+            let row : ChatRow = .init(name: App.profile?.display_name, avatar: App.profile?.avatar, txt: txt)
+            let message : XMPPMessage = .init()
+            message.addBody(row.name ?? "", withLanguage: "nikName")
+            message.addBody(row.avatar ?? "", withLanguage: "avatar")
+            message.addBody(row.messageText ?? "")
+            self.chatRoom?.send(message)
+        }
+    }
 }
 
 extension XMPPController: XMPPStreamDelegate {
@@ -109,8 +121,8 @@ extension XMPPController: XMPPStreamDelegate {
             return nil
         }
         do {
-            let d = message.body!.replacingOccurrences(of: "\\", with: "", options: .literal, range: nil)
-            let result = try App.decoder.decode(StreamDataRes.self, from: d.data(using: .utf8)!)
+
+            let result = try App.decoder.decode(StreamDataRes.self, from: message.body!.data(using: .utf8)!)
             if(result.question != nil){
                 self.delegate?.reciveQuestion(sender: result.question!)
             }
@@ -118,16 +130,11 @@ extension XMPPController: XMPPStreamDelegate {
                 self.delegate?.updateOnlineUser(sender: result.onlineUsers )
             }
         } catch {
-            print("ERROR")
-            print(error)
-            print(message)
-            let xml = SWXMLHash.parse(message.description)
-            let name : String = xml["message"]["body"][0].element?.text ?? ""
-            let avatar : String = xml["message"]["body"][1].element?.text ?? ""
-            let txt : String = xml["message"]["body"][2].element?.text ?? ""
+            let name : String = message.body(forLanguage: "nikName") ?? ""
+            let avatar : String = message.body(forLanguage: "avatar") ?? ""
+            let txt : String = message.body(forLanguage: "") ?? ""
             do{
-                let d = txt.replacingOccurrences(of: "\\", with: "", options: .literal, range: nil)
-                let result = try App.decoder.decode(StreamDataRes.self, from: d.data(using: .utf8)!)
+                let result = try App.decoder.decode(StreamDataRes.self, from: txt.data(using: .utf8)!)
                 if(result.question != nil){
                     self.delegate?.reciveQuestion(sender: result.question!)
                 }

@@ -120,7 +120,23 @@ extension UIView {
         return self.center.y
     }
     
+    var rightX: CGFloat {
+        return self.x + self.width
+    }
+    
+    var bottomY: CGFloat {
+        return self.y + self.height
+    }
     // MARK: Easily update frames parameters
+    
+    
+    func setRight(right: CGFloat) {
+        self.frame.origin.x = right - self.width
+    }
+    
+    func setBottom(bottom: CGFloat) {
+        self.frame.origin.y = bottom - self.height
+    }
     
     /**
      Update frames width with a given value

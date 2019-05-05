@@ -33,6 +33,9 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
         self.table.dataSource = self
 
+        self.coinLabel.text = App.profile?.coin?.description
+        
+        self.gemLabel.text = App.profile?.gem?.description
         
         App.showLoading(vc: self)
         MR.getGameList(vc: self){res in
@@ -81,11 +84,11 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         }
         
         if(c.rules?.prize != nil && !(c.rules?.prize!.isEmpty)!){
-            let prize : Prize = (c.rules?.prize!.first!)!
+            let prize : Prize = (c.rules?.prize!.last!)!
             if(prize.type ?? "once" == "once"){
-                cell.prizeConditionLabel.text = "پاسخ درست در سوال " + prize.period!.description
+                cell.prizeConditionLabel.text =  prize.period!.description + " پاسخ درست"
             }else{
-                cell.prizeConditionLabel.text = "هر " + prize.period!.description + "پاسخ درست"
+                cell.prizeConditionLabel.text = "هر " + prize.period!.description + " پاسخ درست"
             }
             cell.coinAwardLabel.text = prize.coin?.description
             cell.gemAwardLabel.text = prize.gem?.description

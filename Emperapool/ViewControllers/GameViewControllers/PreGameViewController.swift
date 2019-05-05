@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import DCKit
 
 class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableViewDataSource{
 
     @IBOutlet weak var popupView: UIView!
     
     @IBOutlet weak var table: UITableView!
+    
+    @IBOutlet weak var gem: UILabel!
+    @IBOutlet weak var coin: UILabel!
+    @IBOutlet weak var gameTitle: UILabel!
+    
+    @IBOutlet weak var fiftyAmount: DCBaseLabel!
+    @IBOutlet weak var fiftyPrice: UILabel!
+    @IBOutlet weak var timeAmount: DCBaseLabel!
+    @IBOutlet weak var timePrice: UILabel!
+    @IBOutlet weak var chartAmount: DCBaseLabel!
+    @IBOutlet weak var chartPrice: UILabel!
+    
+    @IBOutlet weak var skipLabel: UILabel!
+    @IBOutlet weak var tableBackView: UIView!
+    @IBOutlet weak var skipView: UIView!
+    
     
     var gameRules : GameListRes?
     
@@ -23,12 +40,35 @@ class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableVie
         
         self.table.register(UINib(nibName: "PreGameTableViewCell", bundle: nil), forCellReuseIdentifier:"PreGameTableViewCell")
         
-        self.table.estimatedRowHeight = 30 
+        self.table.estimatedRowHeight = 33
         
-        self.table.rowHeight = 30
+        self.table.rowHeight = 33
         
+        self.table.setHeight(height: CGFloat((self.gameRules?.rules?.prize?.count ?? 0)) * self.table.rowHeight)
         
+        if(self.table.bottomY > self.tableBackView.height){
+            self.tableBackView.setHeight(height: self.table.bottomY + 10)
+            self.skipView.setY(y: self.tableBackView.bottomY + 2)
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if(gameRules != nil){
+            self.gem.text = "X " + (gameRules!.entry_fee_gem?.description ?? "0")
+            self.coin.text = "X " + (gameRules!.entry_fee_coin?.description ?? "0")
+            self.gameTitle.text = gameRules!.description
+            self.fiftyAmount.text = gameRules?.rules?.help?.fifty?.available?.description
+            self.fiftyPrice.text = gameRules?.rules?.help?.fifty?.price?.description
+            
+            self.timeAmount.text = gameRules?.rules?.help?.time?.available?.description
+            self.timePrice.text = gameRules?.rules?.help?.time?.price?.description
+            
+            self.chartAmount.text = gameRules?.rules?.help?.chart?.available?.description
+            self.chartPrice.text = gameRules?.rules?.help?.chart?.price?.description
+            
+            self.skipLabel.text = ((gameRules?.rules?.conditions?.available_skip!.description) ?? "0" ) + " سوال رو می تونی جواب ندی!!!"
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

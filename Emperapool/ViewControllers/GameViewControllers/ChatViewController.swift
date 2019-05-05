@@ -8,6 +8,8 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import DCKit
+import UICircularProgressRing
 
 class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
 
@@ -18,9 +20,33 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
     
     var chatWords : [String] = [String]()
     
+    @IBOutlet weak var dynamicView: UIView!
+    
+    @IBOutlet weak var staticView: UIView!
+    
+    @IBOutlet weak var txtField: DCBorderedTextField!
+    
+    @IBOutlet weak var stopChatView: UIView!
+    
+    @IBOutlet weak var chatTimer: UICircularTimerRing!
+    
+    @IBOutlet weak var goDynamicBox: DCBorderedView!
+    
+    @IBOutlet weak var goStaticButton: UIButton!
+    
+    @IBOutlet weak var stopLabel: UILabel!
+    
+    var chatType : Int = 2
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        IQKeyboardManager.shared.enable = true
+        
+        IQKeyboardManager.setAccessibilityElementsHidden(true)
+        
+//        self.hideKeyboardWhenTappedAround()
         
         collection.register(UINib(nibName: "ChatWordCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ChatWordCollectionViewCell")
         
@@ -30,6 +56,19 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
         
         self.table.rowHeight = 30 * self.view.frame.height / 677
 
+        self.dynamicView.alpha = 0
+        
+        self.staticView.alpha = 1
+        
+        self.chatTimer.alpha = 0
+        
+        self.chatTimer.valueFormatter = UICircularProgressRingFormatter.init(valueIndicator: "", rightToLeft: true, showFloatingPoint: false, decimalPlaces: 2)
+        
+        self.chatTimer.innerCapStyle = .round
+        
+        self.chatTimer.font = UIFont.init(name: "Shabnam-FD", size: 23)!
+        
+        self.stopChatView.alpha = 0
         // Do any additional setup after loading the view.
     }
     
@@ -40,6 +79,21 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
             self.collection.alpha = 0
         }
         self.collection.reloadData()
+        
+        self.chatType = (self.parent as! GameBoardViewController).gameRules?.rules?.conditions?.chat_type ?? 2
+        
+        switch chatType {
+        case 0:
+            self.stopChatView.alpha = 1
+        case 1:
+            self.goDynamicBox.alpha = 0
+        case 3:
+            self.goStaticButton.alpha = 0
+            self.staticView.alpha = 0
+            self.dynamicView.alpha = 1
+        default:
+            print("chat is free")
+        }
     }
     
     
@@ -84,6 +138,11 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
         return chatWords.count
     }
     
+    func sendMessage(txt : String){
+        (self.parent as! GameBoardViewController).xmpp?.sendMessage(txt: txt)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : ChatWordCollectionViewCell = collection.dequeueReusableCell(withReuseIdentifier: "ChatWordCollectionViewCell", for: indexPath as IndexPath) as! ChatWordCollectionViewCell
         let c = chatWords[indexPath.item]
@@ -91,9 +150,12 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
         
         return cell
     }
+    @IBAction func sendEmoji(_ sender: Any) {
+        self.sendMessage(txt: (sender as! UIButton).title(for: .normal) ?? "")
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        self.sendMessage(txt: self.chatWords[indexPath.item])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -120,4 +182,73 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
         return 0
     }
 
+    
+    @IBAction func sendDynamicComment(_ sender: Any) {
+        if(self.txtField.text == nil || self.txtField.text == ""){
+            return
+        }
+        self.sendMessage(txt: self.txtField.text!)
+        self.txtField.text = ""
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func goStaticChat(_ sender: Any) {
+        self.staticView.alpha = 1
+        self.dynamicView.alpha = 0
+    }
+    
+    @IBAction func goKeyboard(_ sender: Any) {
+        self.staticView.alpha = 0
+        self.dynamicView.alpha = 1
+        self.txtField.resignFirstResponder()
+        
+    }
+    
+    
+    func stopChat(time : Int , chatQuestionType : Int){
+        if(chatQuestionType == 0 || chatQuestionType == 3){
+            self.view.endEditing(true)
+            UIView.animate(withDuration: 0.2, delay: 0.0 , options: .curveEaseInOut, animations: {
+                self.stopChatView.alpha = 1
+            }){completion in }
+            if(chatQuestionType == 3){
+                self.chatTimer.alpha = 1
+                self.stopLabel.alpha = 1
+            }
+            self.chatTimer.startTimer(to: TimeInterval(time)) { state in
+                switch state {
+                case .finished:
+                    self.stopChatView.alpha = 0
+                    self.chatTimer.alpha = 0
+                    self.stopLabel.alpha = 0
+                    self.chatTimer.resetTimer()
+                case .continued(let time):
+                    print("continued: \(time ?? 0)")
+                case .paused(let time):
+                    print("paused: \(time ?? 0)")
+                }
+            }
+        }else if(chatQuestionType == 2){
+            self.view.endEditing(true)
+            self.goDynamicBox.alpha = 0
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(time)) {
+                self.goDynamicBox.alpha = 1
+            }
+        }
+        
+        
+        
+        switch chatType {
+        case 0:
+            self.stopChatView.alpha = 1
+        case 1:
+            self.goDynamicBox.alpha = 0
+        case 3:
+            self.goStaticButton.alpha = 0
+            self.staticView.alpha = 0
+            self.dynamicView.alpha = 1
+        default:
+            print("chat is free")
+        }
+    }
 }

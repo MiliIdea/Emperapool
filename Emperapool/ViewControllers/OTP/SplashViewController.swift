@@ -31,6 +31,7 @@ class SplashViewController: UIViewController {
         lottieView.addSubview(animationView)
         
         animationView.play() { (finished) in
+            App.showLoading(vc: self, viewAlpha: 0)
             self.goToSpecificViewController()
             self.lottieView.alpha = 0
             animationView.stop()

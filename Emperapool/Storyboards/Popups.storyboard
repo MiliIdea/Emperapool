@@ -345,7 +345,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_machine" translatesAutoresizingMaskIntoConstraints="NO" id="lsI-LV-BHY">
-                                        <rect key="frame" x="17" y="26" width="339" height="119"/>
+                                        <rect key="frame" x="17" y="25" width="339" height="119"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="status" translatesAutoresizingMaskIntoConstraints="NO" id="Glb-3e-Aqs">

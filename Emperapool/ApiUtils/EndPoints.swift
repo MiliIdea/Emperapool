@@ -48,6 +48,12 @@ public class EndPoints {
     
     static let answerQuestion : String = baseUrl + "game/answer/send"
     
+    static let helpFifty : String = baseUrl + "game/help/fifty"
+    
+    static let helpExtraTime : String = baseUrl + "game/help/time"
+    
+    static let helpChart : String = baseUrl + "game/help/chart"
+    
     //- MARK: Prize
     
     static let prizeList : String = baseUrl + "shop/prize/list"

@@ -132,6 +132,11 @@
 		04FAEF64227B110600078C64 /* ChatWordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */; };
 		04FAEF66227B1B3600078C64 /* MR-INTRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF65227B1B3600078C64 /* MR-INTRO.swift */; };
 		04FAEF68227B1B8700078C64 /* IntroRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF67227B1B8700078C64 /* IntroRes.swift */; };
+		04FAEF6A227D6B0F00078C64 /* ScoreCalculatorInQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF69227D6B0F00078C64 /* ScoreCalculatorInQuestion.swift */; };
+		04FAEF6C227D8EEA00078C64 /* ExtraHelpFiftyRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF6B227D8EEA00078C64 /* ExtraHelpFiftyRes.swift */; };
+		04FAEF6E227D8EF700078C64 /* ExtraHelpChartRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF6D227D8EF700078C64 /* ExtraHelpChartRes.swift */; };
+		04FAEF70227EBC8500078C64 /* LoserPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF6F227EBC8500078C64 /* LoserPopupViewController.swift */; };
+		04FAEF72227ED39B00078C64 /* EndGamePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEF71227ED39B00078C64 /* EndGamePopupViewController.swift */; };
 		2ACCE79A3AD319144B496D97 /* Pods_EmperapoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4465D329123448EDB4292C49 /* Pods_EmperapoolUITests.framework */; };
 		C9AD78D020EFD98D61C5E54B /* Pods_EmperapoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A016915F0635C8441C531A /* Pods_EmperapoolTests.framework */; };
 		CDAADE284F834814506D3DD0 /* Pods_Emperapool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5497ADB10127B5044129BB7 /* Pods_Emperapool.framework */; };
@@ -286,6 +291,11 @@
 		04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatWordCollectionViewCell.xib; sourceTree = "<group>"; };
 		04FAEF65227B1B3600078C64 /* MR-INTRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MR-INTRO.swift"; sourceTree = "<group>"; };
 		04FAEF67227B1B8700078C64 /* IntroRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroRes.swift; sourceTree = "<group>"; };
+		04FAEF69227D6B0F00078C64 /* ScoreCalculatorInQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculatorInQuestion.swift; sourceTree = "<group>"; };
+		04FAEF6B227D8EEA00078C64 /* ExtraHelpFiftyRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraHelpFiftyRes.swift; sourceTree = "<group>"; };
+		04FAEF6D227D8EF700078C64 /* ExtraHelpChartRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraHelpChartRes.swift; sourceTree = "<group>"; };
+		04FAEF6F227EBC8500078C64 /* LoserPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserPopupViewController.swift; sourceTree = "<group>"; };
+		04FAEF71227ED39B00078C64 /* EndGamePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGamePopupViewController.swift; sourceTree = "<group>"; };
 		0518EFBE499426D2DAE947C3 /* Pods-EmperapoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.release.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0623A2A77FD653A6D5CAEE6A /* Pods-EmperapoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolTests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolTests/Pods-EmperapoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1901B6AA9C87552A4A2B5AD1 /* Pods-EmperapoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmperapoolUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmperapoolUITests/Pods-EmperapoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -467,6 +477,8 @@
 				04559FE52275B37000394D87 /* OnlineUsers.swift */,
 				04C0952C227AC982001D48EE /* ExtraAnswerRes.swift */,
 				04C0952E227ACA14001D48EE /* ExtraJoinGameRes.swift */,
+				04FAEF6B227D8EEA00078C64 /* ExtraHelpFiftyRes.swift */,
+				04FAEF6D227D8EF700078C64 /* ExtraHelpChartRes.swift */,
 			);
 			path = StreamDataResponse;
 			sourceTree = "<group>";
@@ -530,6 +542,8 @@
 				04028FF82276F5DE00100C54 /* QuestionViewController.swift */,
 				04028FFA2276F5EB00100C54 /* ChatViewController.swift */,
 				040290002278338D00100C54 /* GameBoardViewController.swift */,
+				04FAEF6F227EBC8500078C64 /* LoserPopupViewController.swift */,
+				04FAEF71227ED39B00078C64 /* EndGamePopupViewController.swift */,
 			);
 			path = GameViewControllers;
 			sourceTree = "<group>";
@@ -619,6 +633,7 @@
 				04559FC3226EFB4700394D87 /* SwiftEventBus.swift */,
 				04559FDE2275780C00394D87 /* XMPPController.swift */,
 				0472C977226302280056848A /* TabController.swift */,
+				04FAEF69227D6B0F00078C64 /* ScoreCalculatorInQuestion.swift */,
 				0421713D2266FF40000D3623 /* Lotties */,
 				04C81BC3225C721600069A19 /* Fonts */,
 			);
@@ -1022,6 +1037,7 @@
 				0421715E22671807000D3623 /* ExtraGameListRes.swift in Sources */,
 				04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */,
 				04D71598226886B4007F94A7 /* Avatars.swift in Sources */,
+				04FAEF6C227D8EEA00078C64 /* ExtraHelpFiftyRes.swift in Sources */,
 				04D71596226886B4007F94A7 /* ShopListRes.swift in Sources */,
 				042171582267169F000D3623 /* Conditions.swift in Sources */,
 				04C81C08225F22BB00069A19 /* GameToturialViewController.swift in Sources */,
@@ -1047,6 +1063,7 @@
 				0421716022675681000D3623 /* CoinStoreViewController.swift in Sources */,
 				04559FD0226F443800394D87 /* MachineCollectionViewCell.swift in Sources */,
 				04559FBE226D9DB500394D87 /* LeaderBoardType.swift in Sources */,
+				04FAEF72227ED39B00078C64 /* EndGamePopupViewController.swift in Sources */,
 				0472C96F2263000D0056848A /* HomeViewController.swift in Sources */,
 				0472C98922647E6D0056848A /* ExtraLeaderboardRes.swift in Sources */,
 				04FAEF66227B1B3600078C64 /* MR-INTRO.swift in Sources */,
@@ -1054,6 +1071,7 @@
 				0472C97C22631B8D0056848A /* LeaderBoardViewController.swift in Sources */,
 				04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */,
 				040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */,
+				04FAEF70227EBC8500078C64 /* LoserPopupViewController.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				04559FE62275B37000394D87 /* OnlineUsers.swift in Sources */,
 				04559FDF2275780C00394D87 /* XMPPController.swift in Sources */,
@@ -1061,6 +1079,7 @@
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				04FAEF68227B1B8700078C64 /* IntroRes.swift in Sources */,
 				04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */,
+				04FAEF6E227D8EF700078C64 /* ExtraHelpChartRes.swift in Sources */,
 				04559FC8226F27B300394D87 /* InviteFriendsViewController.swift in Sources */,
 				04028FFE227713DE00100C54 /* PreGameTableViewCell.swift in Sources */,
 				04559FE32275AEA500394D87 /* StreamDataRes.swift in Sources */,
@@ -1093,6 +1112,7 @@
 				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
 				04559FD5227041B300394D87 /* MR-DAILY-MACHINE.swift in Sources */,
 				04559FBC226B448400394D87 /* LeadersViewController.swift in Sources */,
+				04FAEF6A227D6B0F00078C64 /* ScoreCalculatorInQuestion.swift in Sources */,
 				042171572267169F000D3623 /* Help.swift in Sources */,
 				04D71599226886B4007F94A7 /* Badges.swift in Sources */,
 				0421714522670266000D3623 /* SplashViewController.swift in Sources */,

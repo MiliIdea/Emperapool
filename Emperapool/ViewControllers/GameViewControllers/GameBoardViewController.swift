@@ -92,6 +92,14 @@ class GameBoardViewController: UIViewController  , EmperapoolXMPPDelegate{
         self.questionViewController?.isOfflineButton.backgroundColor = UIColor("#8BD760")
     }
     
+    func stopChat(){
+        
+    }
+    
+    func resumeChat(){
+        
+    }
+    
     
     
     // MARK: - Navigation

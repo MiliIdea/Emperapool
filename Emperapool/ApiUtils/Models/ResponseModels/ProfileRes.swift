@@ -13,19 +13,19 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct ProfileRes : Codable {
-	let avatar : String?
+	var avatar : String?
 	let status : String?
-	let birthday : String?
+	var birthday : String?
 	let id : Int?
 	let username : String?
-	let display_name : String?
+	var display_name : String?
 	let mobile : String?
 	let introduce_code : String?
-	let introduced_by : String?
+	var introduced_by : String?
 	let activation_code : Int?
-	let coin : Int?
-	let coin_total : Int?
-	let gem : Int?
+    var coin : Int?
+    let coin_total : Int?
+    var gem : Int?
 	let gem_total : Int?
 	let credit : String?
 	let level : Int?
@@ -35,8 +35,8 @@ struct ProfileRes : Codable {
 	let has_unread_ticket : Bool?
 	let has_unread_message : Bool?
 	let firebase : String?
-	let city : String?
-	let job : String?
+	var city : String?
+	var job : String?
 	let video_reward_total : Int?
 	let video_reward_available : Int?
 	let video_reward_lastuse : Int?

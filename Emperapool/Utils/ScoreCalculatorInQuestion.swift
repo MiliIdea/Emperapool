@@ -21,8 +21,10 @@ public class ScoreCalculatorInQuestion {
     var chartPrice : Int
     var time : Int
     var timePrice : Int
+    var skipQuestion : Int
+    var skipAmount : Int
     
-    init(myGem : Int , myCoin : Int , prizes : [Prize] , fifty : Int ,fiftyPrice : Int , time : Int ,timePrice : Int , chart : Int , chartPrice : Int) {
+    init(myGem : Int , myCoin : Int , prizes : [Prize] , fifty : Int ,fiftyPrice : Int , time : Int ,timePrice : Int , chart : Int , chartPrice : Int , skipQuestion : Int) {
         self.rules = prizes
         myScore = .init(coin: myCoin, gem: myGem)
         atFirstMyScore = myScore
@@ -34,21 +36,24 @@ public class ScoreCalculatorInQuestion {
         self.time = time
         self.timePrice = timePrice
         self.usedCoin = 0
+        self.skipQuestion = skipQuestion
+        self.skipAmount = skipQuestion
     }
     
     func getScoreOfQuestion() -> ScoreModel{
         var result : ScoreModel = .init(coin: 0, gem: 0)
+        var intSkip = self.skipAmount - skipQuestion
         for r in rules {
             if(r.period == nil){
                 return .init(coin: 0, gem: 0)
             }
             if(r.type == "once"){
-                if(questionNumber == r.period){
+                if((questionNumber - intSkip) == r.period){
                     result.coin += r.coin ?? 0
                     result.gem += r.gem ?? 0
                 }
             }else{//repeat
-                if(questionNumber % r.period! == 0){
+                if((questionNumber - intSkip) % r.period! == 0){
                     result.coin += r.coin ?? 0
                     result.gem += r.gem ?? 0
                 }
@@ -64,6 +69,10 @@ public class ScoreCalculatorInQuestion {
         self.questionScores.coin += getScoreOfQuestion().coin
         self.questionScores.gem  += getScoreOfQuestion().gem
         
+        self.questionNumber += 1
+    }
+    
+    func skipThisQuestion(){
         self.questionNumber += 1
     }
     

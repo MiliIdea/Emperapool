@@ -90,7 +90,6 @@ class PreGameViewController: UIViewController  ,UITableViewDelegate , UITableVie
             self.view.removeFromSuperview()
             self.removeFromParent()
         }
-        
     }
     
     @IBAction func decline(_ sender: Any) {

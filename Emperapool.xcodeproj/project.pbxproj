@@ -14,6 +14,10 @@
 		040290012278338D00100C54 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040290002278338D00100C54 /* GameBoardViewController.swift */; };
 		040290042279A43300100C54 /* ChatRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040290022279A43300100C54 /* ChatRowTableViewCell.swift */; };
 		040290052279A43300100C54 /* ChatRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040290032279A43300100C54 /* ChatRowTableViewCell.xib */; };
+		0402F6C02281B08C006FE27C /* ProfileDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402F6BF2281B08C006FE27C /* ProfileDatePickerViewController.swift */; };
+		0402F6C42281B0CE006FE27C /* ProfileListSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402F6C32281B0CE006FE27C /* ProfileListSelectorViewController.swift */; };
+		0402F6C72282A238006FE27C /* ProfileListSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402F6C52282A238006FE27C /* ProfileListSelectCollectionViewCell.swift */; };
+		0402F6C82282A238006FE27C /* ProfileListSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402F6C62282A238006FE27C /* ProfileListSelectCollectionViewCell.xib */; };
 		040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C550C2264BA7100B6F769 /* HomeTableViewCell.swift */; };
 		040C550F2264BA7100B6F769 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040C550D2264BA7100B6F769 /* HomeTableViewCell.xib */; };
 		042171412266FF4D000D3623 /* startgamepage.json in Resources */ = {isa = PBXBuildFile; fileRef = 0421713E2266FF4D000D3623 /* startgamepage.json */; };
@@ -167,6 +171,10 @@
 		040290002278338D00100C54 /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 		040290022279A43300100C54 /* ChatRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowTableViewCell.swift; sourceTree = "<group>"; };
 		040290032279A43300100C54 /* ChatRowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRowTableViewCell.xib; sourceTree = "<group>"; };
+		0402F6BF2281B08C006FE27C /* ProfileDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatePickerViewController.swift; sourceTree = "<group>"; };
+		0402F6C32281B0CE006FE27C /* ProfileListSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListSelectorViewController.swift; sourceTree = "<group>"; };
+		0402F6C52282A238006FE27C /* ProfileListSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		0402F6C62282A238006FE27C /* ProfileListSelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListSelectCollectionViewCell.xib; sourceTree = "<group>"; };
 		040C550C2264BA7100B6F769 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		040C550D2264BA7100B6F769 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		0421713E2266FF4D000D3623 /* startgamepage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = startgamepage.json; sourceTree = "<group>"; };
@@ -358,6 +366,8 @@
 				040290032279A43300100C54 /* ChatRowTableViewCell.xib */,
 				04FAEF61227B110600078C64 /* ChatWordCollectionViewCell.swift */,
 				04FAEF62227B110600078C64 /* ChatWordCollectionViewCell.xib */,
+				0402F6C52282A238006FE27C /* ProfileListSelectCollectionViewCell.swift */,
+				0402F6C62282A238006FE27C /* ProfileListSelectCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -453,9 +463,11 @@
 			children = (
 				04559FC7226F27B300394D87 /* InviteFriendsViewController.swift */,
 				04559FCC226F36A800394D87 /* ErrorNetPopupViewController.swift */,
-				04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */,
 				04559FD2227031BC00394D87 /* DailyMachinesViewController.swift */,
 				04559FDB2270842300394D87 /* MachineViewController.swift */,
+				04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */,
+				0402F6BF2281B08C006FE27C /* ProfileDatePickerViewController.swift */,
+				0402F6C32281B0CE006FE27C /* ProfileListSelectorViewController.swift */,
 			);
 			path = PopupsViewControllers;
 			sourceTree = "<group>";
@@ -868,6 +880,7 @@
 				04217147226713A7000D3623 /* loading.json in Resources */,
 				042CD22E225B2ED0009E0F98 /* Main.storyboard in Resources */,
 				04559FC2226DA9F900394D87 /* LeaderboardTableViewCell.xib in Resources */,
+				0402F6C82282A238006FE27C /* ProfileListSelectCollectionViewCell.xib in Resources */,
 				042171412266FF4D000D3623 /* startgamepage.json in Resources */,
 				04C81BD9225C772100069A19 /* B Yekan+ Bold.ttf in Resources */,
 				04FAEF64227B110600078C64 /* ChatWordCollectionViewCell.xib in Resources */,
@@ -929,6 +942,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Emperapool/Pods-Emperapool-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CheckboxButton/CheckboxButton.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
@@ -938,6 +952,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PersianDatePicker/PersianDatePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
@@ -955,6 +970,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CheckboxButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
@@ -964,6 +980,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersianDatePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
@@ -1076,6 +1093,7 @@
 				04559FE62275B37000394D87 /* OnlineUsers.swift in Sources */,
 				04559FDF2275780C00394D87 /* XMPPController.swift in Sources */,
 				042171562267169F000D3623 /* Time.swift in Sources */,
+				0402F6C72282A238006FE27C /* ProfileListSelectCollectionViewCell.swift in Sources */,
 				042CD22B225B2ED0009E0F98 /* LoginViewController.swift in Sources */,
 				04FAEF68227B1B8700078C64 /* IntroRes.swift in Sources */,
 				04D7159D226886C5007F94A7 /* MR-SHOP.swift in Sources */,
@@ -1084,6 +1102,7 @@
 				04028FFE227713DE00100C54 /* PreGameTableViewCell.swift in Sources */,
 				04559FE32275AEA500394D87 /* StreamDataRes.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
+				0402F6C02281B08C006FE27C /* ProfileDatePickerViewController.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
 				04028FF92276F5DE00100C54 /* QuestionViewController.swift in Sources */,
 				042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */,
@@ -1109,6 +1128,7 @@
 				04D715A422688BC8007F94A7 /* AvatarCollectionViewCell.swift in Sources */,
 				04C81BFC225CE72500069A19 /* DefaultStrings.swift in Sources */,
 				040290042279A43300100C54 /* ChatRowTableViewCell.swift in Sources */,
+				0402F6C42281B0CE006FE27C /* ProfileListSelectorViewController.swift in Sources */,
 				04C81C10225F237400069A19 /* NewsViewController.swift in Sources */,
 				04559FD5227041B300394D87 /* MR-DAILY-MACHINE.swift in Sources */,
 				04559FBC226B448400394D87 /* LeadersViewController.swift in Sources */,

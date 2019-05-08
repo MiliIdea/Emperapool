@@ -36,6 +36,8 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
     
     @IBOutlet weak var stopLabel: UILabel!
     
+    var chatIsLock : Bool = false
+    
     var chatType : Int = 2
     
     override func viewDidLoad() {
@@ -139,7 +141,26 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
     }
     
     func sendMessage(txt : String){
-        (self.parent as! GameBoardViewController).xmpp?.sendMessage(txt: txt)
+        if(!chatIsLock){
+            (self.parent as! GameBoardViewController).xmpp?.sendMessage(txt: txt)
+            chatIsLock = true
+            if(self.staticView.alpha == 1){
+                self.staticView.alpha = 0.4
+            }
+            if(self.dynamicView.alpha == 1){
+                self.dynamicView.alpha = 0.4
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.chatIsLock = false
+                if(self.staticView.alpha != 0){
+                    self.staticView.alpha = 1
+                }
+                if(self.dynamicView.alpha != 0){
+                    self.dynamicView.alpha = 1
+                }
+            }
+        }
+        
     }
     
     
@@ -193,14 +214,18 @@ class ChatViewController: UIViewController  , UITableViewDelegate , UITableViewD
     }
     
     @IBAction func goStaticChat(_ sender: Any) {
-        self.staticView.alpha = 1
-        self.dynamicView.alpha = 0
+        if(!self.chatIsLock){
+            self.staticView.alpha = 1
+            self.dynamicView.alpha = 0
+        }
     }
     
     @IBAction func goKeyboard(_ sender: Any) {
-        self.staticView.alpha = 0
-        self.dynamicView.alpha = 1
-        self.txtField.resignFirstResponder()
+        if(!self.chatIsLock){
+            self.staticView.alpha = 0
+            self.dynamicView.alpha = 1
+            self.txtField.resignFirstResponder()
+        }
         
     }
     

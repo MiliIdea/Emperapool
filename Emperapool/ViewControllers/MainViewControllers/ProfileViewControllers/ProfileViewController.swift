@@ -41,7 +41,13 @@ class ProfileViewController: UIViewController , UICollectionViewDelegate, UIColl
             if(res != nil && res?.data != nil && !(res?.data!.isEmpty)!){
                 App.profile = res?.data?.first!
                 self.updateProfileView()
+                SwiftEventBus.post("profileUpdate")
             }
+        }
+        
+        SwiftEventBus.onMainThread(self, name: "profileUpdate") { result in
+            self.coin.text = (App.profile?.coin ?? 0).description
+            self.gem.text = (App.profile?.gem ?? 0).description
         }
         
         MR.getMyBadge(vc: self){res in
@@ -73,7 +79,20 @@ class ProfileViewController: UIViewController , UICollectionViewDelegate, UIColl
         self.gem.text = (App.profile?.gem ?? 0).description
     }
     
-
+    @IBAction func editProfile(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+        
+        let vc : ProfileSettingsViewController = (storyboard.instantiateViewController(withIdentifier: "ProfileSettingsViewController")) as! ProfileSettingsViewController
+        
+        vc.profileRes = App.profile
+        
+        self.parent!.addChild(vc)
+        
+        vc.didMove(toParent: self.parent!)
+        
+        self.parent!.view.addSubview(vc.view)
+    }
+    
     @IBAction func moreBadge(_ sender: Any) {
     }
     

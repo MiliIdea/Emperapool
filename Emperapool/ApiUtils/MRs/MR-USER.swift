@@ -74,7 +74,7 @@ extension MR {
         
     }
     
-    static func updateUser(vc : UIViewController , profile : [String: Any] , activationCode : String   , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
+    static func updateUser(vc : UIViewController , profile : [String: Any] , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
         request(EndPoints.approveUserToken, method: .post , parameters: profile , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
             DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
             self.resHandler(vc: vc, response: response){res in
@@ -85,6 +85,15 @@ extension MR {
     }
     
     
+    
+    static func getMyAvatars(vc : UIViewController , completionHandler: @escaping (GenericResponse<[Avatars] ,ExtraGameListRes>?) -> Void){
+        request(EndPoints.myAvatars, method: .get , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response : DataResponse<GenericResponse<[Avatars],ExtraGameListRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value)
+            }
+        }
+        
+    }
     
     
 }

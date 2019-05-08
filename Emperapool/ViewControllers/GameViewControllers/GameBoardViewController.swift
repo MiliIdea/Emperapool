@@ -33,6 +33,9 @@ class GameBoardViewController: UIViewController  , EmperapoolXMPPDelegate{
                 do{
                     //"88_emp@chat.emperapool.com"
                     //"I17KIAALO31VMWI"
+                    App.profile?.coin! -= (self.gameRules?.entry_fee_coin ?? 0)
+                    App.profile?.gem! -= (self.gameRules?.entry_fee_gem ?? 0)
+                    SwiftEventBus.post("profileUpdate")
                     self.xmpp = try XMPPController.init(hostName: "chat.emperapool.com", userJIDString: ((App.profile?.id!.description)! + "_emp@chat.emperapool.com"), password: (App.profile?.chat_token)!, dataRoomAddress: res?.extra_data?.data_room ?? "" , chatRoomAddress : res?.extra_data?.chat_room ?? "" )
                     self.xmpp?.delegate = self
                     self.xmpp!.connect()

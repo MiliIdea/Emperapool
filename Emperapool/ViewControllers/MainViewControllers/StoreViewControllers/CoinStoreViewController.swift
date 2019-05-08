@@ -20,6 +20,8 @@ class CoinStoreViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var on: UIImageView!
     @IBOutlet weak var off: UIImageView!
     
+    @IBOutlet weak var myCoins: UILabel!
+    @IBOutlet weak var myGems: UILabel!
     
     
     override func viewDidLoad() {
@@ -30,6 +32,15 @@ class CoinStoreViewController: UIViewController, UICollectionViewDelegate, UICol
         collection.register(UINib(nibName: "CoinCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CoinCollectionViewCell")
         
         Timer.scheduledTimer(timeInterval: 1.1, target: self, selector: #selector(runOnAndOff), userInfo: nil, repeats: true)
+        
+        self.myCoins.text = App.profile?.coin?.description
+        
+        self.myGems.text = App.profile?.gem?.description
+        
+        SwiftEventBus.onMainThread(self, name: "profileUpdate") { result in
+            self.myCoins.text = (App.profile?.coin ?? 0).description
+            self.myGems.text = (App.profile?.gem ?? 0).description
+        }
         // Do any additional setup after loading the view.
     }
     

@@ -36,6 +36,25 @@
                                 <rect key="frame" x="12" y="17" width="92" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-T1-wqO" customClass="CheckboxButton" customModule="CheckboxButton">
+                                <rect key="frame" x="9" y="82" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="checkColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="containerColor">
+                                        <color key="value" red="0.54616463179999997" green="0.84441280360000004" blue="0.37629425529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="checkLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="containerFillsOnToggleOn" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96746855970000001" green="0.81299978490000002" blue="0.34090119600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <userDefinedRuntimeAttributes>
@@ -87,6 +106,8 @@
             <connections>
                 <outlet property="backImage" destination="G5Z-lv-Jdh" id="wVJ-4G-dkI"/>
                 <outlet property="backView" destination="oQn-AF-Cgu" id="imv-Qu-MVJ"/>
+                <outlet property="checkBox" destination="jdM-T1-wqO" id="EED-5t-da2"/>
+                <outlet property="coinBackView" destination="gZS-GO-gFP" id="WLh-OM-bzl"/>
                 <outlet property="icon" destination="iqj-Ez-e0Y" id="nrC-Sc-SUE"/>
                 <outlet property="priceLabel" destination="qsx-qC-raD" id="Dqe-nn-zDy"/>
             </connections>

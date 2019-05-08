@@ -8,6 +8,7 @@
 
 import UIKit
 import DCKit
+import CheckboxButton
 
 class AvatarCollectionViewCell: UICollectionViewCell {
 
@@ -17,7 +18,11 @@ class AvatarCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var icon: UIImageView!
     
+    @IBOutlet weak var coinBackView: DCBorderedView!
+    
     @IBOutlet weak var backImage: UIImageView!
+    
+    @IBOutlet weak var checkBox: CheckboxButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

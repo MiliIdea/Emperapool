@@ -32,6 +32,8 @@ public class EndPoints {
     
     static let rewardVideo : String = baseUrl + "user/profile/reward/video"
     
+    static let myAvatars : String = baseUrl + "shop/avatar/myavatar"
+    
     //- MARK: Leaderboards
     
     static let overallLeaderboard : String = baseUrl + "user/leaderboard/overall"
@@ -47,6 +49,8 @@ public class EndPoints {
     static let joinGame : String = baseUrl + "game/join"
     
     static let answerQuestion : String = baseUrl + "game/answer/send"
+    
+    static let skipQuestion : String = baseUrl + "game/answer/skip"
     
     static let helpFifty : String = baseUrl + "game/help/fifty"
     

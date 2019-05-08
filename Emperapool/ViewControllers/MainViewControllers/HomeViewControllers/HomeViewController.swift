@@ -33,9 +33,11 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
         self.table.dataSource = self
 
-        self.coinLabel.text = App.profile?.coin?.description
-        
-        self.gemLabel.text = App.profile?.gem?.description
+        SwiftEventBus.onMainThread(self, name: "profileUpdate") { result in
+            self.coinLabel.text = App.profile?.coin?.description
+            
+            self.gemLabel.text = App.profile?.gem?.description
+        }
         
         App.showLoading(vc: self)
         MR.getGameList(vc: self){res in

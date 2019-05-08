@@ -60,6 +60,8 @@ class QuestionViewController: UIViewController {
     
     var trueAnswer : Int = 0
     
+    @IBOutlet weak var skipQuestionBox: GradientView!
+    @IBOutlet weak var skipQuestionLabel: UILabel!
     @IBOutlet weak var fiftyHelpButton: UIButton!
     @IBOutlet weak var timePlusHelpButton: UIButton!
     @IBOutlet weak var percentageHelpButton: UIButton!
@@ -69,7 +71,7 @@ class QuestionViewController: UIViewController {
     
     var scoreCalculator : ScoreCalculatorInQuestion?
     
-    var availableSkip : Int = 0
+//    var availableSkip : Int = 0
     
     var iAmLoser : Bool = false
     
@@ -100,7 +102,7 @@ class QuestionViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         self.setLottie(name: "startgamepage")
         let gameRules = (self.parent as! GameBoardViewController).gameRules
-        self.scoreCalculator = ScoreCalculatorInQuestion.init(myGem: App.profile?.gem ?? 0, myCoin: App.profile?.coin ?? 0, prizes: gameRules?.rules?.prize ?? [Prize]() , fifty : gameRules?.rules?.help?.fifty?.available ?? 0, fiftyPrice: gameRules?.rules?.help?.fifty?.price ?? 0 , time: gameRules?.rules?.help?.time?.available ?? 0, timePrice: gameRules?.rules?.help?.time?.price ?? 0 , chart : gameRules?.rules?.help?.chart?.available ?? 0, chartPrice: gameRules?.rules?.help?.chart?.price ?? 0)
+        self.scoreCalculator = ScoreCalculatorInQuestion.init(myGem: App.profile?.gem ?? 0, myCoin: App.profile?.coin ?? 0, prizes: gameRules?.rules?.prize ?? [Prize]() , fifty : gameRules?.rules?.help?.fifty?.available ?? 0, fiftyPrice: gameRules?.rules?.help?.fifty?.price ?? 0 , time: gameRules?.rules?.help?.time?.available ?? 0, timePrice: gameRules?.rules?.help?.time?.price ?? 0 , chart : gameRules?.rules?.help?.chart?.available ?? 0, chartPrice: gameRules?.rules?.help?.chart?.price ?? 0, skipQuestion: gameRules?.rules?.conditions?.available_skip ?? 0)
         
     }
     
@@ -129,7 +131,10 @@ class QuestionViewController: UIViewController {
         self.timePlusAmount.text = (self.scoreCalculator?.time)?.description
         self.percentageCoin.text = (self.scoreCalculator?.chartPrice)?.description
         self.percentageAmount.text = (self.scoreCalculator?.chart)?.description
-
+        self.skipQuestionLabel.text = self.scoreCalculator?.skipQuestion.description
+        if(self.skipQuestionLabel.text == "0"){
+            self.skipQuestionBox.alpha = 0
+        }
         self.enableInteractWithQuestion()
         self.questionNumber.text = "سوال " + ((self.scoreCalculator?.questionNumber ?? 1).description)
         self.selectedAnswer = 0
@@ -283,11 +288,16 @@ class QuestionViewController: UIViewController {
             //type barikala
         }else{
             
-            self.iAmLoser = true
-            
-            if(selectedAnswer == 0){
+            if(selectedAnswer == 0 && self.scoreCalculator?.skipQuestion != 0){
                 //ag dg soal baraye rad kardan nadasht showlosepopup
+                MR.skipQuestion(vc: self, gameId: (self.parent as! GameBoardViewController).gameRules?.id ?? 0, questionId: self.currentQuestion?.id ?? 0){res , status in
+                    if(status == 200){
+                        self.scoreCalculator?.skipQuestion -= 1
+                    }
+                }
+                
             }else{
+                self.iAmLoser = true
                 switch trueAnswer {
                 case 1:
                     self.firstAnswer.normalBackgroundColor = UIColor("#8BD760")
@@ -317,6 +327,11 @@ class QuestionViewController: UIViewController {
         
         self.coin.text = self.scoreCalculator?.myScore.coin.description
         self.gem.text = self.scoreCalculator?.myScore.gem.description
+        
+        App.profile?.coin = self.scoreCalculator?.myScore.coin
+        App.profile?.gem = self.scoreCalculator?.myScore.gem
+        
+        SwiftEventBus.post("profileUpdate")
         
         UIView.animate(withDuration: 0.2, delay: 0.5 , options: .curveEaseInOut, animations: {
             self.lottieView.alpha = 0

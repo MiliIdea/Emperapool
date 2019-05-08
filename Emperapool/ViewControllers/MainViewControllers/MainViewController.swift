@@ -82,15 +82,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func help(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
-        
-        let vc : ProfileSettingsViewController = (storyboard.instantiateViewController(withIdentifier: "ProfileSettingsViewController")) as! ProfileSettingsViewController
-        
-        self.addChild(vc)
-        
-        vc.didMove(toParent: self)
-        
-        self.view.addSubview(vc.view)
+        navigate(storyboardName: "GameMenu", vc: GameToturialViewController.self){res in }
     }
     
     @objc func tabPressed(sender : UIButton){
@@ -130,8 +122,15 @@ class MainViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Popups", bundle: nil)
         let vc : InviteFriendsViewController = (storyboard.instantiateViewController(withIdentifier: "InviteFriendsViewController")) as! InviteFriendsViewController
         self.addChild(vc)
-        vc.didMove(toParent: self)
         self.view.addSubview(vc.view)
+        vc.view.setY(y: vc.view.height)
+        vc.view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .transitionFlipFromBottom, animations: {
+            vc.view.setY(y: 0)
+        }) { (finished) in
+            vc.didMove(toParent: self)
+        }
+        
     }
     
     @IBAction func goVideo(_ sender: Any) {

@@ -60,7 +60,7 @@ class AvatarStoreViewController: UIViewController , UICollectionViewDelegate, UI
         let cell : AvatarCollectionViewCell = collection.dequeueReusableCell(withReuseIdentifier: "AvatarCollectionViewCell", for: indexPath as IndexPath) as! AvatarCollectionViewCell
         let c = avatars[indexPath.item]
         
-        cell.icon.kf.setImage(with: URL.init(string: c.icon ?? ""))
+        cell.icon.kf.setImage(with: URL.init(string: c.image ?? ""))
         
         cell.priceLabel.text = c.price ?? "0"
         

@@ -45,6 +45,10 @@ target 'Emperapool' do
   pod 'SWXMLHash', '~> 4.7.0'
   
   pod 'UICircularProgressRing', '~> 6.1.0'
+  
+  pod 'PersianDatePicker', '~> 0.7.0'
+  
+  pod 'CheckboxButton', '~> 3.1.1'
 
   
   # Pods for Emperapool

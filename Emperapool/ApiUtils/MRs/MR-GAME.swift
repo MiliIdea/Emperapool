@@ -45,6 +45,17 @@ extension MR {
     }
     
     
+    static func skipQuestion(vc : UIViewController , gameId : Int , questionId : Int  , completionHandler: @escaping (GenericResponse<[ProfileRes] ,ExtraAnswerRes>? , Int) -> Void){
+        request(EndPoints.skipQuestion, method: .post , parameters: ["game_id" : gameId , "question_id" : questionId] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<[ProfileRes] ,ExtraAnswerRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value, (res?.response!.statusCode)!)
+            }
+        }
+        
+    }
+    
+    
     static func helpExtraTime(vc : UIViewController , gameId : Int  , questionId : Int  , completionHandler: @escaping (GenericResponse<[ProfileRes] ,ExtraAnswerRes>? , Int) -> Void){
         request(EndPoints.helpExtraTime, method: .post , parameters: ["game_id" : gameId, "question_id" : questionId] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
             DataResponse<GenericResponse<[ProfileRes] ,ExtraAnswerRes>>) in

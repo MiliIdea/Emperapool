@@ -93,6 +93,9 @@ extension XMPPController: XMPPStreamDelegate {
     func xmppStreamDidAuthenticate(_ sender: XMPPStream) {
         self.delegate?.nowIsOnline()
         do{
+            if(self.dataRoomAddress == "" || self.chatRoomAddress == "" ){
+                return
+            }
             self.xmppStream.send(XMPPPresence())
             print("Stream: Authenticated")
             let roomStorage: XMPPRoomMemoryStorage = XMPPRoomMemoryStorage()

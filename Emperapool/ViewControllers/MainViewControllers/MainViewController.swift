@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class MainViewController: UIViewController {
 
@@ -93,6 +94,14 @@ class MainViewController: UIViewController {
         self.tabsController?.updateButtonImages(index: sender.tag)
     }
     
+    func goTab(_ num : Int){
+        UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
+            self.mainBoard.frame.origin.x = CGFloat(-1 * (num - 1)) * self.view.frame.width
+        },completion: nil)
+        self.titleOfTabs.text = self.tabsController?.tabs[num - 1].title
+        self.tabsController?.updateButtonImages(index: num)
+    }
+    
     @IBAction func slide(_ sender: Any) {
         if(slideIsHide){
             showSlider()
@@ -134,6 +143,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func goVideo(_ sender: Any) {
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
     }
     
     @IBAction func goDailyMachine(_ sender: Any) {
@@ -145,6 +155,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func goQuestionPlan(_ sender: Any) {
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
     }
     
     

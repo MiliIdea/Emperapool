@@ -128,6 +128,13 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
     }
     
+    @IBAction func goCoin(_ sender: Any) {
+        (self.parent as! MainViewController).goTab(3)
+        ((self.parent as! MainViewController).children[2] as! StoreViewController).goTab(1)
+    }
     
-
+    @IBAction func goGem(_ sender: Any) {
+        (self.parent as! MainViewController).goTab(1)
+    }
+    
 }

@@ -24,7 +24,25 @@ extension MR {
         
     }
     
+    static func getAvailableToBuyPrize(vc : UIViewController , productId : Int , completionHandler: @escaping (GenericResponse<PrizeAvailableRes ,UserRes>? , Int) -> Void){
+        request(EndPoints.PrizeAvailableRes + productId.description , method: .post , parameters: [:] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<PrizeAvailableRes,UserRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value, (res?.response!.statusCode)!)
+            }
+        }
+        
+    }
     
+    static func payPrize(vc : UIViewController , productId : Int , bId : Int , refId : String , completionHandler: @escaping (GenericResponse<PrizeAvailableRes ,UserRes>? , Int) -> Void){
+        request(EndPoints.payPrize + productId.description + "/" + refId + "/" + bId.description, method: .post , parameters: [:] , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+            DataResponse<GenericResponse<PrizeAvailableRes,UserRes>>) in
+            self.resHandler(vc: vc, response: response){res in
+                completionHandler(res?.result.value, (res?.response!.statusCode)!)
+            }
+        }
+        
+    }
 }
 
 

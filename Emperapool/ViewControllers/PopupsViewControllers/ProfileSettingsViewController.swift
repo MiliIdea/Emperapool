@@ -89,11 +89,15 @@ class ProfileSettingsViewController: UIViewController  , UICollectionViewDelegat
         
         self.profileRes?.introduced_by = self.introduceCodeTxtField.text
         
-        do{
-            let dict = try self.profileRes.asDictionary()
-            
-            MR.updateUser(vc: self, profile: dict){res in
+        print(["display_name" : profileRes?.display_name ?? "" , "birthday" : self.profileRes?.birthday ?? "" , "city" : self.profileRes?.city ?? "" , "job" : self.profileRes?.job ?? "" , "introduced_by" : self.profileRes?.introduced_by ?? ""])
+        
+            MR.updateUser(vc: self, profile: ["display_name" : profileRes?.display_name ?? "" , "birthday" : self.profileRes?.birthday ?? "" , "city" : self.profileRes?.city ?? "" , "job" : self.profileRes?.job ?? "" , "introduced_by" : self.profileRes?.introduced_by ?? ""]){res in
                 if(res != nil && res?.data != nil){
+                    
+                    App.profile = self.profileRes
+                    
+                    SwiftEventBus.post("profileUpdate")
+                    
                     UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
                         
                         self.view.backgroundColor = UIColor.clear
@@ -106,9 +110,9 @@ class ProfileSettingsViewController: UIViewController  , UICollectionViewDelegat
                     }
                 }
             }
-        }catch{
-            print(error)
-        }
+//        }catch{
+//            print(error)
+//        }
     }
     
     @IBAction func deny(_ sender: Any) {
@@ -157,6 +161,19 @@ class ProfileSettingsViewController: UIViewController  , UICollectionViewDelegat
     
     
     @IBAction func moreAvatars(_ sender: Any) {
+        UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
+            
+            self.view.backgroundColor = UIColor.clear
+            
+            self.popupBackView.frame.origin.y = self.view.frame.height
+            
+        }){completion in
+            (self.parent as! MainViewController).goTab(3)
+            ((self.parent as! MainViewController).children[2] as! StoreViewController).goTab(2)
+            self.view.removeFromSuperview()
+            self.removeFromParent()
+        }
+        
     }
     
     

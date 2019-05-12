@@ -50,6 +50,20 @@ class ProfileViewController: UIViewController , UICollectionViewDelegate, UIColl
             self.gem.text = (App.profile?.gem ?? 0).description
         }
         
+        SwiftEventBus.onMainThread(self, name: "badgeUpdate") { result in
+            MR.getMyBadge(vc: self){res in
+                if(res != nil && res?.data != nil && !(res?.data!.isEmpty)!){
+                    self.badges = (res?.data!)!
+                    self.collection.reloadData()
+                    let h = self.collection.collectionViewLayout.collectionViewContentSize.height
+                    self.collection.frame.size.height = h
+                    self.badgeView.setHeight(height: self.collection.y + h + 15)
+                    self.myScrollView.contentSize.height = self.badgeView.height + self.badgeView.y + (30 * self.view.frame.height / 603)
+                    
+                }
+            }
+        }
+        
         MR.getMyBadge(vc: self){res in
             if(res != nil && res?.data != nil && !(res?.data!.isEmpty)!){
                 self.badges = (res?.data!)!
@@ -94,6 +108,8 @@ class ProfileViewController: UIViewController , UICollectionViewDelegate, UIColl
     }
     
     @IBAction func moreBadge(_ sender: Any) {
+        (self.parent as! MainViewController).goTab(3)
+        ((self.parent as! MainViewController).children[2] as! StoreViewController).goTab(3)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -134,4 +150,15 @@ class ProfileViewController: UIViewController , UICollectionViewDelegate, UIColl
         return 0
     }
 
+    @IBAction func goCoin(_ sender: Any) {
+        (self.parent as! MainViewController).goTab(3)
+        ((self.parent as! MainViewController).children[2] as! StoreViewController).goTab(1)
+    }
+    
+    @IBAction func goGem(_ sender: Any) {
+        (self.parent as! MainViewController).goTab(1)
+    }
+    
+    
+    
 }

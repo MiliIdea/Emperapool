@@ -31,7 +31,7 @@ public class App {
         var head = ["os" : "iOS" , "os-version" : UIDevice.current.systemVersion , "version" : "40" , "api-version" : api]
         if(token != ""){
             head["Authorization"] = "Bearer " + token
-//            print(head["Authorization"] as Any)
+            print(head["Authorization"] as Any)
         }
 //        print(head)
         return head

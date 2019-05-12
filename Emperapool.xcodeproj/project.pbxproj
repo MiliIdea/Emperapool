@@ -119,6 +119,11 @@
 		04C81C14225F248A00069A19 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */; };
 		04C81C1A225F27EA00069A19 /* GameMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C19225F27EA00069A19 /* GameMenu.storyboard */; };
 		04C81C1C225F27F900069A19 /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81C1B225F27F900069A19 /* OTP.storyboard */; };
+		04CA6DC82287EDCA00600DE9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6DC62287EDCA00600DE9 /* Product.swift */; };
+		04CA6DC92287EDCA00600DE9 /* AvailableToBuyRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6DC72287EDCA00600DE9 /* AvailableToBuyRes.swift */; };
+		04CA6DCB2287F86500600DE9 /* VerificationToBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6DCA2287F86500600DE9 /* VerificationToBuyViewController.swift */; };
+		04CA6DCE2288316700600DE9 /* PrizeAvailableRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6DCC2288316700600DE9 /* PrizeAvailableRes.swift */; };
+		04CA6DCF2288316700600DE9 /* Prize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6DCD2288316700600DE9 /* Prize.swift */; };
 		04D7158C22687060007F94A7 /* MR_PRIZE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7158B22687060007F94A7 /* MR_PRIZE.swift */; };
 		04D7158E2268716F007F94A7 /* PrizeRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7158D2268716F007F94A7 /* PrizeRes.swift */; };
 		04D71596226886B4007F94A7 /* ShopListRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D71590226886B2007F94A7 /* ShopListRes.swift */; };
@@ -282,6 +287,11 @@
 		04C81C13225F248A00069A19 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
 		04C81C19225F27EA00069A19 /* GameMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenu.storyboard; sourceTree = "<group>"; };
 		04C81C1B225F27F900069A19 /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
+		04CA6DC62287EDCA00600DE9 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		04CA6DC72287EDCA00600DE9 /* AvailableToBuyRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableToBuyRes.swift; sourceTree = "<group>"; };
+		04CA6DCA2287F86500600DE9 /* VerificationToBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationToBuyViewController.swift; sourceTree = "<group>"; };
+		04CA6DCC2288316700600DE9 /* PrizeAvailableRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrizeAvailableRes.swift; sourceTree = "<group>"; };
+		04CA6DCD2288316700600DE9 /* Prize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prize.swift; sourceTree = "<group>"; };
 		04D7158B22687060007F94A7 /* MR_PRIZE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MR_PRIZE.swift; sourceTree = "<group>"; };
 		04D7158D2268716F007F94A7 /* PrizeRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrizeRes.swift; sourceTree = "<group>"; };
 		04D71590226886B2007F94A7 /* ShopListRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListRes.swift; sourceTree = "<group>"; };
@@ -468,6 +478,7 @@
 				04C81C04225F219600069A19 /* ProfileSettingsViewController.swift */,
 				0402F6BF2281B08C006FE27C /* ProfileDatePickerViewController.swift */,
 				0402F6C32281B0CE006FE27C /* ProfileListSelectorViewController.swift */,
+				04CA6DCA2287F86500600DE9 /* VerificationToBuyViewController.swift */,
 			);
 			path = PopupsViewControllers;
 			sourceTree = "<group>";
@@ -715,6 +726,10 @@
 		04D7158F2268869E007F94A7 /* ShopListResponse */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6DCD2288316700600DE9 /* Prize.swift */,
+				04CA6DCC2288316700600DE9 /* PrizeAvailableRes.swift */,
+				04CA6DC72287EDCA00600DE9 /* AvailableToBuyRes.swift */,
+				04CA6DC62287EDCA00600DE9 /* Product.swift */,
 				04D71592226886B3007F94A7 /* Avatars.swift */,
 				04D71593226886B3007F94A7 /* Badges.swift */,
 				04D71595226886B4007F94A7 /* Coins.swift */,
@@ -1054,6 +1069,7 @@
 				0421715E22671807000D3623 /* ExtraGameListRes.swift in Sources */,
 				04C81BF5225CDE9300069A19 /* ProfileRes.swift in Sources */,
 				04D71598226886B4007F94A7 /* Avatars.swift in Sources */,
+				04CA6DCF2288316700600DE9 /* Prize.swift in Sources */,
 				04FAEF6C227D8EEA00078C64 /* ExtraHelpFiftyRes.swift in Sources */,
 				04D71596226886B4007F94A7 /* ShopListRes.swift in Sources */,
 				042171582267169F000D3623 /* Conditions.swift in Sources */,
@@ -1089,6 +1105,7 @@
 				04217164226756B1000D3623 /* BadgeStoreViewController.swift in Sources */,
 				040C550E2264BA7100B6F769 /* HomeTableViewCell.swift in Sources */,
 				04FAEF70227EBC8500078C64 /* LoserPopupViewController.swift in Sources */,
+				04CA6DCE2288316700600DE9 /* PrizeAvailableRes.swift in Sources */,
 				04C81BF8225CE51000069A19 /* Reachability.swift in Sources */,
 				04559FE62275B37000394D87 /* OnlineUsers.swift in Sources */,
 				04559FDF2275780C00394D87 /* XMPPController.swift in Sources */,
@@ -1103,6 +1120,7 @@
 				04559FE32275AEA500394D87 /* StreamDataRes.swift in Sources */,
 				04C81C0C225F22F200069A19 /* GameSettingsViewController.swift in Sources */,
 				0402F6C02281B08C006FE27C /* ProfileDatePickerViewController.swift in Sources */,
+				04CA6DC82287EDCA00600DE9 /* Product.swift in Sources */,
 				04C81BFA225CE6C800069A19 /* App.swift in Sources */,
 				04028FF92276F5DE00100C54 /* QuestionViewController.swift in Sources */,
 				042171622267568E000D3623 /* AvatarStoreViewController.swift in Sources */,
@@ -1111,6 +1129,7 @@
 				04559FCD226F36A800394D87 /* ErrorNetPopupViewController.swift in Sources */,
 				042171672268674F000D3623 /* prizeTableViewCell.swift in Sources */,
 				04028FFB2276F5EB00100C54 /* ChatViewController.swift in Sources */,
+				04CA6DC92287EDCA00600DE9 /* AvailableToBuyRes.swift in Sources */,
 				042171542267169F000D3623 /* Fifty.swift in Sources */,
 				0472C98E2264AEF80056848A /* PreGameViewController.swift in Sources */,
 				04D715A022688BB9007F94A7 /* CoinCollectionViewCell.swift in Sources */,
@@ -1139,6 +1158,7 @@
 				040290012278338D00100C54 /* GameBoardViewController.swift in Sources */,
 				04D7158E2268716F007F94A7 /* PrizeRes.swift in Sources */,
 				04D7159B226886B4007F94A7 /* Coins.swift in Sources */,
+				04CA6DCB2287F86500600DE9 /* VerificationToBuyViewController.swift in Sources */,
 				04D7158C22687060007F94A7 /* MR_PRIZE.swift in Sources */,
 				0472C975226300BE0056848A /* AwardViewController.swift in Sources */,
 				04559FDA2270433300394D87 /* DailyMachineRes.swift in Sources */,

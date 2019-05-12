@@ -80,4 +80,12 @@ class StoreViewController: UIViewController {
         self.tabsController?.updateButtonsBackground(index: sender.tag)
         
     }
+    
+    func goTab(_ num : Int) {
+        UIView.animate(withDuration: 0.2, delay: 0 , options: .curveEaseInOut, animations: {
+            self.mainBoard.frame.origin.x = CGFloat(-1 * (num - 1)) * self.view.frame.width
+            self.tabIndicator.setX(x: CGFloat((num - 1)) * self.tabIndicator.width )
+        },completion: nil)
+        self.tabsController?.updateButtonsBackground(index: num)
+    }
 }

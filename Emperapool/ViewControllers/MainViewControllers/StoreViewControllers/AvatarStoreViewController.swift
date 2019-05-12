@@ -52,6 +52,37 @@ class AvatarStoreViewController: UIViewController , UICollectionViewDelegate, UI
         self.myScrollView.contentSize.height = h + self.collection.y + 20
     }
     
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        App.showLoading(vc: self.parent!.parent! , viewAlpha: 0.3)
+        let c = self.avatars[indexPath.item]
+        MR.getAvailableToBuy(vc: self, productId: c.id ?? 0){res,status  in
+            App.dismissLoading(vc: self.parent!.parent!)
+            if(res?.extra_data?.user != nil){
+                App.profile = res?.extra_data?.user
+                SwiftEventBus.post("profileUpdate")
+            }
+            if(status == 200 || status == 201){
+                if(res != nil){
+                    if(res?.data?.available_to_buy == true && res?.data?.ready_to_buy == true){
+                        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+                        let vc : VerificationToBuyViewController = (storyboard.instantiateViewController(withIdentifier: "VerificationToBuyViewController")) as! VerificationToBuyViewController
+                        vc.setup(coinAmount: c.price ?? "", imgAddress: c.image ?? c.icon ?? "", popupTitle: "آیا از خرید این آواتار مطمئن اید ؟!", productId: c.id ?? 0 , bId: res?.data?.bid ?? 0)
+                        self.parent!.parent!.addChild(vc)
+                        vc.didMove(toParent: self.parent!.parent!)
+                        self.parent!.parent!.view.addSubview(vc.view)
+                    }else{
+                        self.parent!.parent!.view.makeToast("این محصول آماده ی خرید نمی باشد")
+                    }
+                }
+            }else{
+                self.parent!.parent!.view.makeToast("این محصول آماده ی خرید نمی باشد")
+            }
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return avatars.count
     }

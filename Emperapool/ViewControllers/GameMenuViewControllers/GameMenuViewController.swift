@@ -25,27 +25,33 @@ class GameMenuViewController: UIViewController {
     
     
     @IBAction func goSupport(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: SupportViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: SupportViewController.self){_ in}
     }
     
     @IBAction func goMessages(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: MessagesViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: MessagesViewController.self){_ in}
     }
     
     @IBAction func goCreateQuestion(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: CreateQuestionViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: CreateQuestionViewController.self){_ in}
     }
     
     @IBAction func goNews(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: NewsViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: NewsViewController.self){_ in}
     }
     
     @IBAction func goSettings(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: GameSettingsViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: GameSettingsViewController.self){_ in}
     }
     
     @IBAction func goGameTutorial(_ sender: Any) {
-        navigate(storyboardName: "GameMenu", vc: GameToturialViewController.self){_ in}
+        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+//        navigate(storyboardName: "GameMenu", vc: GameToturialViewController.self){_ in}
     }
     
     @IBAction func goRateUs(_ sender: Any) {

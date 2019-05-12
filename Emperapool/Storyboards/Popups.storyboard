@@ -299,6 +299,92 @@
             </objects>
             <point key="canvasLocation" x="3244" y="190.25487256371815"/>
         </scene>
+        <!--Verification To Buy View Controller-->
+        <scene sceneID="6Py-Fc-dnF">
+            <objects>
+                <viewController storyboardIdentifier="VerificationToBuyViewController" id="qMF-ud-44D" customClass="VerificationToBuyViewController" customModule="Emperapool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7uJ-wK-C0r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-tg-LCZ">
+                                <rect key="frame" x="-5.5" y="0.0" width="386" height="687"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupprize" translatesAutoresizingMaskIntoConstraints="NO" id="LTf-Vm-NmH">
+                                        <rect key="frame" x="33" y="231" width="316" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTu-ln-qPB">
+                                        <rect key="frame" x="222" y="413" width="112" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="18"/>
+                                        <state key="normal" title="آره" backgroundImage="acceptbutton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buy:" destination="qMF-ud-44D" eventType="touchUpInside" id="ukW-qT-c6B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-AE-OXK">
+                                        <rect key="frame" x="49" y="413" width="111" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="18"/>
+                                        <state key="normal" title="نه" backgroundImage="denybutton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="qMF-ud-44D" eventType="touchUpInside" id="0jy-Ag-evK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="از خرید این آواتار مطمنید؟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5tQ-Uw-SzG">
+                                        <rect key="frame" x="59" y="337" width="263" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-FD" family="Shabnam FD" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-2B-wKa">
+                                        <rect key="frame" x="158" y="262" width="69" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwN-Zw-gpF">
+                                        <rect key="frame" x="158" y="378" width="39" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold-FD" family="Shabnam FD" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_pre" translatesAutoresizingMaskIntoConstraints="NO" id="iCB-yO-kN1">
+                                        <rect key="frame" x="201" y="378" width="25" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CvW-tg-LCZ" secondAttribute="height" multiplier="375:667" id="hOU-Ju-vq6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="T6T-RH-bOZ" firstAttribute="top" secondItem="CvW-tg-LCZ" secondAttribute="top" constant="20" id="DI3-d5-Mnd"/>
+                            <constraint firstItem="CvW-tg-LCZ" firstAttribute="centerY" secondItem="T6T-RH-bOZ" secondAttribute="centerY" id="iki-uu-0ic"/>
+                            <constraint firstItem="CvW-tg-LCZ" firstAttribute="centerX" secondItem="T6T-RH-bOZ" secondAttribute="centerX" id="w4U-3I-s36"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T6T-RH-bOZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinImage" destination="iCB-yO-kN1" id="Y76-qj-koa"/>
+                        <outlet property="coinLabel" destination="NwN-Zw-gpF" id="hbY-Vl-ydW"/>
+                        <outlet property="img" destination="v7i-2B-wKa" id="Lbx-OL-kxo"/>
+                        <outlet property="popupView" destination="CvW-tg-LCZ" id="fqe-lE-EXt"/>
+                        <outlet property="titleDesc" destination="5tQ-Uw-SzG" id="oum-hh-QDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfR-hD-knW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3239.1999999999998" y="865.81709145427294"/>
+        </scene>
         <!--Daily Machines View Controller-->
         <scene sceneID="3Zm-5X-VYN">
             <objects>
@@ -389,7 +475,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_machine" translatesAutoresizingMaskIntoConstraints="NO" id="lsI-LV-BHY">
-                                        <rect key="frame" x="17" y="25" width="339" height="118"/>
+                                        <rect key="frame" x="17" y="25" width="339" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="status" translatesAutoresizingMaskIntoConstraints="NO" id="Glb-3e-Aqs">

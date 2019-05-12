@@ -62,9 +62,17 @@ public class EndPoints {
     
     static let prizeList : String = baseUrl + "shop/prize/list"
     
+    static let prizeAvailableToBuy : String = baseUrl + "shop/prize/check_available/"
+    
+    static let payPrize : String = baseUrl + "shop/prize/request/"
+    
     //- MARK: Shop
     
     static let shopList : String = baseUrl + "shop/list"
+    
+    static let productAvailableToBuy : String = baseUrl + "shop/check_available/"
+    
+    static let payProduct : String = baseUrl + "shop/pay/"
     
     //- MARK: DailyMachine
     

@@ -32,7 +32,7 @@ class MR {
 //        print(response.response?.debugDescription ?? "")
 //        print()
         print(response.response?.statusCode ?? "")
-        if(response.response?.statusCode == 200 || response.response?.statusCode == 201 || response.response?.statusCode == 202 ){
+        if(response.response?.statusCode == 200 || response.response?.statusCode == 201 || response.response?.statusCode == 202 || response.response?.statusCode == 406 ){
             completionHandler(response)
         }else{
             if(response.response?.statusCode == 400){

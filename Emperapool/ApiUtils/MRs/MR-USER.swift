@@ -75,7 +75,7 @@ extension MR {
     }
     
     static func updateUser(vc : UIViewController , profile : [String: Any] , completionHandler: @escaping (GenericResponse<[ProfileRes] ,TokenRes>?) -> Void){
-        request(EndPoints.approveUserToken, method: .post , parameters: profile , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
+        request(EndPoints.updateUser, method: .post , parameters: profile , headers: App.publicHeader(api :  "1")).validate().responseDecodableObject(decoder: App.decoder) { (response :
             DataResponse<GenericResponse<[ProfileRes] ,TokenRes>>) in
             self.resHandler(vc: vc, response: response){res in
                 completionHandler(res?.result.value)

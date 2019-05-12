@@ -64,6 +64,10 @@ class CoinStoreViewController: UIViewController, UICollectionViewDelegate, UICol
         self.myScrollView.contentSize.height = h + self.collection.y + 20
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.parent!.parent!.view.makeToast("این محصول آماده ی خرید نمی باشد")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return coins.count
     }
@@ -103,4 +107,10 @@ class CoinStoreViewController: UIViewController, UICollectionViewDelegate, UICol
         return 0
     }
 
+    
+    @IBAction func goGem(_ sender: Any) {
+        (self.parent?.parent as! MainViewController).goTab(1)
+    }
+    
+    
 }

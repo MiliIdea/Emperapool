@@ -15,7 +15,7 @@ import Foundation
 struct PrizeAvailableRes : Codable {
 	let pid : Int?
 	let status : Int?
-	let prize : Prize?
+	let prize : PrizeRes?
 	let ready_to_request : Bool?
 	let available_to_request : Bool?
 	let special_msg : String?

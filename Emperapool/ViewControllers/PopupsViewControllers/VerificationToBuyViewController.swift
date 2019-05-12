@@ -19,6 +19,8 @@ class VerificationToBuyViewController: UIViewController {
     
     var productId : Int?
     var bId : Int?
+    var refId : String = ""
+    var isCoinType : Bool = true
 
     var coinAmount : String = ""
     var imgAddress : String = ""
@@ -29,18 +31,23 @@ class VerificationToBuyViewController: UIViewController {
         self.popupView.setY(y: self.view.height)
     }
     
-    func setup(coinAmount : String , imgAddress : String ,popupTitle : String , productId : Int , bId : Int){
+    func setup(coinAmount : String , imgAddress : String ,popupTitle : String , productId : Int , bId : Int , isCoinType : Bool = true){
         self.coinAmount = coinAmount
         self.imgAddress = imgAddress
         self.popupTitle = popupTitle
         self.productId = productId
         self.bId = bId
+        self.isCoinType = isCoinType
+        
     }
     
     override func viewDidLayoutSubviews() {
         self.coinLabel.text = self.coinAmount
         self.img.kf.setImage(with: URL.init(string: self.imgAddress))
         self.titleDesc.text = self.popupTitle
+        if(!isCoinType){
+            self.coinImage.image = UIImage.init(named: "gem_pre")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -56,17 +63,34 @@ class VerificationToBuyViewController: UIViewController {
     
     
     @IBAction func buy(_ sender: Any) {
-        App.showLoading(vc: self, viewAlpha: 0.3)
-        MR.payProduct(vc: self, productId: self.productId ?? 0, bId: self.bId ?? 0){res , status in
-            if(res?.extra_data?.user != nil){
-                App.profile = res?.extra_data?.user
-                SwiftEventBus.post("profileUpdate")
+        if(self.isCoinType){
+            App.showLoading(vc: self, viewAlpha: 0.3)
+            MR.payProduct(vc: self, productId: self.productId ?? 0, bId: self.bId ?? 0){res , status in
+                if(res?.extra_data?.user != nil){
+                    App.profile = res?.extra_data?.user
+                    SwiftEventBus.post("profileUpdate")
+                }
+                if(res?.complete == true){
+                    self.view.makeToast("محصول با موفقیت خریداری شد!")
+                    SwiftEventBus.post("badgeUpdate")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.dismiss("")
+                    }
+                }
             }
-            if(res?.complete == true){
-                self.view.makeToast("محصول با موفقیت خریداری شد!")
-                SwiftEventBus.post("badgeUpdate")
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.dismiss("")
+        }else{
+            App.showLoading(vc: self, viewAlpha: 0.3)
+            MR.payPrize(vc: self, productId: self.productId ?? 0, bId: self.bId ?? 0 , refId: self.refId){res , status in
+                if(res?.extra_data?.user != nil){
+                    App.profile = res?.extra_data?.user
+                    SwiftEventBus.post("profileUpdate")
+                }
+                if(res?.complete == true){
+                    self.view.makeToast("محصول با موفقیت خریداری شد!")
+                    SwiftEventBus.post("badgeUpdate")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.dismiss("")
+                    }
                 }
             }
         }

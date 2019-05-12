@@ -61,5 +61,34 @@ class AwardViewController: UIViewController  ,UITableViewDelegate , UITableViewD
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        App.showLoading(vc: self.parent!.parent! , viewAlpha: 0.3)
+        let c = self.prizeList[indexPath.row]
+        MR.getAvailableToBuyPrize(vc: self, productId: c.id ?? 0){res,status  in
+            App.dismissLoading(vc: self.parent!.parent!)
+            if(res?.extra_data?.user != nil){
+                App.profile = res?.extra_data?.user
+                SwiftEventBus.post("profileUpdate")
+            }
+            if(status == 200 || status == 201){
+                if(res != nil){
+                    if(res?.data?.available_to_request == true && res?.data?.ready_to_request == true){
+                        let storyboard = UIStoryboard(name: "Popups", bundle: nil)
+                        let vc : VerificationToBuyViewController = (storyboard.instantiateViewController(withIdentifier: "VerificationToBuyViewController")) as! VerificationToBuyViewController
+                        vc.refId = res?.data?.ref_code ?? ""
+                        vc.setup(coinAmount: c.gem?.description ?? "" , imgAddress: c.image ?? c.icon ?? "", popupTitle: "آیا از خرید این محصول مطمئن اید ؟!", productId: c.id ?? 0 , bId: res?.data?.pid ?? 0 , isCoinType: false)
+                        self.parent!.addChild(vc)
+                        vc.didMove(toParent: self.parent!)
+                        self.parent!.view.addSubview(vc.view)
+                    }else{
+                        self.parent!.view.makeToast("این محصول آماده ی خرید نمی باشد")
+                    }
+                }
+            }else{
+                self.parent!.view.makeToast("این محصول آماده ی خرید نمی باشد")
+            }
+        }
+    }
 
 }

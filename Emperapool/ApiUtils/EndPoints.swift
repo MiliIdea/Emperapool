@@ -79,4 +79,8 @@ public class EndPoints {
     static let getDailyMachine : String = baseUrl + "luck/wof/list"
     
     static let getRoll : String = baseUrl + "luck/wof/roll/"
+    
+    //- MARK: News
+    
+    static let news : String = baseUrl + "news/list/1"
 }

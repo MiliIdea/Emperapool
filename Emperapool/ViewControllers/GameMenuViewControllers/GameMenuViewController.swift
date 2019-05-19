@@ -16,7 +16,7 @@ class GameMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.versionLabel.text = "V " + (Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String)
     }
     
     @IBAction func back(_ sender: Any) {
@@ -40,8 +40,8 @@ class GameMenuViewController: UIViewController {
     }
     
     @IBAction func goNews(_ sender: Any) {
-        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
-//        navigate(storyboardName: "GameMenu", vc: NewsViewController.self){_ in}
+//        self.view.makeToast("این قسمت در ورژن بعدی در دسترس خواهد بود")
+        navigate(storyboardName: "GameMenu", vc: NewsViewController.self){_ in}
     }
     
     @IBAction func goSettings(_ sender: Any) {
@@ -59,11 +59,21 @@ class GameMenuViewController: UIViewController {
     }
     
     @IBAction func goTerms(_ sender: Any) {
-        self.view.makeToast("terms")
+        let myUrl : String = "http://panel.emperapool.com/static/rules/"
+        let myTitle : String = "قوانین بازی"
+        navigate(storyboardName: "GameMenu", vc: HelpWebViewsViewController.self){vc in
+            vc.urlToLoad = myUrl
+            vc.myTitle = myTitle
+        }
     }
     
     @IBAction func goContactUs(_ sender: Any) {
-        self.view.makeToast("contact us")
+        let myUrl : String = "http://panel.emperapool.com/static/contact/"
+        let myTitle : String = "تماس با ما"
+        navigate(storyboardName: "GameMenu", vc: HelpWebViewsViewController.self){vc in
+            vc.urlToLoad = myUrl
+            vc.myTitle = myTitle
+        }
     }
     
     
